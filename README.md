@@ -103,3 +103,20 @@ ListContainer:
                         vel = 106
                         len = 5
 ```
+
+
+#SysEx control of the device
+
+Switch to preset X (ie 100 -> 0x64)
+```
+$ amidi -p hw:1,0,0 -S 'f000211a02013364f7'
+```
+
+Download and process current preset
+(note: may be interspersed with midi clock -> set sync external)
+```
+amidi -p hw:1,0,0 -S 'f000211a020131f7'  -r prog.bin -t 1
+
+# Strip off extra bits to get at 'config file' portion (note leaves 0x7f at end)
+dd bs=1024 count=1 skip=19 iflag=skip_bytes if=prog.bin of=prog.unosyp
+```
