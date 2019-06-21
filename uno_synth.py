@@ -4,8 +4,26 @@
 # (c) Simon Wood, 18 June 2019
 #
 
+import sys
 from optparse import OptionParser
 from construct import *
+
+#--------------------------------------------------
+# For Midi capabilites (optional)
+
+global inport
+global outport
+
+try:
+    import mido
+    _hasMido = True
+    if sys.platform == 'win32':
+        mido.set_backend('mido.backends.rtmidi_python')
+except ImportError:
+    _hasMido = False
+'''
+_hasMido = False
+'''
 
 #--------------------------------------------------
 # Define file format using Construct (v2.9)
@@ -114,6 +132,10 @@ Uno = Sequence(
 def main():
     global config
 
+    data = None
+    inport = None
+    outport = None
+
     usage = "usage: %prog [options] FILENAME"
     parser = OptionParser(usage)
     parser.add_option("-v", "--verbose",
@@ -122,25 +144,80 @@ def main():
         help="dump configuration/sequence to text",
         action="store_true", dest="dump")
 
+    if _hasMido:
+        parser.add_option("-p", "--preset", dest="preset",
+            help="Use 'PRESET' in MIDI operations" )
+        parser.add_option("-r", "--read", dest="read",
+            help="Read current (or 'PRESET') config from UNO",
+            action="store_true")
+        parser.add_option("-w", "--write", dest="write",
+            help="Read write config to 'PRESET' on attached UNO",
+            action="store_true")
+        parser.add_option("-b", "--backup", dest="backup",
+            help="Backup all presets from UNO to timestamped directory",
+            action="store_true")
+
     (options, args) = parser.parse_args()
 
-    if len(args) != 1:
-        parser.error("input FILE not specified")
+    if _hasMido:
+        if options.preset or options.read or options.write or options.backup:
+            for port in mido.get_input_names():
+                if port[:9]=="UNO Synth":
+                    inport = mido.open_input(port)
+                    break
+            for port in mido.get_output_names():
+                if port[:9]=="UNO Synth":
+                    outport = mido.open_output(port)
+                    break
+            if inport == None or outport == None:
+                sys.exit("Midi: Unable to find UNO Synth")
 
-    if options.verbose:
-        print("Reading %s..." % args[0])
+        if options.read or options.preset:
+            if options.preset and int(options.preset) <= 100:
+                # Switch UNO to preset
+                data=(0x00,0x21,0x1a,0x02,0x01,0x33,int(options.preset))
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
 
-    infile = open(args[0], "rb")
-    if not infile:
-        print("Unable to open file")
-        quit(0)
+            if options.read:
+                # Read config from UNO
+                data=(0x00,0x21,0x1a,0x02,0x01,0x31)
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+                for msg in inport:
+                    if msg.type=='sysex':
+                        if len(msg.data) > 229 and msg.data[6]==0x31:
+                            data = bytes(msg.data[10:])
+                            break
 
-    data = infile.read(2000)
-    config = Uno.parse(data)
-    infile.close()
+    # check whether we've already got data
+    if data == None:
+        if len(args) != 1:
+            parser.error("config FILE not specified")
 
-    if options.dump:
+        if options.verbose:
+            print("Reading %s..." % args[0])
+
+        infile = open(args[0], "rb")
+        if not infile:
+            sys.exit("Unable to open config FILE for reading")
+
+        data = infile.read(2000)
+        infile.close()
+
+    if options.dump and data:
+        config = Uno.parse(data)
         print(config)
+
+    # When reading from UNO, write data to file.
+    if _hasMido:
+        if options.read and data and len(args) == 1:
+            outfile = open(args[0], "wb")
+            if not outfile:
+                sys.exit("Unable to open config FILE for writing")
+
+            outfile.write(data)
+
 
 if __name__ == "__main__":
     main()
