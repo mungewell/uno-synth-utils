@@ -4,8 +4,26 @@ Scripts for controlling the IK UNO Synth
 Parsing of '*.unosyp' preset is done using the Python module 'Construct'
 https://github.com/construct/construct
 
-Currently script only supports dumping the sequencer section of the preset files, the dump is a
-text representation of the 'Construct' object.
+```
+$ python3 uno_synth.py -h
+Usage: uno_synth.py [options] FILENAME
+
+Options:
+  -h, --help            show this help message and exit
+  -v, --verbose         
+  -d, --dump            dump configuration/sequence to text
+  -m MIDI, --midi=MIDI  Select 'MIDI' device name
+  -p PRESET, --preset=PRESET
+                        Use 'PRESET' in MIDI operations
+  -r, --read            Read current (or 'PRESET') config from UNO
+```
+
+Currently script supports selecting the preset on the device and
+downloading (from UNO to PC) the preset.
+
+It can also 'dump' the sequencer section of the preset file, the dump is a
+text representation of the 'Construct' object. It can not (yet) change
+the preset, but that is planned at some point...
 ```
 $ python3 uno_synth.py -d test/Factory\ 21-100/21.unosyp 
 ListContainer: 
