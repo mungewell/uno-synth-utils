@@ -145,6 +145,8 @@ def main():
         action="store_true", dest="dump")
 
     if _hasMido:
+        parser.add_option("-m", "--midi", dest="midi", default="UNO Synth",
+            help="Select 'MIDI' device name")
         parser.add_option("-p", "--preset", dest="preset",
             help="Use 'PRESET' in MIDI operations" )
         parser.add_option("-r", "--read", dest="read",
@@ -161,12 +163,16 @@ def main():
 
     if _hasMido:
         if options.preset or options.read or options.write or options.backup:
+            if sys.platform == 'win32':
+                name = bytes(options.midi, 'ascii')
+            else:
+                name = options.midi
             for port in mido.get_input_names():
-                if port[:9]=="UNO Synth":
+                if port[:len(name)]==name:
                     inport = mido.open_input(port)
                     break
             for port in mido.get_output_names():
-                if port[:9]=="UNO Synth":
+                if port[:len(name)]==name:
                     outport = mido.open_output(port)
                     break
             if inport == None or outport == None:
