@@ -5,6 +5,8 @@
 #
 
 import sys
+import os
+import time
 from optparse import OptionParser
 from construct import *
 
@@ -148,16 +150,15 @@ def main():
         parser.add_option("-m", "--midi", dest="midi", default="UNO Synth",
             help="Select 'MIDI' device name")
         parser.add_option("-p", "--preset", dest="preset",
-            help="Use 'PRESET' in MIDI operations" )
+            help="Select 'PRESET' and use in MIDI operations" )
         parser.add_option("-r", "--read", dest="read",
             help="Read current (or 'PRESET') config from UNO",
             action="store_true")
         parser.add_option("-w", "--write", dest="write",
             help="Read write config to 'PRESET' on attached UNO",
             action="store_true")
-        parser.add_option("-b", "--backup", dest="backup",
-            help="Backup all presets from UNO to timestamped directory",
-            action="store_true")
+        parser.add_option("-B", "--backup", dest="backup",
+            help="Backup all presets (21-100) from UNO to 'BACKUP' directory")
 
     (options, args) = parser.parse_args()
 
@@ -196,6 +197,36 @@ def main():
                             data = bytes(msg.data[10:])
                             break
 
+        if options.backup:
+            path = os.path.join(os.getcwd(), options.backup)
+            os.mkdir(path)
+
+            for preset in range(21,101,1):
+                data=(0x00,0x21,0x1a,0x02,0x01,0x33,preset)
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+
+                # temp hack to allow UNO time to switch
+                time.sleep(1)
+
+                name = os.path.join(path, str(preset) + ".unosyp")
+                outfile = open(name, "wb")
+                if not outfile:
+                    sys.exit("Unable to open config FILE for writing")
+
+                data=(0x00,0x21,0x1a,0x02,0x01,0x31)
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+                for msg in inport:
+                    if msg.type=='sysex':
+                        if len(msg.data) > 229 and msg.data[6]==0x31:
+                            data = bytes(msg.data[10:])
+                            break
+
+                outfile.write(data)
+                outfile.close()
+
+
     # check whether we've already got data
     if data == None:
         if len(args) != 1:
@@ -223,6 +254,7 @@ def main():
                 sys.exit("Unable to open config FILE for writing")
 
             outfile.write(data)
+            outfile.close()
 
 
 if __name__ == "__main__":
