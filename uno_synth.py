@@ -52,18 +52,35 @@ ADSR = Struct(
     "skip" / Bytes(2),
     )
 
-'''
-    "skip" / Bytes(220),
-'''
 Config = Struct(
-    "skip" / Bytes(42),
+    "skip" / Bytes(7),
+    "tempo" / Short,
+    "skip" / Bytes(2),
+    "octave" / Byte,
+    "skip" / Bytes(2),
+    "glide" / Byte,
+    "skip" / Bytes(3),
+    "scale" / Byte,
+    "skip" / Bytes(5),
+    "delay_time" / Byte,
+    "skip" / Bytes(2),
+    "delay_mix" / Byte,
+    "skip" / Bytes(2),
+    "arp_direction" / Byte,
+    "skip" / Bytes(5),
+    "seq_direction" / Byte,
+    "skip" / Bytes(2),
+    "range" / Byte,
+    "skip" / Bytes(2),
 
     "oscillator1" / Oscillator,
     "oscillator2" / Oscillator,
 
     "noise_level" / Byte,
 
-    "skip" / Bytes(6),
+    "skip" / Bytes(2),
+    "filter_cutoff" / Short,
+    "skip" / Bytes(2),
     "filter_mode" / Byte,
     "skip" / Bytes(2),
     "filter_res" / Byte,
@@ -84,8 +101,8 @@ Config = Struct(
     "skip" / Bytes(2),
     "lfo_filter" / Short,
 
-    "skip2" / Bytes(86),
-    "skip3" / Bytes(7),
+    "skip98" / Bytes(86),
+    "skip99" / Bytes(7),
     )
 
 Seq = Struct(
