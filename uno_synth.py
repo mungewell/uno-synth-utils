@@ -32,8 +32,60 @@ _hasMido = False
 # requires:
 # https://github.com/construct/construct
 
-Config = Struct(
+Oscillator = Struct(
+    "wave" / Short,
+    "skip" / Bytes(2),
+    "tune" / Short,
+    "skip" / Bytes(2),
+    "level" / Byte,
+    "skip" / Bytes(2),
+    )
+
+ADSR = Struct(
+    "attack" / Short,
+    "skip" / Bytes(2),
+    "delay" / Short,
+    "skip" / Bytes(2),
+    "sustain" / Short,
+    "skip" / Bytes(1),
+    "release" / Short,
+    "skip" / Bytes(2),
+    )
+
+'''
     "skip" / Bytes(220),
+'''
+Config = Struct(
+    "skip" / Bytes(42),
+
+    "oscillator1" / Oscillator,
+    "oscillator2" / Oscillator,
+
+    "noise_level" / Byte,
+
+    "skip" / Bytes(6),
+    "filter_mode" / Byte,
+    "skip" / Bytes(2),
+    "filter_res" / Byte,
+    "skip" / Bytes(2),
+    "filter_drive" / Short,
+    "skip" / Bytes(1),
+    "filter_env_amount" / Short,
+    "skip" / Bytes(2),
+
+    "filter" / ADSR,
+    "envelope" / ADSR,
+
+    "lfo_wave" / Byte,
+    "skip" / Bytes(2),
+    "lfo_rate" / Short,
+    "skip" / Bytes(2),
+    "lfo_pitch" / Short,
+    "skip" / Bytes(2),
+    "lfo_filter" / Short,
+
+    "skip2" / Bytes(86),
+    "skip3" / Bytes(7),
     )
 
 Seq = Struct(
