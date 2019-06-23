@@ -1,7 +1,50 @@
 Synthmania/Sprite Voice.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x07\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 7
+        scale = 0
+        delay_time = 102
+        delay_mix = 64
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 812
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 340
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 114
+        noise_level = 45
+        filter_cutoff = 331
+        filter_mode = 2
+        filter_res = 57
+        filter_drive = 19744
+        filter_env_amount = 12
+        filter = Container: 
+            attack = 125
+            skip = b' \x1d' (total 2)
+            delay = 41
+            sustain = 14624
+            release = 83
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 375
+            sustain = 3360
+            release = 15
+        lfo_wave = 0
+        lfo_rate = 615
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -96,7 +139,50 @@ ListContainer:
 Synthmania/Persuaders Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 106
+        oscillator2 = Container: 
+            wave = 808
+            skip = b'\x00\x13' (total 2)
+            tune = 26
+            level = 93
+        noise_level = 0
+        filter_cutoff = 31
+        filter_mode = 0
+        filter_res = 69
+        filter_drive = 25632
+        filter_env_amount = 51
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 101
+            sustain = 11552
+            release = 107
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 101
+            sustain = 32544
+            release = 75
+        lfo_wave = 0
+        lfo_rate = 559
+        lfo_pitch = 9
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -345,7 +431,50 @@ ListContainer:
 Synthmania/Corona Melody.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 74
+        delay_mix = 113
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 796
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 115
+        oscillator2 = Container: 
+            wave = 800
+            skip = b'\x00\x13' (total 2)
+            tune = 4
+            level = 100
+        noise_level = 0
+        filter_cutoff = 83
+        filter_mode = 0
+        filter_res = 13
+        filter_drive = 19744
+        filter_env_amount = 57
+        filter = Container: 
+            attack = 15
+            skip = b' \x1d' (total 2)
+            delay = 23
+            sustain = 11296
+            release = 13
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 5
+        lfo_wave = 0
+        lfo_rate = 13
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%\x17\x00&\x14\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -606,7 +735,50 @@ ListContainer:
 Synthmania/Alien Talk.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 77
+        delay_mix = 61
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 115
+        oscillator2 = Container: 
+            wave = 612
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 115
+        noise_level = 0
+        filter_cutoff = 267
+        filter_mode = 0
+        filter_res = 96
+        filter_drive = 32
+        filter_env_amount = 23
+        filter = Container: 
+            attack = 307
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 325
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 309
+            sustain = 32544
+            release = 289
+        lfo_wave = 6
+        lfo_rate = 3412
+        lfo_pitch = 125
+        lfo_filter = 113
+        skip98 = b"\x00%@\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x14' (total 7)
     ListContainer: 
         Container: 
             step = 3
@@ -631,7 +803,50 @@ ListContainer:
 Synthmania/Yellow Puppet.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x12\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 18
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 620
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 108
+        oscillator2 = Container: 
+            wave = 808
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 106
+        noise_level = 0
+        filter_cutoff = 59
+        filter_mode = 0
+        filter_res = 28
+        filter_drive = 25888
+        filter_env_amount = 54
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 33
+            sustain = 8736
+            release = 103
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 43
+        lfo_wave = 1
+        lfo_rate = 279
+        lfo_pitch = 5
+        lfo_filter = 21
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -686,7 +901,50 @@ ListContainer:
 Synthmania/Ice Cream Truck.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 34
+        delay_mix = 34
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 0
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 0
+        noise_level = 124
+        filter_cutoff = 31
+        filter_mode = 2
+        filter_res = 12
+        filter_drive = 11552
+        filter_env_amount = 15
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 15904
+            release = 329
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 313
+        lfo_wave = 3
+        lfo_rate = 1289
+        lfo_pitch = 19
+        lfo_filter = 309
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'@\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -711,7 +969,50 @@ ListContainer:
 Synthmania/Big In Japan.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 87
+        delay_mix = 25
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 120
+            skip = b' \x10' (total 2)
+            tune = 2
+            level = 124
+        oscillator2 = Container: 
+            wave = 808
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 124
+        noise_level = 0
+        filter_cutoff = 55
+        filter_mode = 2
+        filter_res = 34
+        filter_drive = 31776
+        filter_env_amount = 35
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 51
+            sustain = 7712
+            release = 51
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 51
+            sustain = 32
+            release = 51
+        lfo_wave = 0
+        lfo_rate = 1049
+        lfo_pitch = 9
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -836,7 +1137,50 @@ ListContainer:
 Synthmania/1001 Nights.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 61
+        delay_mix = 80
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 840
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 124
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 55
+        filter_cutoff = 327
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 25632
+        filter_env_amount = 30
+        filter = Container: 
+            attack = 39
+            skip = b' \x1d' (total 2)
+            delay = 31
+            sustain = 23584
+            release = 67
+        envelope = Container: 
+            attack = 11
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 67
+        lfo_wave = 0
+        lfo_rate = 881
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -951,7 +1295,50 @@ ListContainer:
 Synthmania/Chameleon Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 125
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 868
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 113
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 67
+        noise_level = 0
+        filter_cutoff = 59
+        filter_mode = 0
+        filter_res = 77
+        filter_drive = 25632
+        filter_env_amount = 34
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 55
+            sustain = 32
+            release = 55
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 45
+            sustain = 32544
+            release = 61
+        lfo_wave = 0
+        lfo_rate = 5944
+        lfo_pitch = 0
+        lfo_filter = 3
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1076,7 +1463,50 @@ ListContainer:
 Synthmania/Thunder Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x03\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 3
+        scale = 0
+        delay_time = 92
+        delay_mix = 23
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 622
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 111
+        oscillator2 = Container: 
+            wave = 784
+            skip = b'\x00\x13' (total 2)
+            tune = 10
+            level = 110
+        noise_level = 51
+        filter_cutoff = 59
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 25632
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 14624
+            release = 11
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 257
+            sustain = 32544
+            release = 121
+        lfo_wave = 0
+        lfo_rate = 266
+        lfo_pitch = 0
+        lfo_filter = 5
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1171,7 +1601,50 @@ ListContainer:
 Synthmania/Euro Ambulance.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 39
+        scale = 0
+        delay_time = 113
+        delay_mix = 108
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 280
+            skip = b' \x10' (total 2)
+            tune = 32638
+            level = 115
+        oscillator2 = Container: 
+            wave = 784
+            skip = b'\x00\x13' (total 2)
+            tune = 2
+            level = 115
+        noise_level = 36
+        filter_cutoff = 299
+        filter_mode = 1
+        filter_res = 44
+        filter_drive = 32544
+        filter_env_amount = 32628
+        filter = Container: 
+            attack = 69
+            skip = b' \x1d' (total 2)
+            delay = 329
+            sustain = 3872
+            release = 65
+        envelope = Container: 
+            attack = 335
+            skip = b'\x00!' (total 2)
+            delay = 309
+            sustain = 32
+            release = 383
+        lfo_wave = 4
+        lfo_rate = 82
+        lfo_pitch = 57
+        lfo_filter = 51
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 3
@@ -1186,7 +1659,50 @@ ListContainer:
 Synthmania/Planet Soul.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 91
+        delay_mix = 61
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 2
+            level = 120
+        oscillator2 = Container: 
+            wave = 869
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 375
+        filter_mode = 2
+        filter_res = 111
+        filter_drive = 20000
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 31
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C+' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1281,7 +1797,50 @@ ListContainer:
 Synthmania/Bass n Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 77
+        delay_mix = 21
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 524
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 115
+        oscillator2 = Container: 
+            wave = 372
+            skip = b'\x00\x13' (total 2)
+            tune = 32620
+            level = 115
+        noise_level = 0
+        filter_cutoff = 279
+        filter_mode = 0
+        filter_res = 55
+        filter_drive = 18464
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 31
+            sustain = 1056
+            release = 37
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 110
+        lfo_pitch = 4
+        lfo_filter = 13
+        skip98 = b"\x00%\x19\x00&\x19\x00'\x18\x00(\x19\x00)\x19\x00"... (truncated, total 86)
+        skip99 = b'h\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1386,7 +1945,50 @@ ListContainer:
 Synthmania/VL Piano.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 299
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 303
+        filter_mode = 2
+        filter_res = 29
+        filter_drive = 15904
+        filter_env_amount = 5
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 123
+            sustain = 32
+            release = 273
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 123
+            sustain = 32
+            release = 125
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'@\x00B\x01\x00C-' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1461,7 +2063,50 @@ ListContainer:
 Synthmania/I Like To Moov It.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x02\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 2
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 868
+            skip = b' \x10' (total 2)
+            tune = 32634
+            level = 117
+        oscillator2 = Container: 
+            wave = 868
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 113
+        noise_level = 0
+        filter_cutoff = 303
+        filter_mode = 2
+        filter_res = 33
+        filter_drive = 29472
+        filter_env_amount = 4
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 17
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 17
+        lfo_wave = 0
+        lfo_rate = 798
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x0c' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1516,7 +2161,50 @@ ListContainer:
 Synthmania/Alien Birds.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 70
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 1
+            skip = b' \x10' (total 2)
+            tune = 22
+            level = 115
+        oscillator2 = Container: 
+            wave = 787
+            skip = b'\x00\x13' (total 2)
+            tune = 46
+            level = 111
+        noise_level = 0
+        filter_cutoff = 347
+        filter_mode = 0
+        filter_res = 35
+        filter_drive = 21536
+        filter_env_amount = 58
+        filter = Container: 
+            attack = 99
+            skip = b' \x1d' (total 2)
+            delay = 5
+            sustain = 9248
+            release = 383
+        envelope = Container: 
+            attack = 39
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 19232
+            release = 315
+        lfo_wave = 0
+        lfo_rate = 3412
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1631,7 +2319,50 @@ ListContainer:
 Synthmania/Inside The CPU.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x04 \x04\r\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 4
+        glide = 13
+        scale = 12
+        delay_time = 117
+        delay_mix = 127
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 560
+            skip = b' \x10' (total 2)
+            tune = 32584
+            level = 120
+        oscillator2 = Container: 
+            wave = 620
+            skip = b'\x00\x13' (total 2)
+            tune = 74
+            level = 120
+        noise_level = 0
+        filter_cutoff = 371
+        filter_mode = 0
+        filter_res = 25
+        filter_drive = 24608
+        filter_env_amount = 19
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 51
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 89
+        lfo_wave = 6
+        lfo_rate = 1570
+        lfo_pitch = 9
+        lfo_filter = 287
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1666,7 +2397,50 @@ ListContainer:
 Synthmania/Octopus.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 8
+        delay_time = 127
+        delay_mix = 120
+        arp_direction = 6
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 121
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 124
+        noise_level = 88
+        filter_cutoff = 267
+        filter_mode = 0
+        filter_res = 66
+        filter_drive = 12064
+        filter_env_amount = 64
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 107
+            sustain = 15904
+            release = 257
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 329
+        lfo_wave = 2
+        lfo_rate = 3896
+        lfo_pitch = 0
+        lfo_filter = 33
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1681,7 +2455,50 @@ ListContainer:
 Synthmania/Warm Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 6
+        scale = 0
+        delay_time = 70
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 320
+            skip = b'\x00\x13' (total 2)
+            tune = 32638
+            level = 104
+        noise_level = 0
+        filter_cutoff = 39
+        filter_mode = 0
+        filter_res = 22
+        filter_drive = 32544
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 35
+            sustain = 2848
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 0
+        lfo_wave = 4
+        lfo_rate = 32631
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1806,7 +2623,50 @@ ListContainer:
 Synthmania/Anteater.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x03\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 3
+        scale = 9
+        delay_time = 127
+        delay_mix = 14
+        arp_direction = 3
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 115
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 32636
+            level = 115
+        noise_level = 20
+        filter_cutoff = 91
+        filter_mode = 0
+        filter_res = 27
+        filter_drive = 23840
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 93
+            sustain = 4896
+            release = 61
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 69
+        lfo_wave = 4
+        lfo_rate = 559
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%\r\x00&\x08\x00'\x07\x00(A\x00)D\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00CZ' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1921,7 +2781,50 @@ ListContainer:
 Synthmania/Elvis Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x0c\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 12
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 92
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 118
+        oscillator2 = Container: 
+            wave = 96
+            skip = b'\x00\x13' (total 2)
+            tune = 32592
+            level = 118
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 42
+        filter_drive = 15392
+        filter_env_amount = 32639
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 1555
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2006,7 +2909,50 @@ ListContainer:
 Synthmania/Pulsing Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\r\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 13
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 300
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 108
+        oscillator2 = Container: 
+            wave = 576
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 107
+        noise_level = 0
+        filter_cutoff = 59
+        filter_mode = 0
+        filter_res = 48
+        filter_drive = 22816
+        filter_env_amount = 41
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 105
+            sustain = 18464
+            release = 67
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 111
+        lfo_wave = 0
+        lfo_rate = 293
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2141,7 +3087,50 @@ ListContainer:
 Synthmania/Lucky Squares.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\n\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 10
+        scale = 0
+        delay_time = 127
+        delay_mix = 79
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 532
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 108
+        oscillator2 = Container: 
+            wave = 512
+            skip = b'\x00\x13' (total 2)
+            tune = 4
+            level = 108
+        noise_level = 66
+        filter_cutoff = 283
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 32544
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 13
+            skip = b' \x1d' (total 2)
+            delay = 301
+            sustain = 5920
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 260
+        lfo_wave = 0
+        lfo_rate = 518
+        lfo_pitch = 0
+        lfo_filter = 3
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2166,7 +3155,50 @@ ListContainer:
 Synthmania/Cosmo Arp.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00f\x00\x03\x02 \x04"\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 102
+        octave = 2
+        glide = 34
+        scale = 0
+        delay_time = 127
+        delay_mix = 106
+        arp_direction = 3
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 516
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 115
+        oscillator2 = Container: 
+            wave = 272
+            skip = b'\x00\x13' (total 2)
+            tune = 32632
+            level = 115
+        noise_level = 46
+        filter_cutoff = 71
+        filter_mode = 1
+        filter_res = 19
+        filter_drive = 32
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 31
+            skip = b' \x1d' (total 2)
+            delay = 21
+            sustain = 32
+            release = 287
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 61
+        lfo_wave = 0
+        lfo_rate = 812
+        lfo_pitch = 7
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'@\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2427,7 +3459,50 @@ ListContainer:
 Synthmania/Under The Skin.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04N\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 78
+        scale = 0
+        delay_time = 127
+        delay_mix = 43
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 304
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 113
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 32620
+            level = 115
+        noise_level = 112
+        filter_cutoff = 87
+        filter_mode = 0
+        filter_res = 40
+        filter_drive = 19744
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 29
+            skip = b' \x1d' (total 2)
+            delay = 53
+            sustain = 25376
+            release = 273
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 303
+        lfo_wave = 6
+        lfo_rate = 27
+        lfo_pitch = 3
+        lfo_filter = 25
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C&' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2442,7 +3517,50 @@ ListContainer:
 Synthmania/Synth Pop Seq.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00m\x00\x03\x05 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 109
+        octave = 5
+        glide = 0
+        scale = 8
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 6
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 368
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 800
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 115
+        noise_level = 0
+        filter_cutoff = 55
+        filter_mode = 0
+        filter_res = 65
+        filter_drive = 15648
+        filter_env_amount = 54
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 21
+            sustain = 5664
+            release = 51
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 97
+        lfo_wave = 0
+        lfo_rate = 1060
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2703,7 +3821,50 @@ ListContainer:
 Synthmania/Funk Master.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x0b\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 11
+        scale = 0
+        delay_time = 77
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 296
+            skip = b'\x00\x13' (total 2)
+            tune = 32634
+            level = 120
+        noise_level = 0
+        filter_cutoff = 23
+        filter_mode = 0
+        filter_res = 77
+        filter_drive = 32
+        filter_env_amount = 10
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 49
+            sustain = 11808
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 77
+        lfo_pitch = 0
+        lfo_filter = 18
+        skip98 = b"\x00%\x17\x00&\x03\x00'=\x00(A\x00)A\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2808,7 +3969,50 @@ ListContainer:
 Synthmania/Ivory Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x10\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 16
+        scale = 0
+        delay_time = 100
+        delay_mix = 55
+        arp_direction = 5
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 368
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 115
+        oscillator2 = Container: 
+            wave = 120
+            skip = b'\x00\x13' (total 2)
+            tune = 32632
+            level = 115
+        noise_level = 0
+        filter_cutoff = 95
+        filter_mode = 0
+        filter_res = 16
+        filter_drive = 25632
+        filter_env_amount = 39
+        filter = Container: 
+            attack = 51
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 27168
+            release = 49
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 275
+        lfo_wave = 0
+        lfo_rate = 266
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2913,7 +4117,50 @@ ListContainer:
 Synthmania/80s Bass 1.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 5
+        delay_mix = 77
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 588
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 0
+        filter_cutoff = 31
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 17952
+        filter_env_amount = 60
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 12832
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 67
+        lfo_wave = 0
+        lfo_rate = 6
+        lfo_pitch = 0
+        lfo_filter = 6
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3126,7 +4373,50 @@ ListContainer:
 Synthmania/Laser Cannons.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 71
+        delay_mix = 77
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 814
+            skip = b' \x10' (total 2)
+            tune = 32614
+            level = 110
+        oscillator2 = Container: 
+            wave = 604
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 113
+        noise_level = 96
+        filter_cutoff = 51
+        filter_mode = 2
+        filter_res = 61
+        filter_drive = 27168
+        filter_env_amount = 56
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 33
+            sustain = 800
+            release = 49
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 285
+        lfo_wave = 0
+        lfo_rate = 41
+        lfo_pitch = 0
+        lfo_filter = 3
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 2
@@ -3181,7 +4471,50 @@ ListContainer:
 Synthmania/Big Room Squeeze.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 60
+        delay_mix = 44
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 814
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 116
+        oscillator2 = Container: 
+            wave = 104
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 116
+        noise_level = 42
+        filter_cutoff = 295
+        filter_mode = 0
+        filter_res = 34
+        filter_drive = 32544
+        filter_env_amount = 21
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 16672
+            release = 257
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 2
+        lfo_rate = 32636
+        lfo_pitch = 5
+        lfo_filter = 383
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3226,7 +4559,50 @@ ListContainer:
 Synthmania/Distant Planet.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 69
+        delay_mix = 127
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 5
+            level = 124
+        oscillator2 = Container: 
+            wave = 852
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 124
+        noise_level = 96
+        filter_cutoff = 819
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 23840
+        filter_env_amount = 32639
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 45
+            sustain = 19232
+            release = 383
+        envelope = Container: 
+            attack = 7
+            skip = b'\x00!' (total 2)
+            delay = 33
+            sustain = 22560
+            release = 87
+        lfo_wave = 0
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 301
+        skip98 = b"\x00%\x1b\x00&\x1c\x00'\x19\x00(\x1c\x00)\x1d\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3271,7 +4647,50 @@ ListContainer:
 Synthmania/Contagion.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x17\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 23
+        scale = 0
+        delay_time = 127
+        delay_mix = 127
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 344
+            skip = b' \x10' (total 2)
+            tune = 64
+            level = 115
+        oscillator2 = Container: 
+            wave = 636
+            skip = b'\x00\x13' (total 2)
+            tune = 32566
+            level = 115
+        noise_level = 0
+        filter_cutoff = 339
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 19744
+        filter_env_amount = 15
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 307
+            sustain = 1824
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 72
+        lfo_wave = 2
+        lfo_rate = 124
+        lfo_pitch = 0
+        lfo_filter = 5
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3316,7 +4735,50 @@ ListContainer:
 Synthmania/70s Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 95
+        delay_mix = 86
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 512
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 118
+        oscillator2 = Container: 
+            wave = 612
+            skip = b'\x00\x13' (total 2)
+            tune = 31756
+            level = 118
+        noise_level = 0
+        filter_cutoff = 539
+        filter_mode = 0
+        filter_res = 53
+        filter_drive = 3872
+        filter_env_amount = 3
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 123
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 101
+        lfo_wave = 0
+        lfo_rate = 55
+        lfo_pitch = 3
+        lfo_filter = 17
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C"' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3441,7 +4903,50 @@ ListContainer:
 Synthmania/Electro Arpeggio.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00f\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 102
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 56
+        delay_mix = 80
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 784
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 600
+            skip = b'\x00\x13' (total 2)
+            tune = 24
+            level = 115
+        noise_level = 63
+        filter_cutoff = 67
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 32
+        filter_env_amount = 42
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 287
+            sustain = 18464
+            release = 71
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 377
+        lfo_wave = 0
+        lfo_rate = 82
+        lfo_pitch = 5
+        lfo_filter = 5
+        skip98 = b"\x00%#\x00&#\x00'%\x00('\x00)&\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C!' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3702,7 +5207,50 @@ ListContainer:
 Synthmania/See You Lately.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 124
+        delay_mix = 0
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 32
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 78
+        noise_level = 0
+        filter_cutoff = 79
+        filter_mode = 0
+        filter_res = 42
+        filter_drive = 32544
+        filter_env_amount = 50
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 313
+            sustain = 32
+            release = 69
+        lfo_wave = 0
+        lfo_rate = 2
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3857,7 +5405,50 @@ ListContainer:
 Synthmania/Wind Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 0
+        delay_mix = 119
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 336
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 120
+        oscillator2 = Container: 
+            wave = 376
+            skip = b'\x00\x13' (total 2)
+            tune = 32638
+            level = 123
+        noise_level = 0
+        filter_cutoff = 51
+        filter_mode = 0
+        filter_res = 21
+        filter_drive = 25632
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 47
+            skip = b' \x1d' (total 2)
+            delay = 47
+            sustain = 5920
+            release = 0
+        envelope = Container: 
+            attack = 4
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 123
+        lfo_wave = 1
+        lfo_rate = 628
+        lfo_pitch = 5
+        lfo_filter = 7
+        skip98 = b"\x00%>\x00&\x17\x00'\x1e\x00(;\x00)F\x00"... (truncated, total 86)
+        skip99 = b'^\x00B\x01\x00C[' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3972,7 +5563,50 @@ ListContainer:
 Synthmania/Venga Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 124
+        delay_mix = 16
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 292
+            skip = b'\x00\x13' (total 2)
+            tune = 784
+            level = 120
+        noise_level = 9
+        filter_cutoff = 577
+        filter_mode = 0
+        filter_res = 29
+        filter_drive = 19744
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 121
+            sustain = 15392
+            release = 13
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 109
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 2064
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4137,7 +5771,50 @@ ListContainer:
 Synthmania/Disco Carnival.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 106
+        delay_mix = 100
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 115
+        oscillator2 = Container: 
+            wave = 292
+            skip = b'\x00\x13' (total 2)
+            tune = 32618
+            level = 115
+        noise_level = 0
+        filter_cutoff = 375
+        filter_mode = 0
+        filter_res = 49
+        filter_drive = 25888
+        filter_env_amount = 64
+        filter = Container: 
+            attack = 51
+            skip = b' \x1d' (total 2)
+            delay = 307
+            sustain = 18976
+            release = 263
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 113
+        lfo_wave = 6
+        lfo_rate = 1399
+        lfo_pitch = 7
+        lfo_filter = 21
+        skip98 = b"\x00%?\x00&@\x00'C\x00(=\x00)D\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4302,7 +5979,50 @@ ListContainer:
 Synthmania/Industrial Bass.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x03\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 3
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 115
+        oscillator2 = Container: 
+            wave = 292
+            skip = b'\x00\x13' (total 2)
+            tune = 32596
+            level = 115
+        noise_level = 76
+        filter_cutoff = 95
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 17696
+        filter_env_amount = 36
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 33
+            sustain = 32
+            release = 83
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 285
+        lfo_wave = 0
+        lfo_rate = 1365
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%>\x00&@\x00'B\x00(@\x00)?\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4387,7 +6107,50 @@ ListContainer:
 Synthmania/Alien Rise.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 127
+        delay_mix = 109
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 116
+        oscillator2 = Container: 
+            wave = 614
+            skip = b'\x00\x13' (total 2)
+            tune = 22
+            level = 116
+        noise_level = 0
+        filter_cutoff = 83
+        filter_mode = 0
+        filter_res = 69
+        filter_drive = 10528
+        filter_env_amount = 43
+        filter = Container: 
+            attack = 309
+            skip = b' \x1d' (total 2)
+            delay = 323
+            sustain = 32
+            release = 285
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 311
+        lfo_wave = 6
+        lfo_rate = 32630
+        lfo_pitch = 3
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x1b' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4432,7 +6195,50 @@ ListContainer:
 Synthmania/Thru The Night.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00l\x00\x03\x04 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 108
+        octave = 4
+        glide = 39
+        scale = 0
+        delay_time = 119
+        delay_mix = 56
+        arp_direction = 9
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 816
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 115
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 32636
+            level = 115
+        noise_level = 0
+        filter_cutoff = 563
+        filter_mode = 0
+        filter_res = 30
+        filter_drive = 25888
+        filter_env_amount = 30
+        filter = Container: 
+            attack = 43
+            skip = b' \x1d' (total 2)
+            delay = 123
+            sustain = 8480
+            release = 123
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 123
+            sustain = 6944
+            release = 123
+        lfo_wave = 0
+        lfo_rate = 1078
+        lfo_pitch = 5
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C%' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4597,7 +6403,50 @@ ListContainer:
 Synthmania/Mirrored Rave.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 93
+        delay_mix = 57
+        arp_direction = 8
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 32632
+            level = 108
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 109
+        noise_level = 60
+        filter_cutoff = 263
+        filter_mode = 2
+        filter_res = 85
+        filter_drive = 13600
+        filter_env_amount = 43
+        filter = Container: 
+            attack = 15
+            skip = b' \x1d' (total 2)
+            delay = 53
+            sustain = 6944
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 383
+        lfo_wave = 0
+        lfo_rate = 307
+        lfo_pitch = 15
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C<' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4642,7 +6491,50 @@ ListContainer:
 Synthmania/50s Sci-Fi Vox.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x13\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 19
+        scale = 0
+        delay_time = 87
+        delay_mix = 54
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 524
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 44
+            skip = b'\x00\x13' (total 2)
+            tune = 32628
+            level = 106
+        noise_level = 0
+        filter_cutoff = 115
+        filter_mode = 0
+        filter_res = 36
+        filter_drive = 19744
+        filter_env_amount = 34
+        filter = Container: 
+            attack = 105
+            skip = b' \x1d' (total 2)
+            delay = 259
+            sustain = 22304
+            release = 291
+        envelope = Container: 
+            attack = 91
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 28192
+            release = 51
+        lfo_wave = 0
+        lfo_rate = 1133
+        lfo_pitch = 31
+        lfo_filter = 21
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4677,7 +6569,50 @@ ListContainer:
 Synthmania/Telstarry Eyes.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 33
+        delay_mix = 107
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 868
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 864
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 73
+        noise_level = 0
+        filter_cutoff = 275
+        filter_mode = 2
+        filter_res = 30
+        filter_drive = 32544
+        filter_env_amount = 25
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 27
+            sustain = 29472
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 1
+        lfo_rate = 1133
+        lfo_pitch = 11
+        lfo_filter = 7
+        skip98 = b"\x00%6\x00&5\x00'&\x00(3\x00)7\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4772,7 +6707,50 @@ ListContainer:
 Synthmania/Retro Sequence.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x12\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 18
+        scale = 0
+        delay_time = 2
+        delay_mix = 15
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 288
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 844
+            skip = b'\x00\x13' (total 2)
+            tune = 17
+            level = 115
+        noise_level = 0
+        filter_cutoff = 320
+        filter_mode = 0
+        filter_res = 34
+        filter_drive = 18976
+        filter_env_amount = 19
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 41
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 123
+        lfo_wave = 3
+        lfo_rate = 32630
+        lfo_pitch = 0
+        lfo_filter = 271
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x01\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4837,7 +6815,50 @@ ListContainer:
 Synthmania/Faun Flute.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 47
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 532
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 127
+        oscillator2 = Container: 
+            wave = 846
+            skip = b'\x00\x13' (total 2)
+            tune = 8
+            level = 0
+        noise_level = 29
+        filter_cutoff = 83
+        filter_mode = 0
+        filter_res = 27
+        filter_drive = 21792
+        filter_env_amount = 21
+        filter = Container: 
+            attack = 39
+            skip = b' \x1d' (total 2)
+            delay = 69
+            sustain = 28448
+            release = 323
+        envelope = Container: 
+            attack = 17
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 47
+        lfo_wave = 0
+        lfo_rate = 867
+        lfo_pitch = 0
+        lfo_filter = 3
+        skip98 = b"\x00%,\x00&&\x00''\x00(+\x00)0\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4912,7 +6933,50 @@ ListContainer:
 Synthmania/Area 51.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 6
+        scale = 0
+        delay_time = 100
+        delay_mix = 77
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 64
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 106
+        oscillator2 = Container: 
+            wave = 512
+            skip = b'\x00\x13' (total 2)
+            tune = 90
+            level = 115
+        noise_level = 0
+        filter_cutoff = 103
+        filter_mode = 0
+        filter_res = 67
+        filter_drive = 2592
+        filter_env_amount = 64
+        filter = Container: 
+            attack = 283
+            skip = b' \x1d' (total 2)
+            delay = 305
+            sustain = 16416
+            release = 283
+        envelope = Container: 
+            attack = 51
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 127
+        lfo_wave = 0
+        lfo_rate = 110
+        lfo_pitch = 0
+        lfo_filter = 29
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4927,7 +6991,50 @@ ListContainer:
 Synthmania/Badger Badger.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00f\x00\x03\x01 \x04\x1f\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 102
+        octave = 1
+        glide = 31
+        scale = 0
+        delay_time = 70
+        delay_mix = 22
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 284
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 520
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 115
+        noise_level = 91
+        filter_cutoff = 31
+        filter_mode = 0
+        filter_res = 54
+        filter_drive = 29472
+        filter_env_amount = 30
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 64
+            sustain = 7456
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 335
+            sustain = 32544
+            release = 49
+        lfo_wave = 0
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5092,7 +7199,50 @@ ListContainer:
 Synthmania/Snap Seq.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00f\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 102
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 520
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 103
+        oscillator2 = Container: 
+            wave = 316
+            skip = b'\x00\x13' (total 2)
+            tune = 32636
+            level = 108
+        noise_level = 0
+        filter_cutoff = 595
+        filter_mode = 0
+        filter_res = 31
+        filter_drive = 32544
+        filter_env_amount = 32639
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 25
+            sustain = 3360
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 13
+        lfo_wave = 0
+        lfo_rate = 1369
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x0e' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5257,7 +7407,50 @@ ListContainer:
 Synthmania/Popcorn Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x05 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 5
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 568
+            skip = b' \x10' (total 2)
+            tune = 32638
+            level = 115
+        oscillator2 = Container: 
+            wave = 564
+            skip = b'\x00\x13' (total 2)
+            tune = 5
+            level = 0
+        noise_level = 0
+        filter_cutoff = 1
+        filter_mode = 0
+        filter_res = 36
+        filter_drive = 27168
+        filter_env_amount = 51
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 33
+            sustain = 32
+            release = 33
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 33
+            sustain = 32544
+            release = 33
+        lfo_wave = 0
+        lfo_rate = 2156
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5422,7 +7615,50 @@ ListContainer:
 Synthmania/Rave Shield.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 70
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 851
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 823
+            skip = b'\x00\x13' (total 2)
+            tune = 32624
+            level = 107
+        noise_level = 72
+        filter_cutoff = 67
+        filter_mode = 1
+        filter_res = 45
+        filter_drive = 26144
+        filter_env_amount = 39
+        filter = Container: 
+            attack = 105
+            skip = b' \x1d' (total 2)
+            delay = 89
+            sustain = 11552
+            release = 89
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 313
+        lfo_wave = 2
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 77
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5487,7 +7723,50 @@ ListContainer:
 Synthmania/Electro Sequence.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00f\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 102
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 27
+        delay_mix = 127
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 844
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 63
+        oscillator2 = Container: 
+            wave = 333
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 0
+        noise_level = 124
+        filter_cutoff = 287
+        filter_mode = 1
+        filter_res = 64
+        filter_drive = 15648
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 127
+            skip = b' \x1d' (total 2)
+            delay = 273
+            sustain = 11552
+            release = 383
+        envelope = Container: 
+            attack = 19
+            skip = b'\x00!' (total 2)
+            delay = 33
+            sustain = 32
+            release = 37
+        lfo_wave = 5
+        lfo_rate = 5143
+        lfo_pitch = 115
+        lfo_filter = 357
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5652,7 +7931,50 @@ ListContainer:
 Synthmania/Talk 2 Much.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x17\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 23
+        scale = 0
+        delay_time = 47
+        delay_mix = 56
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 781
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 118
+        oscillator2 = Container: 
+            wave = 639
+            skip = b'\x00\x13' (total 2)
+            tune = 31756
+            level = 118
+        noise_level = 0
+        filter_cutoff = 119
+        filter_mode = 2
+        filter_res = 25
+        filter_drive = 11040
+        filter_env_amount = 20
+        filter = Container: 
+            attack = 74
+            skip = b' \x1d' (total 2)
+            delay = 292
+            sustain = 32544
+            release = 29
+        envelope = Container: 
+            attack = 16
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 123
+        lfo_wave = 6
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x1d' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5727,7 +8049,50 @@ ListContainer:
 Synthmania/Vampire Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x0b\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 11
+        scale = 0
+        delay_time = 127
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 112
+            skip = b' \x10' (total 2)
+            tune = 32622
+            level = 116
+        oscillator2 = Container: 
+            wave = 52
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 116
+        noise_level = 27
+        filter_cutoff = 19
+        filter_mode = 0
+        filter_res = 66
+        filter_drive = 17952
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 15
+            skip = b' \x1d' (total 2)
+            delay = 295
+            sustain = 4128
+            release = 127
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 74
+        lfo_wave = 1
+        lfo_rate = 1050
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%\x7f\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5872,7 +8237,50 @@ ListContainer:
 Synthmania/Early Rave.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x0c\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 12
+        scale = 0
+        delay_time = 87
+        delay_mix = 49
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 32540
+            level = 126
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 32576
+            level = 127
+        noise_level = 63
+        filter_cutoff = 359
+        filter_mode = 2
+        filter_res = 55
+        filter_drive = 19744
+        filter_env_amount = 6
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 2080
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 321
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(M\x00)M\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C$' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6007,7 +8415,50 @@ ListContainer:
 Synthmania/Paft Dunker.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 14
+        scale = 0
+        delay_time = 127
+        delay_mix = 67
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 300
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 106
+        oscillator2 = Container: 
+            wave = 312
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 106
+        noise_level = 0
+        filter_cutoff = 27
+        filter_mode = 2
+        filter_res = 77
+        filter_drive = 32544
+        filter_env_amount = 42
+        filter = Container: 
+            attack = 75
+            skip = b' \x1d' (total 2)
+            delay = 113
+            sustain = 4128
+            release = 77
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 5
+        lfo_wave = 0
+        lfo_rate = 5944
+        lfo_pitch = 15
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(D\x00)I\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6072,7 +8523,50 @@ ListContainer:
 Synthmania/Space Puppies.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 84
+        delay_mix = 54
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 875
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 111
+        oscillator2 = Container: 
+            wave = 779
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 37
+        filter_cutoff = 39
+        filter_mode = 2
+        filter_res = 94
+        filter_drive = 13088
+        filter_env_amount = 20
+        filter = Container: 
+            attack = 89
+            skip = b' \x1d' (total 2)
+            delay = 299
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 55
+            skip = b'\x00!' (total 2)
+            delay = 93
+            sustain = 32
+            release = 269
+        lfo_wave = 0
+        lfo_rate = 546
+        lfo_pitch = 383
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6117,7 +8611,50 @@ ListContainer:
 Synthmania/Lunar Base.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 57
+        delay_mix = 0
+        arp_direction = 8
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 292
+            skip = b'\x00\x13' (total 2)
+            tune = 31756
+            level = 127
+        noise_level = 28
+        filter_cutoff = 339
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 32
+        filter_env_amount = 8
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 97
+            sustain = 5408
+            release = 335
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 77
+            sustain = 28704
+            release = 335
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 5
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x16' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6202,7 +8739,50 @@ ListContainer:
 Synthmania/Blue Ducks.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04@\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 64
+        scale = 0
+        delay_time = 127
+        delay_mix = 111
+        arp_direction = 6
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 120
+        oscillator2 = Container: 
+            wave = 852
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 120
+        noise_level = 0
+        filter_cutoff = 375
+        filter_mode = 2
+        filter_res = 60
+        filter_drive = 13344
+        filter_env_amount = 6
+        filter = Container: 
+            attack = 28
+            skip = b' \x1d' (total 2)
+            delay = 3
+            sustain = 32
+            release = 45
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 119
+        skip98 = b"\x00%Y\x00&>\x00'\x1e\x00(0\x00)1\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00CW' (total 7)
     ListContainer: 
         Container: 
             step = 6
@@ -6257,7 +8837,50 @@ ListContainer:
 Synthmania/Sci-Fi Drone.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 10
+        delay_time = 127
+        delay_mix = 77
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 260
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 115
+        oscillator2 = Container: 
+            wave = 592
+            skip = b'\x00\x13' (total 2)
+            tune = 32586
+            level = 117
+        noise_level = 0
+        filter_cutoff = 339
+        filter_mode = 0
+        filter_res = 16
+        filter_drive = 20000
+        filter_env_amount = 30
+        filter = Container: 
+            attack = 329
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 32
+            release = 53
+        envelope = Container: 
+            attack = 85
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 345
+        lfo_wave = 0
+        lfo_rate = 41
+        lfo_pitch = 0
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6282,7 +8905,50 @@ ListContainer:
 Synthmania/Accordion.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 46
+        delay_mix = 13
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 804
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 115
+        oscillator2 = Container: 
+            wave = 288
+            skip = b'\x00\x13' (total 2)
+            tune = 32634
+            level = 115
+        noise_level = 0
+        filter_cutoff = 375
+        filter_mode = 0
+        filter_res = 27
+        filter_drive = 20512
+        filter_env_amount = 36
+        filter = Container: 
+            attack = 15
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 17952
+            release = 53
+        envelope = Container: 
+            attack = 13
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 27
+        lfo_wave = 0
+        lfo_rate = 894
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x15' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6447,7 +9113,50 @@ ListContainer:
 Synthmania/A Forest.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x047\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 55
+        scale = 0
+        delay_time = 127
+        delay_mix = 100
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 864
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 1340
+            level = 80
+        noise_level = 44
+        filter_cutoff = 335
+        filter_mode = 2
+        filter_res = 39
+        filter_drive = 20256
+        filter_env_amount = 64
+        filter = Container: 
+            attack = 21
+            skip = b' \x1d' (total 2)
+            delay = 62
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 305
+        lfo_wave = 6
+        lfo_rate = 41
+        lfo_pitch = 3
+        lfo_filter = 13
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6502,7 +9211,50 @@ ListContainer:
 Synthmania/Space Gulls.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04"\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 34
+        scale = 0
+        delay_time = 93
+        delay_mix = 81
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 304
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 532
+            skip = b'\x00\x13' (total 2)
+            tune = 4
+            level = 117
+        noise_level = 109
+        filter_cutoff = 95
+        filter_mode = 2
+        filter_res = 35
+        filter_drive = 26912
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 55
+            sustain = 32
+            release = 113
+        envelope = Container: 
+            attack = 25
+            skip = b'\x00!' (total 2)
+            delay = 53
+            sustain = 6432
+            release = 315
+        lfo_wave = 3
+        lfo_rate = 1064
+        lfo_pitch = 95
+        lfo_filter = 109
+        skip98 = b"\x00%Y\x00&@\x00'5\x00(9\x00)>\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C@' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6537,7 +9289,50 @@ ListContainer:
 Synthmania/Morse Transmission.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x04 \x04\x13\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 4
+        glide = 19
+        scale = 6
+        delay_time = 127
+        delay_mix = 77
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 556
+            skip = b' \x10' (total 2)
+            tune = 6
+            level = 118
+        oscillator2 = Container: 
+            wave = 376
+            skip = b'\x00\x13' (total 2)
+            tune = 32628
+            level = 116
+        noise_level = 0
+        filter_cutoff = 358
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 24608
+        filter_env_amount = 32639
+        filter = Container: 
+            attack = 86
+            skip = b' \x1d' (total 2)
+            delay = 353
+            sustain = 25120
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 309
+        lfo_wave = 6
+        lfo_rate = 3654
+        lfo_pitch = 31
+        lfo_filter = 382
+        skip98 = b"\x00%\x7f\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6632,7 +9427,50 @@ ListContainer:
 Synthmania/Fishing Boat.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\n\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 10
+        scale = 0
+        delay_time = 38
+        delay_mix = 67
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 3
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 0
+        oscillator2 = Container: 
+            wave = 359
+            skip = b'\x00\x13' (total 2)
+            tune = 48
+            level = 0
+        noise_level = 34
+        filter_cutoff = 43
+        filter_mode = 1
+        filter_res = 26
+        filter_drive = 27168
+        filter_env_amount = 32592
+        filter = Container: 
+            attack = 43
+            skip = b' \x1d' (total 2)
+            delay = 115
+            sustain = 16928
+            release = 383
+        envelope = Container: 
+            attack = 39
+            skip = b'\x00!' (total 2)
+            delay = 55
+            sustain = 27168
+            release = 279
+        lfo_wave = 4
+        lfo_rate = 1399
+        lfo_pitch = 33
+        lfo_filter = 326
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00CB' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6647,7 +9485,50 @@ ListContainer:
 Synthmania/Modular Lead.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x04\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 4
+        scale = 0
+        delay_time = 102
+        delay_mix = 42
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 328
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 115
+        oscillator2 = Container: 
+            wave = 280
+            skip = b'\x00\x13' (total 2)
+            tune = 1340
+            level = 115
+        noise_level = 62
+        filter_cutoff = 63
+        filter_mode = 0
+        filter_res = 59
+        filter_drive = 23072
+        filter_env_amount = 57
+        filter = Container: 
+            attack = 25
+            skip = b' \x1d' (total 2)
+            delay = 61
+            sustain = 22304
+            release = 127
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 17
+        lfo_wave = 0
+        lfo_rate = 628
+        lfo_pitch = 7
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x18' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6762,7 +9643,50 @@ ListContainer:
 Synthmania/Clay Cats.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x15\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 21
+        scale = 4
+        delay_time = 123
+        delay_mix = 51
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 516
+            skip = b' \x10' (total 2)
+            tune = 32636
+            level = 115
+        oscillator2 = Container: 
+            wave = 639
+            skip = b'\x00\x13' (total 2)
+            tune = 14
+            level = 0
+        noise_level = 0
+        filter_cutoff = 75
+        filter_mode = 0
+        filter_res = 77
+        filter_drive = 32
+        filter_env_amount = 42
+        filter = Container: 
+            attack = 59
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 17696
+            release = 63
+        envelope = Container: 
+            attack = 45
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 101
+        lfo_wave = 0
+        lfo_rate = 293
+        lfo_pitch = 3
+        lfo_filter = 5
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6877,7 +9801,50 @@ ListContainer:
 Synthmania/Rain & Wind.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x1e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 30
+        scale = 0
+        delay_time = 74
+        delay_mix = 127
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 32626
+            level = 0
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 328
+            level = 0
+        noise_level = 105
+        filter_cutoff = 0
+        filter_mode = 1
+        filter_res = 87
+        filter_drive = 10272
+        filter_env_amount = 26
+        filter = Container: 
+            attack = 31
+            skip = b' \x1d' (total 2)
+            delay = 79
+            sustain = 11040
+            release = 0
+        envelope = Container: 
+            attack = 27
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 260
+        lfo_wave = 6
+        lfo_rate = 1064
+        lfo_pitch = 0
+        lfo_filter = 309
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6972,7 +9939,50 @@ ListContainer:
 Synthmania/Glacier Diva.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x08\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 8
+        scale = 0
+        delay_time = 103
+        delay_mix = 36
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 601
+            skip = b' \x10' (total 2)
+            tune = 54
+            level = 110
+        oscillator2 = Container: 
+            wave = 296
+            skip = b'\x00\x13' (total 2)
+            tune = 32636
+            level = 82
+        noise_level = 84
+        filter_cutoff = 299
+        filter_mode = 2
+        filter_res = 67
+        filter_drive = 18208
+        filter_env_amount = 35
+        filter = Container: 
+            attack = 305
+            skip = b' \x1d' (total 2)
+            delay = 57
+            sustain = 18976
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 120
+        lfo_wave = 0
+        lfo_rate = 1324
+        lfo_pitch = 35
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C5' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7027,7 +10037,50 @@ ListContainer:
 Synthmania/Hardcore Uproar.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 77
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 576
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 576
+            skip = b'\x00\x13' (total 2)
+            tune = 6
+            level = 120
+        noise_level = 0
+        filter_cutoff = 127
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 20512
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 7
+            sustain = 32544
+            release = 71
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 65
+        lfo_wave = 0
+        lfo_rate = 376
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%?\x00&\x1d\x00'#\x00(5\x00)0\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7192,7 +10245,50 @@ ListContainer:
 Synthmania/Antarctica.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 6
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 284
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 66
+        oscillator2 = Container: 
+            wave = 872
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 48
+        noise_level = 106
+        filter_cutoff = 303
+        filter_mode = 0
+        filter_res = 68
+        filter_drive = 22560
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 383
+            skip = b' \x1d' (total 2)
+            delay = 291
+            sustain = 7712
+            release = 329
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 333
+            sustain = 32544
+            release = 383
+        lfo_wave = 0
+        lfo_rate = 1847
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7227,7 +10323,50 @@ ListContainer:
 Synthmania/80s Bass 2.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 0
+        delay_mix = 0
+        arp_direction = 8
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 32630
+            level = 127
+        oscillator2 = Container: 
+            wave = 600
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 121
+        noise_level = 0
+        filter_cutoff = 59
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 11296
+        filter_env_amount = 43
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 13
+            sustain = 8480
+            release = 321
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 69
+        lfo_wave = 0
+        lfo_rate = 27
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7392,7 +10531,50 @@ ListContainer:
 Synthmania/Dinosaur.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x01 \x04G\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 1
+        glide = 71
+        scale = 0
+        delay_time = 127
+        delay_mix = 127
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 528
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 115
+        oscillator2 = Container: 
+            wave = 568
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 115
+        noise_level = 61
+        filter_cutoff = 639
+        filter_mode = 0
+        filter_res = 55
+        filter_drive = 25632
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 19
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 286
+        lfo_wave = 4
+        lfo_rate = 13
+        lfo_pitch = 17
+        lfo_filter = 81
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 3
@@ -7417,7 +10599,50 @@ ListContainer:
 Synthmania/Butterfly.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x05\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 5
+        scale = 0
+        delay_time = 71
+        delay_mix = 90
+        arp_direction = 3
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 532
+            skip = b' \x10' (total 2)
+            tune = 32626
+            level = 120
+        oscillator2 = Container: 
+            wave = 608
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 124
+        noise_level = 0
+        filter_cutoff = 91
+        filter_mode = 2
+        filter_res = 55
+        filter_drive = 4896
+        filter_env_amount = 24
+        filter = Container: 
+            attack = 25
+            skip = b' \x1d' (total 2)
+            delay = 51
+            sustain = 16160
+            release = 383
+        envelope = Container: 
+            attack = 4
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 337
+        lfo_wave = 0
+        lfo_rate = 266
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%\x0b\x00&(\x00'\x19\x00(@\x00)3\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7582,7 +10807,50 @@ ListContainer:
 Synthmania/Big Storm.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 115
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 0
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 32636
+            level = 0
+        noise_level = 127
+        filter_cutoff = 375
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 32544
+        filter_env_amount = 2
+        filter = Container: 
+            attack = 51
+            skip = b' \x1d' (total 2)
+            delay = 358
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 329
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 320
+        lfo_wave = 5
+        lfo_rate = 110
+        lfo_pitch = 43
+        lfo_filter = 21
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7597,7 +10865,50 @@ ListContainer:
 Synthmania/Downpour.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 104
+        arp_direction = 6
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 5
+            level = 0
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 66
+            level = 0
+        noise_level = 115
+        filter_cutoff = 83
+        filter_mode = 1
+        filter_res = 50
+        filter_drive = 15648
+        filter_env_amount = 2
+        filter = Container: 
+            attack = 267
+            skip = b' \x1d' (total 2)
+            delay = 304
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 107
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 325
+        lfo_wave = 6
+        lfo_rate = 0
+        lfo_pitch = 37
+        lfo_filter = 331
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7682,7 +10993,50 @@ ListContainer:
 Synthmania/Without Limits.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x08\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 8
+        scale = 0
+        delay_time = 64
+        delay_mix = 0
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 264
+            skip = b' \x10' (total 2)
+            tune = 32614
+            level = 115
+        oscillator2 = Container: 
+            wave = 288
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 115
+        noise_level = 71
+        filter_cutoff = 103
+        filter_mode = 0
+        filter_res = 51
+        filter_drive = 32544
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 59
+            sustain = 16160
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 75
+            sustain = 32544
+            release = 267
+        lfo_wave = 0
+        lfo_rate = 812
+        lfo_pitch = 19
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7767,7 +11121,50 @@ ListContainer:
 Synthmania/PWM King.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x07\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 7
+        scale = 0
+        delay_time = 74
+        delay_mix = 61
+        arp_direction = 0
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 772
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 124
+        oscillator2 = Container: 
+            wave = 816
+            skip = b'\x00\x13' (total 2)
+            tune = 16
+            level = 119
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 34
+        filter_drive = 15904
+        filter_env_amount = 10
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 76
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 0
+        lfo_wave = 0
+        lfo_rate = 266
+        lfo_pitch = 0
+        lfo_filter = 18
+        skip98 = b"\x00%Y\x00&\x07\x00'\x7f\x00(7\x00)7\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7852,7 +11249,50 @@ ListContainer:
 Synthmania/London Sequence.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00u\x00\x03\x02 \x04\x08\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 117
+        octave = 2
+        glide = 8
+        scale = 0
+        delay_time = 43
+        delay_mix = 44
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 32616
+            level = 120
+        oscillator2 = Container: 
+            wave = 299
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 120
+        noise_level = 0
+        filter_cutoff = 63
+        filter_mode = 1
+        filter_res = 44
+        filter_drive = 19744
+        filter_env_amount = 46
+        filter = Container: 
+            attack = 318
+            skip = b' \x1d' (total 2)
+            delay = 111
+            sustain = 10784
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 57
+        lfo_wave = 0
+        lfo_rate = 532
+        lfo_pitch = 5
+        lfo_filter = 73
+        skip98 = b"\x00%]\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1

@@ -1,7 +1,50 @@
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Transistort - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 55
+        delay_mix = 75
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 548
+            skip = b' \x10' (total 2)
+            tune = 32616
+            level = 105
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 116
+        noise_level = 0
+        filter_cutoff = 283
+        filter_mode = 1
+        filter_res = 6
+        filter_drive = 32544
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 101
+            skip = b' \x1d' (total 2)
+            delay = 339
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 5944
+        lfo_pitch = 31
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1d\x00(\x15\x00),\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -66,7 +109,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Tinder - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x13\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 19
+        scale = 0
+        delay_time = 51
+        delay_mix = 127
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 613
+            skip = b' \x10' (total 2)
+            tune = 31756
+            level = 127
+        oscillator2 = Container: 
+            wave = 592
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 0
+        filter_cutoff = 347
+        filter_mode = 2
+        filter_res = 54
+        filter_drive = 32544
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 79
+            sustain = 6176
+            release = 63
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 69
+            sustain = 32
+            release = 67
+        lfo_wave = 3
+        lfo_rate = 5482
+        lfo_pitch = 15
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&'\x00'`\x00(\x19\x00)\x0f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C@' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -151,7 +237,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Euro Kingdom - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 39
+        delay_mix = 91
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 768
+            skip = b' \x10' (total 2)
+            tune = 2
+            level = 96
+        oscillator2 = Container: 
+            wave = 832
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 103
+        noise_level = 0
+        filter_cutoff = 259
+        filter_mode = 1
+        filter_res = 8
+        filter_drive = 26400
+        filter_env_amount = 21
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 273
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 3170
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -316,7 +445,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Heelumv2 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 40
+        delay_mix = 59
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 288
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 127
+        noise_level = 0
+        filter_cutoff = 635
+        filter_mode = 1
+        filter_res = 63
+        filter_drive = 32544
+        filter_env_amount = 32620
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 31
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 53
+            sustain = 32
+            release = 19
+        lfo_wave = 2
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 15
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -491,7 +663,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Leitos - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 90
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 348
+            skip = b' \x10' (total 2)
+            tune = 784
+            level = 120
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 114
+        noise_level = 56
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 32
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 2687
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -536,7 +751,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ghost - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 102
+        delay_mix = 88
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 860
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 0
+        oscillator2 = Container: 
+            wave = 624
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 108
+        noise_level = 66
+        filter_cutoff = 879
+        filter_mode = 0
+        filter_res = 38
+        filter_drive = 12064
+        filter_env_amount = 32631
+        filter = Container: 
+            attack = 71
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 16416
+            release = 95
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 291
+            sustain = 8992
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -621,7 +879,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Hachi - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 88
+        delay_mix = 51
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 1796
+            level = 116
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 576
+        filter_mode = 0
+        filter_res = 44
+        filter_drive = 24352
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 27
+            sustain = 32
+            release = 283
+        lfo_wave = 4
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -786,7 +1087,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT PlayPlay - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 39
+        scale = 0
+        delay_time = 73
+        delay_mix = 73
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 109
+            skip = b' \x10' (total 2)
+            tune = 1340
+            level = 104
+        oscillator2 = Container: 
+            wave = 108
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 105
+        noise_level = 0
+        filter_cutoff = 599
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 20512
+        filter_env_amount = 8
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 9
+            sustain = 15904
+            release = 81
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 111
+            sustain = 16160
+            release = 61
+        lfo_wave = 4
+        lfo_rate = 1847
+        lfo_pitch = 7
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -871,7 +1215,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Cavern Of DOS - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 112
+        delay_mix = 114
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 632
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 100
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 83
+        filter_mode = 1
+        filter_res = 0
+        filter_drive = 25376
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 32630
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -936,7 +1323,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK LEEDR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\r\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 13
+        scale = 0
+        delay_time = 117
+        delay_mix = 91
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 299
+            skip = b' \x10' (total 2)
+            tune = 32603
+            level = 127
+        oscillator2 = Container: 
+            wave = 299
+            skip = b'\x00\x13' (total 2)
+            tune = 24
+            level = 127
+        noise_level = 61
+        filter_cutoff = 635
+        filter_mode = 0
+        filter_res = 29
+        filter_drive = 32032
+        filter_env_amount = 32616
+        filter = Container: 
+            attack = 11
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 24352
+            release = 43
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 55
+            sustain = 32
+            release = 37
+        lfo_wave = 4
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 57
+        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1021,7 +1451,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK FF - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 88
+        delay_mix = 51
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 612
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 118
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 96
+        noise_level = 0
+        filter_cutoff = 807
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 30752
+        filter_env_amount = 27
+        filter = Container: 
+            attack = 17
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 303
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 15
+            sustain = 32
+            release = 283
+        lfo_wave = 0
+        lfo_rate = 2891
+        lfo_pitch = 9
+        lfo_filter = 71
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1186,7 +1659,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT NiteMR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x0b\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 11
+        scale = 0
+        delay_time = 81
+        delay_mix = 78
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 548
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 105
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 0
+        noise_level = 75
+        filter_cutoff = 303
+        filter_mode = 2
+        filter_res = 127
+        filter_drive = 32544
+        filter_env_amount = 4
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 5944
+        lfo_pitch = 65
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&\x7f\x00'\x11\x00(K\x00)V\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1221,7 +1737,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Zuul - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 82
+        delay_mix = 84
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 824
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 122
+        oscillator2 = Container: 
+            wave = 84
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 101
+        noise_level = 96
+        filter_cutoff = 275
+        filter_mode = 1
+        filter_res = 0
+        filter_drive = 31520
+        filter_env_amount = 32633
+        filter = Container: 
+            attack = 31
+            skip = b' \x1d' (total 2)
+            delay = 117
+            sustain = 32
+            release = 101
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 99
+            sustain = 32
+            release = 107
+        lfo_wave = 4
+        lfo_rate = 3692
+        lfo_pitch = 11
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x05' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1306,7 +1865,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT JayArePehGee - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x05\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 5
+        scale = 0
+        delay_time = 112
+        delay_mix = 67
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 100
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 107
+        filter_mode = 1
+        filter_res = 35
+        filter_drive = 17184
+        filter_env_amount = 19
+        filter = Container: 
+            attack = 113
+            skip = b' \x1d' (total 2)
+            delay = 301
+            sustain = 32
+            release = 77
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 85
+        lfo_wave = 4
+        lfo_rate = 1105
+        lfo_pitch = 9
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1401,7 +2003,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Bubble - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 352
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 0
+        oscillator2 = Container: 
+            wave = 776
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 116
+        noise_level = 81
+        filter_cutoff = 816
+        filter_mode = 0
+        filter_res = 54
+        filter_drive = 31520
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 55
+            skip = b' \x1d' (total 2)
+            delay = 19
+            sustain = 7712
+            release = 13
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 29
+        lfo_wave = 0
+        lfo_rate = 27
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&\x1e\x00'\x1e\x00(1\x00)L\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1456,7 +2101,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Pain - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x05 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 5
+        glide = 0
+        scale = 0
+        delay_time = 96
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 122
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 31072
+            level = 113
+        noise_level = 74
+        filter_cutoff = 291
+        filter_mode = 0
+        filter_res = 51
+        filter_drive = 31520
+        filter_env_amount = 11
+        filter = Container: 
+            attack = 85
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 3616
+            release = 271
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 83
+            sustain = 15136
+            release = 21
+        lfo_wave = 0
+        lfo_rate = 69
+        lfo_pitch = 19
+        lfo_filter = 29
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x12' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1531,7 +2219,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM SnareHats - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 35
+        delay_mix = 77
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 0
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 121
+        filter_cutoff = 275
+        filter_mode = 1
+        filter_res = 109
+        filter_drive = 28192
+        filter_env_amount = 8
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 19
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 101
+            sustain = 32
+            release = 63
+        lfo_wave = 0
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1748,7 +2479,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM DarbuQ HiHats - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x05 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 5
+        glide = 0
+        scale = 0
+        delay_time = 83
+        delay_mix = 65
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 107
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 127
+        filter_cutoff = 517
+        filter_mode = 1
+        filter_res = 31
+        filter_drive = 30752
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 65
+            sustain = 32
+            release = 85
+        lfo_wave = 4
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -1877,7 +2651,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Castle Time - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 1
+        scale = 0
+        delay_time = 37
+        delay_mix = 72
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 32628
+            level = 104
+        oscillator2 = Container: 
+            wave = 100
+            skip = b'\x00\x13' (total 2)
+            tune = 18
+            level = 127
+        noise_level = 0
+        filter_cutoff = 551
+        filter_mode = 2
+        filter_res = 44
+        filter_drive = 32544
+        filter_env_amount = 32634
+        filter = Container: 
+            attack = 17
+            skip = b' \x1d' (total 2)
+            delay = 15
+            sustain = 3104
+            release = 43
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 35
+            sustain = 32
+            release = 69
+        lfo_wave = 0
+        lfo_rate = 2331
+        lfo_pitch = 13
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2074,7 +2891,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS 8bot bits - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x08\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 8
+        scale = 0
+        delay_time = 37
+        delay_mix = 88
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 32638
+            level = 117
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 0
+        filter_cutoff = 105
+        filter_mode = 0
+        filter_res = 28
+        filter_drive = 11040
+        filter_env_amount = 43
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 43
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 29
+        lfo_wave = 4
+        lfo_rate = 32629
+        lfo_pitch = 0
+        lfo_filter = 13
+        skip98 = b"\x00%Y\x00&@\x00'\x7f\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2159,7 +3019,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK LVL13 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 73
+        delay_mix = 73
+        arp_direction = 2
+        seq_direction = 1
+        range = 16
+        oscillator1 = Container: 
+            wave = 348
+            skip = b' \x10' (total 2)
+            tune = 1568
+            level = 97
+        oscillator2 = Container: 
+            wave = 820
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 109
+        noise_level = 35
+        filter_cutoff = 819
+        filter_mode = 0
+        filter_res = 35
+        filter_drive = 29472
+        filter_env_amount = 32594
+        filter = Container: 
+            attack = 261
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 85
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 91
+            sustain = 32
+            release = 273
+        lfo_wave = 1
+        lfo_rate = 1847
+        lfo_pitch = 21
+        lfo_filter = 13
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2224,7 +3127,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Kin - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x11\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 17
+        scale = 0
+        delay_time = 5
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 112
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 10
+            level = 49
+        noise_level = 25
+        filter_cutoff = 0
+        filter_mode = 0
+        filter_res = 48
+        filter_drive = 30240
+        filter_env_amount = 51
+        filter = Container: 
+            attack = 23
+            skip = b' \x1d' (total 2)
+            delay = 33
+            sustain = 15392
+            release = 35
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 63
+        lfo_wave = 1
+        lfo_rate = 32635
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x1f' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2279,7 +3225,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Destruct - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 91
+        delay_mix = 46
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 631
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 591
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 127
+        noise_level = 111
+        filter_cutoff = 372
+        filter_mode = 1
+        filter_res = 51
+        filter_drive = 23072
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 371
+            skip = b' \x1d' (total 2)
+            delay = 77
+            sustain = 3616
+            release = 49
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 101
+            sustain = 32
+            release = 53
+        lfo_wave = 6
+        lfo_rate = 32629
+        lfo_pitch = 383
+        lfo_filter = 43
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(F\x00)2\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2462,7 +3451,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK PoP - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 52
+        delay_mix = 68
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 856
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 119
+        oscillator2 = Container: 
+            wave = 528
+            skip = b'\x00\x13' (total 2)
+            tune = 1340
+            level = 105
+        noise_level = 77
+        filter_cutoff = 611
+        filter_mode = 0
+        filter_res = 30
+        filter_drive = 30752
+        filter_env_amount = 32632
+        filter = Container: 
+            attack = 17
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 303
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 15
+            sustain = 32
+            release = 283
+        lfo_wave = 0
+        lfo_rate = 2891
+        lfo_pitch = 9
+        lfo_filter = 71
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2627,7 +3659,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Nintondo - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 852
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 616
+            skip = b'\x00\x13' (total 2)
+            tune = 32084
+            level = 117
+        noise_level = 0
+        filter_cutoff = 798
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 288
+        filter_env_amount = 32632
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 86
+            sustain = 32
+            release = 17
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 19
+        lfo_wave = 0
+        lfo_rate = 1809
+        lfo_pitch = 5
+        lfo_filter = 5
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -2936,7 +4011,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Quire - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 14
+        scale = 0
+        delay_time = 69
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 368
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 117
+        oscillator2 = Container: 
+            wave = 364
+            skip = b'\x00\x13' (total 2)
+            tune = 18
+            level = 0
+        noise_level = 0
+        filter_cutoff = 297
+        filter_mode = 0
+        filter_res = 22
+        filter_drive = 26656
+        filter_env_amount = 26
+        filter = Container: 
+            attack = 91
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 4128
+            release = 19
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 16
+        lfo_wave = 0
+        lfo_rate = 378
+        lfo_pitch = 0
+        lfo_filter = 6
+        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3041,7 +4159,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Saul - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 14
+        scale = 0
+        delay_time = 86
+        delay_mix = 78
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 16
+            level = 106
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 106
+        noise_level = 0
+        filter_cutoff = 295
+        filter_mode = 2
+        filter_res = 58
+        filter_drive = 21792
+        filter_env_amount = 18
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 355
+            sustain = 32
+            release = 85
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 275
+        lfo_wave = 6
+        lfo_rate = 32632
+        lfo_pitch = 0
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&\n\x00'/\x00(!\x00)6\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x0c' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3106,7 +4267,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Buttered - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 328
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 107
+        oscillator2 = Container: 
+            wave = 96
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 112
+        noise_level = 0
+        filter_cutoff = 6
+        filter_mode = 2
+        filter_res = 51
+        filter_drive = 24864
+        filter_env_amount = 37
+        filter = Container: 
+            attack = 79
+            skip = b' \x1d' (total 2)
+            delay = 107
+            sustain = 13344
+            release = 47
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 3
+        lfo_rate = 32633
+        lfo_pitch = 0
+        lfo_filter = 331
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3201,7 +4405,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Crumble - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 17
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 884
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 120
+        oscillator2 = Container: 
+            wave = 600
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 103
+        noise_level = 0
+        filter_cutoff = 259
+        filter_mode = 0
+        filter_res = 69
+        filter_drive = 22816
+        filter_env_amount = 30
+        filter = Container: 
+            attack = 11
+            skip = b' \x1d' (total 2)
+            delay = 49
+            sustain = 32
+            release = 103
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 64
+        lfo_wave = 3
+        lfo_rate = 32632
+        lfo_pitch = 0
+        lfo_filter = 14
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3276,7 +4523,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Gate - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 39
+        scale = 0
+        delay_time = 31
+        delay_mix = 92
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 60
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 122
+        oscillator2 = Container: 
+            wave = 820
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 111
+        noise_level = 0
+        filter_cutoff = 894
+        filter_mode = 0
+        filter_res = 27
+        filter_drive = 19488
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 293
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 111
+            sustain = 16160
+            release = 19
+        lfo_wave = 4
+        lfo_rate = 1847
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3381,7 +4671,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Worm - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 6
+        scale = 0
+        delay_time = 86
+        delay_mix = 53
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 604
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 0
+        filter_cutoff = 91
+        filter_mode = 0
+        filter_res = 95
+        filter_drive = 25120
+        filter_env_amount = 23
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 79
+            sustain = 8480
+            release = 43
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 0
+        lfo_filter = 11
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C:' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3600,7 +4933,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Nitus - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 93
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 8
+            level = 100
+        oscillator2 = Container: 
+            wave = 604
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 113
+        noise_level = 0
+        filter_cutoff = 543
+        filter_mode = 2
+        filter_res = 29
+        filter_drive = 12064
+        filter_env_amount = 32629
+        filter = Container: 
+            attack = 275
+            skip = b' \x1d' (total 2)
+            delay = 51
+            sustain = 17952
+            release = 0
+        envelope = Container: 
+            attack = 11
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 25
+        lfo_wave = 4
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3645,7 +5021,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT FalseHope - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 0
+        scale = 0
+        delay_time = 46
+        delay_mix = 127
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 824
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 112
+        oscillator2 = Container: 
+            wave = 336
+            skip = b'\x00\x13' (total 2)
+            tune = 78
+            level = 91
+        noise_level = 74
+        filter_cutoff = 847
+        filter_mode = 0
+        filter_res = 30
+        filter_drive = 32544
+        filter_env_amount = 2
+        filter = Container: 
+            attack = 285
+            skip = b' \x1d' (total 2)
+            delay = 99
+            sustain = 12832
+            release = 123
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 101
+        lfo_wave = 6
+        lfo_rate = 518
+        lfo_pitch = 7
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x14\x00(p\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3680,7 +5099,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS DumGubb - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 888
+            skip = b' \x10' (total 2)
+            tune = 1340
+            level = 114
+        oscillator2 = Container: 
+            wave = 840
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 117
+        noise_level = 77
+        filter_cutoff = 266
+        filter_mode = 0
+        filter_res = 68
+        filter_drive = 27680
+        filter_env_amount = 17
+        filter = Container: 
+            attack = 3
+            skip = b' \x1d' (total 2)
+            delay = 314
+            sustain = 15392
+            release = 11
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 29
+        lfo_wave = 0
+        lfo_rate = 5944
+        lfo_pitch = 9
+        lfo_filter = 11
+        skip98 = b"\x00%Y\x00&\x1e\x00'\x1e\x00(E\x00)L\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C!' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -3967,7 +5429,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Princess - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 12
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 114
+        noise_level = 56
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 32
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 1092
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4032,7 +5537,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Kai iKai - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x05\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 5
+        scale = 0
+        delay_time = 85
+        delay_mix = 89
+        arp_direction = 2
+        seq_direction = 1
+        range = 16
+        oscillator1 = Container: 
+            wave = 636
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 100
+        oscillator2 = Container: 
+            wave = 844
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 102
+        noise_level = 71
+        filter_cutoff = 271
+        filter_mode = 1
+        filter_res = 63
+        filter_drive = 17184
+        filter_env_amount = 19
+        filter = Container: 
+            attack = 113
+            skip = b' \x1d' (total 2)
+            delay = 301
+            sustain = 32
+            release = 77
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 63
+            sustain = 32
+            release = 85
+        lfo_wave = 4
+        lfo_rate = 1105
+        lfo_pitch = 9
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4197,7 +5745,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Knight - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 31756
+            level = 120
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 114
+        noise_level = 56
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 32
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 1092
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4282,7 +5873,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Sauwer - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 14
+        scale = 0
+        delay_time = 52
+        delay_mix = 58
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 108
+            skip = b' \x10' (total 2)
+            tune = 16
+            level = 106
+        oscillator2 = Container: 
+            wave = 100
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 106
+        noise_level = 0
+        filter_cutoff = 63
+        filter_mode = 1
+        filter_res = 42
+        filter_drive = 10784
+        filter_env_amount = 18
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 355
+            sustain = 32
+            release = 85
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 275
+        lfo_wave = 0
+        lfo_rate = 32633
+        lfo_pitch = 9
+        lfo_filter = 23
+        skip98 = b"\x00%Y\x00&\n\x00'/\x00(!\x00)6\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x0c' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4307,7 +5941,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Platformer - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00y\x00\x03\x05 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 5
+        glide = 39
+        scale = 0
+        delay_time = 77
+        delay_mix = 85
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 31856
+            level = 86
+        oscillator2 = Container: 
+            wave = 820
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 105
+        noise_level = 69
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 42
+        filter_drive = 26400
+        filter_env_amount = 32622
+        filter = Container: 
+            attack = 63
+            skip = b' \x1d' (total 2)
+            delay = 293
+            sustain = 32
+            release = 47
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 259
+            sustain = 32
+            release = 49
+        lfo_wave = 0
+        lfo_rate = 5741
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x17' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4392,7 +6069,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Whomper - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x06\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 6
+        scale = 0
+        delay_time = 86
+        delay_mix = 53
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 869
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 96
+        oscillator2 = Container: 
+            wave = 856
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 113
+        noise_level = 0
+        filter_cutoff = 73
+        filter_mode = 1
+        filter_res = 15
+        filter_drive = 24096
+        filter_env_amount = 32583
+        filter = Container: 
+            attack = 283
+            skip = b' \x1d' (total 2)
+            delay = 317
+            sustain = 3104
+            release = 35
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 263
+            sustain = 22560
+            release = 67
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 0
+        lfo_filter = 81
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x1c' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4733,7 +6453,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT ChipHeat - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 92
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 106
+        oscillator2 = Container: 
+            wave = 600
+            skip = b'\x00\x13' (total 2)
+            tune = 784
+            level = 104
+        noise_level = 51
+        filter_cutoff = 291
+        filter_mode = 1
+        filter_res = 23
+        filter_drive = 22560
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 277
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32544
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 32629
+        lfo_pitch = 19
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4798,7 +6561,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT LowBatt - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 81
+        delay_mix = 65
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 6
+            level = 119
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 93
+        noise_level = 94
+        filter_cutoff = 301
+        filter_mode = 0
+        filter_res = 54
+        filter_drive = 22816
+        filter_env_amount = 39
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 69
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 93
+            sustain = 32
+            release = 19
+        lfo_wave = 4
+        lfo_rate = 5907
+        lfo_pitch = 383
+        lfo_filter = 15
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -4983,7 +6789,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Ender - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 892
+            skip = b' \x10' (total 2)
+            tune = 31300
+            level = 98
+        oscillator2 = Container: 
+            wave = 120
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 126
+        noise_level = 0
+        filter_cutoff = 786
+        filter_mode = 2
+        filter_res = 42
+        filter_drive = 23328
+        filter_env_amount = 32632
+        filter = Container: 
+            attack = 99
+            skip = b' \x1d' (total 2)
+            delay = 113
+            sustain = 32544
+            release = 43
+        envelope = Container: 
+            attack = 23
+            skip = b'\x00!' (total 2)
+            delay = 91
+            sustain = 23584
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 41
+        lfo_pitch = 3
+        lfo_filter = 17
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5172,7 +7021,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD No Help - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 86
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 120
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 556
+            level = 95
+        noise_level = 63
+        filter_cutoff = 371
+        filter_mode = 2
+        filter_res = 70
+        filter_drive = 32
+        filter_env_amount = 32612
+        filter = Container: 
+            attack = 97
+            skip = b' \x1d' (total 2)
+            delay = 49
+            sustain = 32
+            release = 265
+        envelope = Container: 
+            attack = 59
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 335
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5187,7 +7079,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Rub - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 112
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 314
+        filter_mode = 2
+        filter_res = 70
+        filter_drive = 24352
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 55
+            sustain = 32
+            release = 9
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 19
+        lfo_wave = 0
+        lfo_rate = 10
+        lfo_pitch = 0
+        lfo_filter = 27
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\r' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5352,7 +7287,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Coins - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x05 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 5
+        glide = 0
+        scale = 0
+        delay_time = 116
+        delay_mix = 127
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 100
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 63
+        filter_drive = 12064
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 32629
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5377,7 +7355,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Analog Techno - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 91
+        delay_mix = 46
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 93
+        noise_level = 71
+        filter_cutoff = 0
+        filter_mode = 2
+        filter_res = 57
+        filter_drive = 18464
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 21
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 285
+            sustain = 32
+            release = 19
+        lfo_wave = 3
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5482,7 +7503,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Bump - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 93
+        noise_level = 36
+        filter_cutoff = 51
+        filter_mode = 0
+        filter_res = 26
+        filter_drive = 24096
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 21
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 265
+            sustain = 32
+            release = 19
+        lfo_wave = 3
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5577,7 +7641,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Diztopia - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04&\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 38
+        scale = 0
+        delay_time = 69
+        delay_mix = 66
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 546
+            skip = b' \x10' (total 2)
+            tune = 32637
+            level = 108
+        oscillator2 = Container: 
+            wave = 895
+            skip = b'\x00\x13' (total 2)
+            tune = 3
+            level = 104
+        noise_level = 9
+        filter_cutoff = 62
+        filter_mode = 2
+        filter_res = 58
+        filter_drive = 10528
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 321
+        lfo_wave = 6
+        lfo_rate = 2089
+        lfo_pitch = 17
+        lfo_filter = 11
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5652,7 +7759,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Dungeon Run - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b"\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04'\x00"... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 39
+        scale = 0
+        delay_time = 73
+        delay_mix = 73
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 122
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 19488
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 293
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 111
+            sustain = 16160
+            release = 19
+        lfo_wave = 4
+        lfo_rate = 1847
+        lfo_pitch = 7
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5747,7 +7897,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Trekking - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 33
+        delay_mix = 83
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 108
+        noise_level = 127
+        filter_cutoff = 0
+        filter_mode = 2
+        filter_res = 51
+        filter_drive = 32544
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 25
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 285
+            sustain = 32
+            release = 35
+        lfo_wave = 3
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -5940,7 +8133,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ninja Bits - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 76
+        delay_mix = 94
+        arp_direction = 7
+        seq_direction = 1
+        range = 16
+        oscillator1 = Container: 
+            wave = 580
+            skip = b' \x10' (total 2)
+            tune = 16
+            level = 114
+        oscillator2 = Container: 
+            wave = 576
+            skip = b'\x00\x13' (total 2)
+            tune = 2
+            level = 102
+        noise_level = 82
+        filter_cutoff = 635
+        filter_mode = 0
+        filter_res = 28
+        filter_drive = 12064
+        filter_env_amount = 29
+        filter = Container: 
+            attack = 71
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 16416
+            release = 95
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 291
+            sustain = 8992
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 32639
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x14' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6025,7 +8261,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ladders - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 72
+        delay_mix = 62
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 100
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 116
+        oscillator2 = Container: 
+            wave = 96
+            skip = b'\x00\x13' (total 2)
+            tune = 556
+            level = 119
+        noise_level = 83
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 35
+        filter_drive = 9248
+        filter_env_amount = 32621
+        filter = Container: 
+            attack = 271
+            skip = b' \x1d' (total 2)
+            delay = 283
+            sustain = 8736
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 267
+            sustain = 32
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 1133
+        lfo_pitch = 5
+        lfo_filter = 7
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x1f' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6070,7 +8349,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS DizzBuzzBizz - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\r\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 13
+        scale = 0
+        delay_time = 38
+        delay_mix = 19
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 32634
+            level = 113
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 32602
+            level = 110
+        noise_level = 94
+        filter_cutoff = 84
+        filter_mode = 0
+        filter_res = 52
+        filter_drive = 32544
+        filter_env_amount = 42
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 10016
+            release = 19
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 83
+            sustain = 32544
+            release = 16
+        lfo_wave = 2
+        lfo_rate = 32637
+        lfo_pitch = 23
+        lfo_filter = 73
+        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6135,7 +8457,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Chipped - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 92
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 116
+        oscillator2 = Container: 
+            wave = 600
+            skip = b'\x00\x13' (total 2)
+            tune = 784
+            level = 112
+        noise_level = 0
+        filter_cutoff = 60
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 32544
+        filter_env_amount = 43
+        filter = Container: 
+            attack = 277
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32544
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 32629
+        lfo_pitch = 0
+        lfo_filter = 9
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6200,7 +8565,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Duddy - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x11\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 17
+        scale = 0
+        delay_time = 57
+        delay_mix = 57
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 32638
+            level = 88
+        oscillator2 = Container: 
+            wave = 60
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 118
+        noise_level = 25
+        filter_cutoff = 0
+        filter_mode = 0
+        filter_res = 46
+        filter_drive = 26912
+        filter_env_amount = 45
+        filter = Container: 
+            attack = 271
+            skip = b' \x1d' (total 2)
+            delay = 341
+            sustain = 15392
+            release = 35
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 298
+        lfo_wave = 0
+        lfo_rate = 32633
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6265,7 +8673,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Claustro - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 115
+        delay_mix = 73
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 812
+            skip = b' \x10' (total 2)
+            tune = 32574
+            level = 117
+        oscillator2 = Container: 
+            wave = 792
+            skip = b'\x00\x13' (total 2)
+            tune = 58
+            level = 111
+        noise_level = 84
+        filter_cutoff = 311
+        filter_mode = 1
+        filter_res = 12
+        filter_drive = 12064
+        filter_env_amount = 1
+        filter = Container: 
+            attack = 383
+            skip = b' \x1d' (total 2)
+            delay = 279
+            sustain = 4384
+            release = 49
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 51
+            sustain = 32032
+            release = 87
+        lfo_wave = 3
+        lfo_rate = 3336
+        lfo_pitch = 11
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&[\x00'\x1e\x00(\x7f\x00)e\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6310,7 +8761,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS UKay - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\n\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 10
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 608
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 784
+            level = 112
+        noise_level = 0
+        filter_cutoff = 311
+        filter_mode = 0
+        filter_res = 43
+        filter_drive = 12064
+        filter_env_amount = 52
+        filter = Container: 
+            attack = 335
+            skip = b' \x1d' (total 2)
+            delay = 311
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 1
+        lfo_rate = 32631
+        lfo_pitch = 7
+        lfo_filter = 0
+        skip98 = b"\x00%K\x00&\x17\x00'\x1e\x00(\t\x00)\x0b\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6375,7 +8869,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Daggers - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 88
+        delay_mix = 51
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 32616
+            level = 118
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 20
+            level = 122
+        noise_level = 0
+        filter_cutoff = 345
+        filter_mode = 1
+        filter_res = 45
+        filter_drive = 17696
+        filter_env_amount = 32636
+        filter = Container: 
+            attack = 13
+            skip = b' \x1d' (total 2)
+            delay = 39
+            sustain = 32
+            release = 125
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 47
+            sustain = 32
+            release = 37
+        lfo_wave = 0
+        lfo_rate = 2891
+        lfo_pitch = 9
+        lfo_filter = 71
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6540,7 +9077,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Nervous - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 127
+        delay_mix = 0
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 590
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 97
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 127
+        noise_level = 0
+        filter_cutoff = 66
+        filter_mode = 0
+        filter_res = 54
+        filter_drive = 16672
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 109
+            skip = b' \x1d' (total 2)
+            delay = 101
+            sustain = 32544
+            release = 101
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 93
+            sustain = 4896
+            release = 103
+        lfo_wave = 4
+        lfo_rate = 3094
+        lfo_pitch = 17
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C&' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6595,7 +9175,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT HiroBoshi - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 26
+            level = 120
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 30288
+            level = 114
+        noise_level = 104
+        filter_cutoff = 603
+        filter_mode = 0
+        filter_res = 41
+        filter_drive = 32
+        filter_env_amount = 18
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 63
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 0
+        lfo_rate = 1092
+        lfo_pitch = 3
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x08' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6680,7 +9303,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS GarageTrick - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 36
+        delay_mix = 40
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 588
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 604
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 86
+        filter_cutoff = 0
+        filter_mode = 0
+        filter_res = 25
+        filter_drive = 14880
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 27
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 32544
+            release = 47
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 11
+        lfo_wave = 0
+        lfo_rate = 32633
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x04\x00)\x04\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x14' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6745,7 +9411,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT UNOs Lair - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 30
+        delay_mix = 82
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 100
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 111
+        noise_level = 84
+        filter_cutoff = 555
+        filter_mode = 0
+        filter_res = 28
+        filter_drive = 12064
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 93
+            skip = b' \x1d' (total 2)
+            delay = 9
+            sustain = 32
+            release = 17
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 51
+            sustain = 32032
+            release = 87
+        lfo_wave = 0
+        lfo_rate = 32629
+        lfo_pitch = 5
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6840,7 +9549,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Centaur - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 14
+        scale = 0
+        delay_time = 86
+        delay_mix = 54
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 832
+            skip = b' \x10' (total 2)
+            tune = 16
+            level = 113
+        oscillator2 = Container: 
+            wave = 808
+            skip = b'\x00\x13' (total 2)
+            tune = 32624
+            level = 113
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 59
+        filter_drive = 25376
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 127
+            skip = b' \x1d' (total 2)
+            delay = 35
+            sustain = 11040
+            release = 19
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 83
+            sustain = 32544
+            release = 16
+        lfo_wave = 0
+        lfo_rate = 378
+        lfo_pitch = 0
+        lfo_filter = 6
+        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6875,7 +9627,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK World map - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 121
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 0
+        noise_level = 56
+        filter_cutoff = 283
+        filter_mode = 1
+        filter_res = 12
+        filter_drive = 2592
+        filter_env_amount = 32635
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 101
+            sustain = 32
+            release = 33
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 95
+            sustain = 32
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 0
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -6970,7 +9765,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Thomper - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 96
+        delay_mix = 63
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 122
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 96
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 31520
+        filter_env_amount = 32603
+        filter = Container: 
+            attack = 31
+            skip = b' \x1d' (total 2)
+            delay = 117
+            sustain = 32
+            release = 295
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 99
+            sustain = 32
+            release = 285
+        lfo_wave = 4
+        lfo_rate = 3692
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7095,7 +9933,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK GotoStart - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x05\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 5
+        scale = 0
+        delay_time = 80
+        delay_mix = 93
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 112
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 556
+            level = 116
+        noise_level = 90
+        filter_cutoff = 573
+        filter_mode = 2
+        filter_res = 43
+        filter_drive = 32544
+        filter_env_amount = 32608
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 383
+            sustain = 32
+            release = 69
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 41
+            sustain = 32
+            release = 269
+        lfo_wave = 0
+        lfo_rate = 2407
+        lfo_pitch = 17
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7356,7 +10237,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Cartridge - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 96
+        delay_mix = 63
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 122
+        oscillator2 = Container: 
+            wave = 812
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 116
+        noise_level = 85
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 17440
+        filter_env_amount = 1
+        filter = Container: 
+            attack = 29
+            skip = b' \x1d' (total 2)
+            delay = 85
+            sustain = 15648
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 269
+            sustain = 6176
+            release = 13
+        lfo_wave = 0
+        lfo_rate = 6
+        lfo_pitch = 105
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7521,7 +10445,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Somber - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x13\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 19
+        scale = 0
+        delay_time = 96
+        delay_mix = 92
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 302
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 115
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 32633
+            level = 115
+        noise_level = 63
+        filter_cutoff = 330
+        filter_mode = 0
+        filter_res = 82
+        filter_drive = 2848
+        filter_env_amount = 32619
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 29
+            sustain = 32
+            release = 383
+        envelope = Container: 
+            attack = 8
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 316
+        lfo_wave = 0
+        lfo_rate = 1060
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C@' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7596,7 +10563,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Rapido - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 45
+        delay_mix = 83
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 608
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 127
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 96
+        noise_level = 0
+        filter_cutoff = 787
+        filter_mode = 2
+        filter_res = 22
+        filter_drive = 32544
+        filter_env_amount = 32620
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 25
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 13
+            sustain = 32
+            release = 19
+        lfo_wave = 2
+        lfo_rate = 32636
+        lfo_pitch = 91
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7881,7 +10891,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD West Coast - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x0e\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 14
+        scale = 0
+        delay_time = 92
+        delay_mix = 87
+        arp_direction = 4
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 303
+            skip = b' \x10' (total 2)
+            tune = 2352
+            level = 106
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 10
+            level = 0
+        noise_level = 0
+        filter_cutoff = 23
+        filter_mode = 1
+        filter_res = 63
+        filter_drive = 10784
+        filter_env_amount = 18
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 355
+            sustain = 32
+            release = 85
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 275
+        lfo_wave = 1
+        lfo_rate = 1342
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x03\x00)\x03\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -7946,7 +10999,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM PercStep - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 81
+        delay_mix = 65
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 100
+        noise_level = 94
+        filter_cutoff = 301
+        filter_mode = 0
+        filter_res = 54
+        filter_drive = 32544
+        filter_env_amount = 27
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 69
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 93
+            sustain = 32
+            release = 19
+        lfo_wave = 3
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8131,7 +11227,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM TechaTeck - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 91
+        delay_mix = 46
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 296
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 892
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 108
+        noise_level = 127
+        filter_cutoff = 0
+        filter_mode = 2
+        filter_res = 51
+        filter_drive = 32544
+        filter_env_amount = 33
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 25
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 285
+            sustain = 32
+            release = 35
+        lfo_wave = 3
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8208,7 +11347,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Select Save - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x01\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 1
+        scale = 0
+        delay_time = 92
+        delay_mix = 106
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 600
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 111
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 2352
+            level = 107
+        noise_level = 56
+        filter_cutoff = 283
+        filter_mode = 1
+        filter_res = 12
+        filter_drive = 2592
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 11
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 2649
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8313,7 +11495,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Polly - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x03 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 3
+        glide = 0
+        scale = 0
+        delay_time = 96
+        delay_mix = 104
+        arp_direction = 7
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 292
+            skip = b' \x10' (total 2)
+            tune = 0
+            level = 112
+        oscillator2 = Container: 
+            wave = 288
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 519
+        filter_mode = 0
+        filter_res = 46
+        filter_drive = 12064
+        filter_env_amount = 19
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 289
+            sustain = 8992
+            release = 75
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 265
+        lfo_wave = 4
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8368,7 +11593,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS SEQure - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x02 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 2
+        glide = 0
+        scale = 0
+        delay_time = 108
+        delay_mix = 64
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 772
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 304
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 127
+        noise_level = 0
+        filter_cutoff = 31
+        filter_mode = 0
+        filter_res = 49
+        filter_drive = 12064
+        filter_env_amount = 63
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 79
+            sustain = 32
+            release = 53
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 69
+            sustain = 17952
+            release = 45
+        lfo_wave = 3
+        lfo_rate = 32637
+        lfo_pitch = 0
+        lfo_filter = 323
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8393,7 +11661,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS ReeseeR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x01 \x04\r\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 1
+        glide = 13
+        scale = 0
+        delay_time = 38
+        delay_mix = 19
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 299
+            skip = b' \x10' (total 2)
+            tune = 32603
+            level = 127
+        oscillator2 = Container: 
+            wave = 299
+            skip = b'\x00\x13' (total 2)
+            tune = 24
+            level = 127
+        noise_level = 56
+        filter_cutoff = 849
+        filter_mode = 0
+        filter_res = 64
+        filter_drive = 32
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 11040
+            release = 19
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 83
+            sustain = 32544
+            release = 16
+        lfo_wave = 0
+        lfo_rate = 2076
+        lfo_pitch = 23
+        lfo_filter = 0
+        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8438,7 +11749,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Heelum - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 40
+        delay_mix = 59
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 0
+            skip = b' \x10' (total 2)
+            tune = 30288
+            level = 127
+        oscillator2 = Container: 
+            wave = 0
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 0
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 89
+        filter_drive = 32544
+        filter_env_amount = 32620
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 31
+            sustain = 32
+            release = 23
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 383
+            sustain = 32
+            release = 19
+        lfo_wave = 2
+        lfo_rate = 32636
+        lfo_pitch = 383
+        lfo_filter = 15
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8523,7 +11877,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT LVL2 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 73
+        delay_mix = 73
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 894
+            skip = b' \x10' (total 2)
+            tune = 31072
+            level = 111
+        oscillator2 = Container: 
+            wave = 895
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 121
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 13
+        filter_drive = 19488
+        filter_env_amount = 32576
+        filter = Container: 
+            attack = 293
+            skip = b' \x1d' (total 2)
+            delay = 0
+            sustain = 32
+            release = 17
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 111
+            sustain = 16160
+            release = 19
+        lfo_wave = 1
+        lfo_rate = 1847
+        lfo_pitch = 21
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
@@ -8578,7 +11975,50 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT No Time - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b'\x00C\x00\x01\x02 \x02\x00y\x00\x03\x04 \x04\x00\x00'... (truncated, total 220)
+        skip = b' $' (total 2)
+        tempo = 121
+        octave = 4
+        glide = 0
+        scale = 0
+        delay_time = 73
+        delay_mix = 78
+        arp_direction = 2
+        seq_direction = 0
+        range = 16
+        oscillator1 = Container: 
+            wave = 596
+            skip = b' \x10' (total 2)
+            tune = 556
+            level = 100
+        oscillator2 = Container: 
+            wave = 596
+            skip = b'\x00\x13' (total 2)
+            tune = 0
+            level = 107
+        noise_level = 0
+        filter_cutoff = 895
+        filter_mode = 0
+        filter_res = 0
+        filter_drive = 23328
+        filter_env_amount = 0
+        filter = Container: 
+            attack = 0
+            skip = b' \x1d' (total 2)
+            delay = 256
+            sustain = 32
+            release = 0
+        envelope = Container: 
+            attack = 0
+            skip = b'\x00!' (total 2)
+            delay = 0
+            sustain = 32544
+            release = 257
+        lfo_wave = 4
+        lfo_rate = 32636
+        lfo_pitch = 0
+        lfo_filter = 0
+        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
+        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
     ListContainer: 
         Container: 
             step = 1
