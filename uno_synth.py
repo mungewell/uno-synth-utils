@@ -42,8 +42,8 @@ Config = Struct(
     Const(b"\x00\x03"),
     "octave" / Byte,
     Const(b"\x20\x04"),
-    "glide" / Byte,
-    Const(b"\x00\x00\x05"),
+    "glide" / Short,
+    Const(b"\x00\x05"),
     "scale" / Byte,
 
     Const(b"\x00\x06"),
@@ -87,8 +87,8 @@ Config = Struct(
     Const(b"\x00\x16"),
     "filter_res" / Byte,
     Const(b"\x00\x17"),
-    "filter_drive" / Short,
-    Const(b"\x18"),
+    "filter_drive" / Byte,
+    Const(b"\x20\x18"),
     "filter_env_amount" / Short,
 
     Const(b"\x20\x19"),
@@ -96,8 +96,8 @@ Config = Struct(
     Const(b"\x20\x1A"),
     "filter_delay" / Short,
     Const(b"\x00\x1B"),
-    "filter_sustain" / Short,
-    Const(b"\x1C"),
+    "filter_sustain" / Byte,
+    Const(b"\x20\x1C"),
     "filter_release" / Short,
 
     Const(b"\x20\x1D"),
@@ -105,8 +105,8 @@ Config = Struct(
     Const(b"\x20\x1E"),
     "envelope_delay" / Short,
     Const(b"\x00\x1F"),
-    "envelope_sustain" / Short,
-    Const(b"\x20"),
+    "envelope_sustain" / Byte,
+    Const(b"\x20\x20"),
     "envelope_release" / Short,
 
     Const(b"\x00\x21"),
