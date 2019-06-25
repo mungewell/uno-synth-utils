@@ -1,7 +1,7 @@
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Transistort - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -43,8 +43,30 @@ ListContainer:
         lfo_rate = 5944
         lfo_pitch = 31
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1d\x00(\x15\x00),\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 29
+        dive_amount = 21
+        scoop_amount = 44
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 63
+        osc1_lfo = 0
+        osc2_lfo = 55
+        osc1_shape_pwm = 63
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -109,7 +131,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Tinder - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 19
@@ -151,8 +173,30 @@ ListContainer:
         lfo_rate = 5482
         lfo_pitch = 15
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&'\x00'`\x00(\x19\x00)\x0f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C@' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 39
+        wah_depth = 96
+        dive_amount = 25
+        scoop_amount = 15
+        seq_swing = 53
+        pitch_bend = 20
+        osc1_filter_env = 127
+        osc2_filter_env = 127
+        osc1_lfo = 95
+        osc2_lfo = 87
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 127
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 64
     ListContainer: 
         Container: 
             step = 1
@@ -237,7 +281,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Euro Kingdom - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -279,8 +323,30 @@ ListContainer:
         lfo_rate = 3170
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 64
+        osc1_lfo = 98
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -445,7 +511,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Heelumv2 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 0
@@ -487,8 +553,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 15
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 31
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 127
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -663,7 +751,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Leitos - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 1
@@ -705,8 +793,30 @@ ListContainer:
         lfo_rate = 2687
         lfo_pitch = 3
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 51
+        osc2_filter_env = 0
+        osc1_lfo = 63
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 58
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -751,7 +861,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ghost - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -793,8 +903,30 @@ ListContainer:
         lfo_rate = 32639
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 8
+        osc2_filter_env = 0
+        osc1_lfo = 7
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 41
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -879,7 +1011,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Hachi - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -921,8 +1053,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -1087,7 +1241,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT PlayPlay - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 39
@@ -1129,8 +1283,30 @@ ListContainer:
         lfo_rate = 1847
         lfo_pitch = 7
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 58
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 91
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -1215,7 +1391,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Cavern Of DOS - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -1257,8 +1433,30 @@ ListContainer:
         lfo_rate = 32630
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 30
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -1323,7 +1521,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK LEEDR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 13
@@ -1365,8 +1563,30 @@ ListContainer:
         lfo_rate = 0
         lfo_pitch = 0
         lfo_filter = 57
-        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
+        tremolo_depth = 87
+        vibrato_depth = 7
+        wah_depth = 96
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 7
+        osc2_shape_pwm = 5
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 25
     ListContainer: 
         Container: 
             step = 1
@@ -1451,7 +1671,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK FF - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -1493,8 +1713,30 @@ ListContainer:
         lfo_rate = 2891
         lfo_pitch = 9
         lfo_filter = 71
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -1659,7 +1901,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT NiteMR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 11
@@ -1701,8 +1943,30 @@ ListContainer:
         lfo_rate = 5944
         lfo_pitch = 65
         lfo_filter = 7
-        skip98 = b"\x00%Y\x00&\x7f\x00'\x11\x00(K\x00)V\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 127
+        wah_depth = 17
+        dive_amount = 75
+        scoop_amount = 86
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 40
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -1737,7 +2001,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Zuul - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -1779,8 +2043,30 @@ ListContainer:
         lfo_rate = 3692
         lfo_pitch = 11
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x05' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 111
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 5
+        vel_filter = 5
+        vel_filter_env = 3
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 5
     ListContainer: 
         Container: 
             step = 1
@@ -1865,7 +2151,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT JayArePehGee - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 5
@@ -1907,8 +2193,30 @@ ListContainer:
         lfo_rate = 1105
         lfo_pitch = 9
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -2003,7 +2311,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Bubble - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -2045,8 +2353,30 @@ ListContainer:
         lfo_rate = 27
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&\x1e\x00'\x1e\x00(1\x00)L\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 30
+        wah_depth = 30
+        dive_amount = 49
+        scoop_amount = 76
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 11
+        osc1_shape_pwm = 62
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -2101,7 +2431,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Pain - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 5
         glide = 0
@@ -2143,8 +2473,30 @@ ListContainer:
         lfo_rate = 69
         lfo_pitch = 19
         lfo_filter = 29
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x12' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 104
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 18
     ListContainer: 
         Container: 
             step = 1
@@ -2219,7 +2571,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM SnareHats - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -2261,8 +2613,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -2479,7 +2853,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM DarbuQ HiHats - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 5
         glide = 0
@@ -2521,8 +2895,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -2651,7 +3047,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Castle Time - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 1
@@ -2693,8 +3089,30 @@ ListContainer:
         lfo_rate = 2331
         lfo_pitch = 13
         lfo_filter = 9
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 5
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 6
+        vel_filter_env = 12
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -2891,7 +3309,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS 8bot bits - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 8
@@ -2933,8 +3351,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 0
         lfo_filter = 13
-        skip98 = b"\x00%Y\x00&@\x00'\x7f\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 127
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 39
+        osc2_shape_pwm = 39
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -3019,7 +3459,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK LVL13 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -3061,8 +3501,30 @@ ListContainer:
         lfo_rate = 1847
         lfo_pitch = 21
         lfo_filter = 13
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 91
+        osc2_shape_pwm = 13
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 8
+        vel_filter = 7
+        vel_filter_env = 9
+        mod_lfo_rate = 0
+        vel_lfo_rate = 127
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -3127,7 +3589,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Kin - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 17
@@ -3169,8 +3631,30 @@ ListContainer:
         lfo_rate = 32635
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x1f' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 22
+        vel_filter = 9
+        vel_filter_env = 13
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 31
     ListContainer: 
         Container: 
             step = 1
@@ -3225,7 +3709,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Destruct - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -3267,8 +3751,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 383
         lfo_filter = 43
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(F\x00)2\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 70
+        scoop_amount = 50
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 63
+        osc1_lfo = 0
+        osc2_lfo = 103
+        osc1_shape_pwm = 97
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -3451,7 +3957,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK PoP - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -3493,8 +3999,30 @@ ListContainer:
         lfo_rate = 2891
         lfo_pitch = 9
         lfo_filter = 71
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -3659,7 +4187,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Nintondo - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -3701,8 +4229,30 @@ ListContainer:
         lfo_rate = 1809
         lfo_pitch = 5
         lfo_filter = 5
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 3
+        osc2_lfo = 4
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 127
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -4011,7 +4561,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Quire - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 14
@@ -4053,8 +4603,30 @@ ListContainer:
         lfo_rate = 378
         lfo_pitch = 0
         lfo_filter = 6
-        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 87
+        vibrato_depth = 7
+        wah_depth = 96
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -4159,7 +4731,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Saul - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 14
@@ -4201,8 +4773,30 @@ ListContainer:
         lfo_rate = 32632
         lfo_pitch = 0
         lfo_filter = 7
-        skip98 = b"\x00%Y\x00&\n\x00'/\x00(!\x00)6\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x0c' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 10
+        wah_depth = 47
+        dive_amount = 33
+        scoop_amount = 54
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 23
+        osc2_filter_env = 23
+        osc1_lfo = 10
+        osc2_lfo = 9
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 6
+        vel_filter_env = 7
+        mod_lfo_rate = 0
+        vel_lfo_rate = 127
+        amp_gate = 0
+        key_track = 12
     ListContainer: 
         Container: 
             step = 1
@@ -4267,7 +4861,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Buttered - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -4309,8 +4903,30 @@ ListContainer:
         lfo_rate = 32633
         lfo_pitch = 0
         lfo_filter = 331
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 14
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -4405,7 +5021,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Crumble - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -4447,8 +5063,30 @@ ListContainer:
         lfo_rate = 32632
         lfo_pitch = 0
         lfo_filter = 14
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 3
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -4523,7 +5161,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Gate - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 39
@@ -4565,8 +5203,30 @@ ListContainer:
         lfo_rate = 1847
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 64
+        osc1_lfo = 127
+        osc2_lfo = 127
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -4671,7 +5331,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Worm - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 6
@@ -4713,8 +5373,30 @@ ListContainer:
         lfo_rate = 32639
         lfo_pitch = 0
         lfo_filter = 11
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C:' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 1
+        osc2_filter_env = 66
+        osc1_lfo = 0
+        osc2_lfo = 127
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 34
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 58
     ListContainer: 
         Container: 
             step = 1
@@ -4933,7 +5615,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Nitus - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -4975,8 +5657,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 6
+        vel_filter = 10
+        vel_filter_env = 6
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -5021,7 +5725,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT FalseHope - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 0
@@ -5063,8 +5767,30 @@ ListContainer:
         lfo_rate = 518
         lfo_pitch = 7
         lfo_filter = 9
-        skip98 = b"\x00%Y\x00&@\x00'\x14\x00(p\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 20
+        dive_amount = 112
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 5
+        osc2_shape_pwm = 4
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 7
+        vel_filter_env = 3
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -5099,7 +5825,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS DumGubb - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -5141,8 +5867,30 @@ ListContainer:
         lfo_rate = 5944
         lfo_pitch = 9
         lfo_filter = 11
-        skip98 = b"\x00%Y\x00&\x1e\x00'\x1e\x00(E\x00)L\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C!' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 30
+        wah_depth = 30
+        dive_amount = 69
+        scoop_amount = 76
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 26
+        osc2_lfo = 29
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 33
     ListContainer: 
         Container: 
             step = 1
@@ -5429,7 +6177,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Princess - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 1
@@ -5471,8 +6219,30 @@ ListContainer:
         lfo_rate = 1092
         lfo_pitch = 3
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -5537,7 +6307,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Kai iKai - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 5
@@ -5579,8 +6349,30 @@ ListContainer:
         lfo_rate = 1105
         lfo_pitch = 9
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 9
+        vel_filter = 6
+        vel_filter_env = 5
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -5745,7 +6537,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Knight - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 1
@@ -5787,8 +6579,30 @@ ListContainer:
         lfo_rate = 1092
         lfo_pitch = 3
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -5873,7 +6687,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Sauwer - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 14
@@ -5915,8 +6729,30 @@ ListContainer:
         lfo_rate = 32633
         lfo_pitch = 9
         lfo_filter = 23
-        skip98 = b"\x00%Y\x00&\n\x00'/\x00(!\x00)6\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x0c' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 10
+        wah_depth = 47
+        dive_amount = 33
+        scoop_amount = 54
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 5
+        osc2_filter_env = 0
+        osc1_lfo = 41
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 41
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 6
+        vel_filter_env = 7
+        mod_lfo_rate = 0
+        vel_lfo_rate = 127
+        amp_gate = 0
+        key_track = 12
     ListContainer: 
         Container: 
             step = 1
@@ -5941,7 +6777,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Platformer - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 5
         glide = 39
@@ -5983,8 +6819,30 @@ ListContainer:
         lfo_rate = 5741
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x17' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 69
+        osc2_shape_pwm = 84
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 23
     ListContainer: 
         Container: 
             step = 1
@@ -6069,7 +6927,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Whomper - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 6
@@ -6111,8 +6969,30 @@ ListContainer:
         lfo_rate = 32639
         lfo_pitch = 0
         lfo_filter = 81
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x1c' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 53
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 10
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 34
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 28
     ListContainer: 
         Container: 
             step = 1
@@ -6453,7 +7333,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT ChipHeat - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -6495,8 +7375,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 19
         lfo_filter = 9
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 69
+        osc2_shape_pwm = 58
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -6561,7 +7463,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT LowBatt - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -6603,8 +7505,30 @@ ListContainer:
         lfo_rate = 5907
         lfo_pitch = 383
         lfo_filter = 15
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 115
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -6789,7 +7713,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Ender - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 1
@@ -6831,8 +7755,30 @@ ListContainer:
         lfo_rate = 41
         lfo_pitch = 3
         lfo_filter = 17
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 5
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 6
+        vel_filter_env = 12
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7021,7 +7967,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD No Help - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -7063,8 +8009,30 @@ ListContainer:
         lfo_rate = 335
         lfo_pitch = 3
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 16
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7079,7 +8047,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Rub - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -7121,8 +8089,30 @@ ListContainer:
         lfo_rate = 10
         lfo_pitch = 0
         lfo_filter = 27
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\r' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 13
     ListContainer: 
         Container: 
             step = 1
@@ -7287,7 +8277,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Coins - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 5
         glide = 0
@@ -7329,8 +8319,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 31
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7355,7 +8367,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Analog Techno - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -7397,8 +8409,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7503,7 +8537,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Bump - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -7545,8 +8579,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7641,7 +8697,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Diztopia - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 38
@@ -7683,8 +8739,30 @@ ListContainer:
         lfo_rate = 2089
         lfo_pitch = 17
         lfo_filter = 11
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 52
+        osc2_filter_env = 0
+        osc1_lfo = 87
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 64
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 127
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7759,7 +8837,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Dungeon Run - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 39
@@ -7801,8 +8879,30 @@ ListContainer:
         lfo_rate = 1847
         lfo_pitch = 7
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 91
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -7897,7 +8997,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Trekking - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -7939,8 +9039,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -8133,7 +9255,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ninja Bits - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -8175,8 +9297,30 @@ ListContainer:
         lfo_rate = 32639
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x14' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 37
+        osc2_shape_pwm = 41
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 20
     ListContainer: 
         Container: 
             step = 1
@@ -8261,7 +9405,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Ladders - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -8303,8 +9447,30 @@ ListContainer:
         lfo_rate = 1133
         lfo_pitch = 5
         lfo_filter = 7
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x1f' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 31
     ListContainer: 
         Container: 
             step = 1
@@ -8349,7 +9515,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS DizzBuzzBizz - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 13
@@ -8391,8 +9557,30 @@ ListContainer:
         lfo_rate = 32637
         lfo_pitch = 23
         lfo_filter = 73
-        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
+        tremolo_depth = 87
+        vibrato_depth = 7
+        wah_depth = 96
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 4
+        osc2_shape_pwm = 5
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 25
     ListContainer: 
         Container: 
             step = 1
@@ -8457,7 +9645,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Chipped - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -8499,8 +9687,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 0
         lfo_filter = 9
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -8565,7 +9775,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Duddy - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 17
@@ -8607,8 +9817,30 @@ ListContainer:
         lfo_rate = 32633
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 23
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 22
+        vel_filter = 9
+        vel_filter_env = 13
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -8673,7 +9905,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Claustro - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -8715,8 +9947,30 @@ ListContainer:
         lfo_rate = 3336
         lfo_pitch = 11
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&[\x00'\x1e\x00(\x7f\x00)e\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 91
+        wah_depth = 30
+        dive_amount = 127
+        scoop_amount = 101
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 26
+        osc2_shape_pwm = 24
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 8
+        vel_filter = 5
+        vel_filter_env = 6
+        mod_lfo_rate = 0
+        vel_lfo_rate = 1
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -8761,7 +10015,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS UKay - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 10
@@ -8803,8 +10057,30 @@ ListContainer:
         lfo_rate = 32631
         lfo_pitch = 7
         lfo_filter = 0
-        skip98 = b"\x00%K\x00&\x17\x00'\x1e\x00(\t\x00)\x0b\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 75
+        vibrato_depth = 23
+        wah_depth = 30
+        dive_amount = 9
+        scoop_amount = 11
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 4
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -8869,7 +10145,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK Daggers - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -8911,8 +10187,30 @@ ListContainer:
         lfo_rate = 2891
         lfo_pitch = 9
         lfo_filter = 71
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -9077,7 +10375,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Nervous - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -9119,8 +10417,30 @@ ListContainer:
         lfo_rate = 3094
         lfo_pitch = 17
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C&' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 38
     ListContainer: 
         Container: 
             step = 1
@@ -9175,7 +10495,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT HiroBoshi - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 1
@@ -9217,8 +10537,30 @@ ListContainer:
         lfo_rate = 1092
         lfo_pitch = 3
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x08' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 7
+        vel_filter = 5
+        vel_filter_env = 3
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 8
     ListContainer: 
         Container: 
             step = 1
@@ -9303,7 +10645,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS GarageTrick - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -9345,8 +10687,30 @@ ListContainer:
         lfo_rate = 32633
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x04\x00)\x04\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x14' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 4
+        scoop_amount = 4
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 8
+        mod_cutoff = 0
+        vel_amp = 14
+        vel_filter = 25
+        vel_filter_env = 11
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 20
     ListContainer: 
         Container: 
             step = 1
@@ -9411,7 +10775,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT UNOs Lair - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -9453,8 +10817,30 @@ ListContainer:
         lfo_rate = 32629
         lfo_pitch = 5
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 127
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -9549,7 +10935,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS Centaur - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 14
@@ -9591,8 +10977,30 @@ ListContainer:
         lfo_rate = 378
         lfo_pitch = 0
         lfo_filter = 6
-        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 87
+        vibrato_depth = 7
+        wah_depth = 96
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -9627,7 +11035,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK World map - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 1
@@ -9669,8 +11077,30 @@ ListContainer:
         lfo_rate = 0
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 127
+        osc2_filter_env = 0
+        osc1_lfo = 19
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -9765,7 +11195,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Thomper - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -9807,8 +11237,30 @@ ListContainer:
         lfo_rate = 3692
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -9933,7 +11385,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/PLUCK GotoStart - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 5
@@ -9975,8 +11427,30 @@ ListContainer:
         lfo_rate = 2407
         lfo_pitch = 17
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -10237,7 +11711,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/XTORT Cartridge - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -10279,8 +11753,30 @@ ListContainer:
         lfo_rate = 6
         lfo_pitch = 105
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 111
+        osc2_shape_pwm = 94
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -10445,7 +11941,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Somber - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 19
@@ -10487,8 +11983,30 @@ ListContainer:
         lfo_rate = 1060
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C@' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 127
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 64
     ListContainer: 
         Container: 
             step = 1
@@ -10563,7 +12081,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Rapido - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -10605,8 +12123,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 91
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 31
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 10
+        osc2_filter_env = 0
+        osc1_lfo = 127
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -10891,7 +12431,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD West Coast - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 14
@@ -10933,8 +12473,30 @@ ListContainer:
         lfo_rate = 1342
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x03\x00)\x03\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 3
+        scoop_amount = 3
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -10999,7 +12561,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM PercStep - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -11041,8 +12603,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 64
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11227,7 +12811,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM TechaTeck - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -11269,8 +12853,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00('\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 39
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 127
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11347,7 +12953,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT Select Save - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 1
@@ -11389,8 +12995,30 @@ ListContainer:
         lfo_rate = 2649
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 127
+        osc2_filter_env = 0
+        osc1_lfo = 19
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11495,7 +13123,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/LEAD Polly - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 3
         glide = 0
@@ -11537,8 +13165,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11593,7 +13243,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS SEQure - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 2
         glide = 0
@@ -11635,8 +13285,30 @@ ListContainer:
         lfo_rate = 32637
         lfo_pitch = 0
         lfo_filter = 323
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11661,7 +13333,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/BASS ReeseeR - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 1
         glide = 13
@@ -11703,8 +13375,30 @@ ListContainer:
         lfo_rate = 2076
         lfo_pitch = 23
         lfo_filter = 0
-        skip98 = b"\x00%W\x00&\x07\x00'`\x00(\x7f\x00)\x7f\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x19' (total 7)
+        tremolo_depth = 87
+        vibrato_depth = 7
+        wah_depth = 96
+        dive_amount = 127
+        scoop_amount = 127
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 7
+        osc2_shape_pwm = 5
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 25
     ListContainer: 
         Container: 
             step = 1
@@ -11749,7 +13443,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/DRUM Heelum - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -11791,8 +13485,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 383
         lfo_filter = 15
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x1f\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'?\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 31
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 127
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 63
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11877,7 +13593,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT LVL2 - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -11919,8 +13635,30 @@ ListContainer:
         lfo_rate = 1847
         lfo_pitch = 21
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 91
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1
@@ -11975,7 +13713,7 @@ ListContainer:
 80_UNO_Synth_ presets_by_haQ_attaQ/8BIT No Time - haQ attaQ.unosyp
 ListContainer: 
     Container: 
-        skip = b' $' (total 2)
+        skip = b'\x00B\x01\x00C' (total 5)
         tempo = 121
         octave = 4
         glide = 0
@@ -12017,8 +13755,30 @@ ListContainer:
         lfo_rate = 32636
         lfo_pitch = 0
         lfo_filter = 0
-        skip98 = b"\x00%Y\x00&@\x00'\x1e\x00(\x15\x00)\x15\x00"... (truncated, total 86)
-        skip99 = b'\x00\x00B\x01\x00C\x00' (total 7)
+        tremolo_depth = 89
+        vibrato_depth = 64
+        wah_depth = 30
+        dive_amount = 21
+        scoop_amount = 21
+        seq_swing = 50
+        pitch_bend = 20
+        osc1_filter_env = 0
+        osc2_filter_env = 0
+        osc1_lfo = 0
+        osc2_lfo = 0
+        osc1_shape_pwm = 0
+        osc2_shape_pwm = 0
+        mod_vibrato = 0
+        mod_wah = 0
+        mod_tremolo = 0
+        mod_cutoff = 0
+        vel_amp = 0
+        vel_filter = 0
+        vel_filter_env = 0
+        mod_lfo_rate = 0
+        vel_lfo_rate = 0
+        amp_gate = 0
+        key_track = 0
     ListContainer: 
         Container: 
             step = 1

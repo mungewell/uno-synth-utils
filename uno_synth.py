@@ -54,6 +54,7 @@ ADSR = Struct(
 
 Config = Struct(
     "skip" / Bytes(7),
+
     "tempo" / Short,
     "skip" / Bytes(2),
     "octave" / Byte,
@@ -62,12 +63,16 @@ Config = Struct(
     "skip" / Bytes(3),
     "scale" / Byte,
     "skip" / Bytes(5),
+
     "delay_time" / Byte,
     "skip" / Bytes(2),
     "delay_mix" / Byte,
     "skip" / Bytes(2),
     "arp_direction" / Byte,
-    "skip" / Bytes(5),
+    "skip" / Bytes(2),
+    "arp_octaves" / Byte,
+    "skip" / Bytes(2),
+
     "seq_direction" / Byte,
     "skip" / Bytes(2),
     "range" / Byte,
@@ -100,9 +105,62 @@ Config = Struct(
     "lfo_pitch" / Short,
     "skip" / Bytes(2),
     "lfo_filter" / Short,
+    "skip" / Bytes(2),
 
-    "skip98" / Bytes(86),
-    "skip99" / Bytes(7),
+    "tremolo_depth" / Byte, #0x81
+    "skip" / Bytes(2),
+    "vibrato_depth" / Byte,
+    "skip" / Bytes(2),
+    "wah_depth" / Byte,
+    "skip" / Bytes(2),
+    "dive_amount" / Byte,
+    "skip" / Bytes(2),
+    "scoop_amount" / Byte,
+    "skip" / Bytes(2),
+
+    "seq_swing" / Byte, #0x90
+    "skip" / Bytes(2),
+    "pitch_bend" / Byte,
+    "skip" / Bytes(5),
+
+    "osc1_filter_env" / Byte, #0x99
+    "skip" / Bytes(2),
+    "osc2_filter_env" / Byte,
+    "skip" / Bytes(2),
+    "osc1_lfo" / Byte,
+    "skip" / Bytes(2),
+    "osc2_lfo" / Byte,
+    "skip" / Bytes(8),
+
+    "osc1_shape_pwm" / Byte,
+    "skip" / Bytes(2),
+    "osc2_shape_pwm" / Byte,
+    "skip" / Bytes(2),
+
+    "mod_vibrato" / Byte, #0xB1
+    "skip" / Bytes(2),
+    "mod_wah" / Byte,
+    "skip" / Bytes(2),
+    "mod_tremolo" / Byte,
+    "skip" / Bytes(2),
+    "mod_cutoff" / Byte,
+    "skip" / Bytes(2),
+
+    "vel_amp" / Byte,   # 0xBD
+    "skip" / Bytes(2),
+    "vel_filter" / Byte,
+    "skip" / Bytes(2),
+    "vel_filter_env" / Byte,
+    "skip" / Bytes(11),
+
+    "mod_lfo_rate" / Byte, #0xCF
+    "skip" / Bytes(2),
+    "vel_lfo_rate" / Byte,
+    "skip" / Bytes(2),
+    "amp_gate" / Byte, # Bizare encoding...
+    "skip" / Bytes(5),
+
+    "key_track" / Byte, #0xDB
     )
 
 Seq = Struct(
