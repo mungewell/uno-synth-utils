@@ -32,167 +32,134 @@ _hasMido = False
 # requires:
 # https://github.com/construct/construct
 
+# Midi is 7bit stuffed - each byte max 0x7F
+class Midi2u(Adapter):
+    def _decode(self, obj, context, path):
+        return((obj & 0x7f) + ((obj & 0x7f00) >> 1))
+    def _encode(self, obj, context, path):
+        return((obj & 0x7f) + ((obj & 0x3f80) << 1))
+
+class Midi2s(Adapter):
+    def _decode(self, obj, context, path):
+        if (obj & 0x4000):
+            return(0-8192+((obj & 0x7f) + ((obj & 0x3f00) >> 1)))
+        else:
+            return((obj & 0x7f) + ((obj & 0x7f00) >> 1))
+    def _encode(self, obj, context, path):
+        return((obj & 0x7f) + ((obj & 0x3f80) << 1))
+
+class Midi1u(Adapter):
+    def _decode(self, obj, context, path):
+        return(obj & 0x7f)
+    def _encode(self, obj, context, path):
+        return(obj & 0x7f)
+
+class Midi1s(Adapter):
+    def _decode(self, obj, context, path):
+        if (obj & 0x40):
+            return(0-127+(obj & 0x3f))
+        else:
+            return(obj & 0x7f)
+    def _encode(self, obj, context, path):
+        return(obj & 0x7f)
+
+# Configuration portion of file
 Config = Struct(
     Const(b"\x00\x43"),
-    Const(b"\x00\x01"),
-    "UNKNOWN-1" / Byte,
+    Const(b"\x00\x01"), "unknown1"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x20\x02"),
-    "tempo" / Short,
-    Const(b"\x00\x03"),
-    "octave" / Byte,
-    Const(b"\x20\x04"),
-    "glide" / Short,
-    Const(b"\x00\x05"),
-    "scale" / Byte,
+    Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 120),
+    Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
+    Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),
+    Const(b"\x00\x05"), "scale"         / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x06"),
-    "UNKNOWN-2" / Byte,
+    Const(b"\x00\x06"), "unknown2"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x07"),
-    "delay_time" / Byte,
-    Const(b"\x00\x08"),
-    "delay_mix" / Byte,
-    Const(b"\x00\x09"),
-    "arp_direction" / Byte,
-    Const(b"\x00\x0A"),
-    "arp_octaves" / Byte,
+    Const(b"\x00\x07"), "delay_time"    / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x08"), "delay_mix"     / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x09"), "arp_direction" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x0A"), "arp_octaves"   / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x0B"),
-    "seq_direction" / Byte,
-    Const(b"\x00\x0C"),
-    "range" / Byte,
+    Const(b"\x00\x0B"), "seq_direction" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x0C"), "range"         / Default(Midi1u(Byte), 16),
 
-    Const(b"\x20\x0D"),
-    "osc1_wave" / Short,
-    Const(b"\x20\x0E"),
-    "osc1_tune" / Short,
-    Const(b"\x00\x0F"),
-    "osc1_level" / Byte,
+    Const(b"\x20\x0D"), "osc1_wave"     / Default(Midi2u(Short), 0),
+    Const(b"\x20\x0E"), "osc1_tune"     / Default(Midi2s(Int16sb), 0),
+    Const(b"\x00\x0F"), "osc1_level"    / Default(Midi1u(Byte), 127),
 
-    Const(b"\x20\x10"),
-    "osc2_wave" / Short,
-    Const(b"\x20\x11"),
-    "osc2_tune" / Short,
-    Const(b"\x00\x12"),
-    "osc2_level" / Byte,
+    Const(b"\x20\x10"), "osc2_wave"     / Default(Midi2u(Short), 0),
+    Const(b"\x20\x11"), "osc2_tune"     / Default(Midi2s(Int16sb), 0),
+    Const(b"\x00\x12"), "osc2_level"    / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x13"),
-    "noise_level" / Byte,
+    Const(b"\x00\x13"), "noise_level"   / Default(Midi1u(Byte), 0),
 
-    Const(b"\x20\x14"),
-    "filter_cutoff" / Short,
-    Const(b"\x00\x15"),
-    "filter_mode" / Byte,
-    Const(b"\x00\x16"),
-    "filter_res" / Byte,
-    Const(b"\x00\x17"),
-    "filter_drive" / Byte,
-    Const(b"\x20\x18"),
-    "filter_env_amount" / Short,
+    Const(b"\x20\x14"), "filter_cutoff" / Default(Midi2u(Short), 512),
+    Const(b"\x00\x15"), "filter_mode"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x16"), "filter_res"    / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x17"), "filter_drive"  / Default(Midi1u(Byte), 0),
+    Const(b"\x20\x18"), "filter_env_amount" / Default(Midi2s(Int16sb), 0),
 
-    Const(b"\x20\x19"),
-    "filter_attack" / Short,
-    Const(b"\x20\x1A"),
-    "filter_delay" / Short,
-    Const(b"\x00\x1B"),
-    "filter_sustain" / Byte,
-    Const(b"\x20\x1C"),
-    "filter_release" / Short,
+    Const(b"\x20\x19"), "filter_attack" / Default(Midi2u(Short), 0),
+    Const(b"\x20\x1A"), "filter_delay"  / Default(Midi2u(Short), 0),
+    Const(b"\x00\x1B"), "filter_sustain" / Default(Midi1u(Byte), 0),
+    Const(b"\x20\x1C"), "filter_release" / Default(Midi2u(Short), 0),
 
-    Const(b"\x20\x1D"),
-    "envelope_attack" / Short,
-    Const(b"\x20\x1E"),
-    "envelope_delay" / Short,
-    Const(b"\x00\x1F"),
-    "envelope_sustain" / Byte,
-    Const(b"\x20\x20"),
-    "envelope_release" / Short,
+    Const(b"\x20\x1D"), "envelope_attack"   / Default(Midi2u(Short), 0),
+    Const(b"\x20\x1E"), "envelope_delay"    / Default(Midi2u(Short), 0),
+    Const(b"\x00\x1F"), "envelope_sustain"  / Default(Midi1u(Byte), 127),
+    Const(b"\x20\x20"), "envelope_release"  / Default(Midi2u(Short), 0),
 
-    Const(b"\x00\x21"),
-    "lfo_wave" / Byte,
-    Const(b"\x20\x22"),
-    "lfo_rate" / Short,
-    Const(b"\x20\x23"),
-    "lfo_pitch" / Short,
-    Const(b"\x20\x24"),
-    "lfo_filter" / Short,
+    Const(b"\x00\x21"), "lfo_wave"      / Default(Midi1u(Byte), 0),
+    Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 0),
+    Const(b"\x20\x23"), "lfo_pitch"     / Default(Midi2u(Short), 0),
+    Const(b"\x20\x24"), "lfo_filter"    / Default(Midi2u(Short), 0),
 
-    Const(b"\x00\x25"),
-    "tremolo_depth" / Byte, #0x81
-    Const(b"\x00\x26"),
-    "vibrato_depth" / Byte,
-    Const(b"\x00\x27"),
-    "wah_depth" / Byte,
-    Const(b"\x00\x28"),
-    "dive_amount" / Byte,
-    Const(b"\x00\x29"),
-    "scoop_amount" / Byte,
+    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2A"),
-    "seq_swing" / Byte, #0x90
-    Const(b"\x00\x2B"),
-    "pitch_bend" / Byte,
+    Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2C"),
-    "UNKNOWN-3" / Byte,
+    Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2D"),
-    "osc1_filter_env" / Byte, #0x99
-    Const(b"\x00\x2E"),
-    "osc2_filter_env" / Byte,
-    Const(b"\x00\x2F"),
-    "osc1_lfo" / Byte,
-    Const(b"\x00\x30"),
-    "osc2_lfo" / Byte,
+    Const(b"\x00\x2D"), "osc1_filter_env" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2E"), "osc2_filter_env" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2F"), "osc1_lfo"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x30"), "osc2_lfo"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x31"),
-    "UNKNOWN-4" / Byte,
-    Const(b"\x00\x32"),
-    "UNKNOWN-5" / Byte,
+    Const(b"\x00\x31"), "unknown4"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x32"), "unknown5"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x33"),
-    "osc1_shape_pwm" / Byte,
-    Const(b"\x00\x34"),
-    "osc2_shape_pwm" / Byte,
+    Const(b"\x00\x33"), "osc1_shape_pwm" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x34"), "osc2_shape_pwm" / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x35"),
-    "mod_vibrato" / Byte, #0xB1
-    Const(b"\x00\x36"),
-    "mod_wah" / Byte,
-    Const(b"\x00\x37"),
-    "mod_tremolo" / Byte,
-    Const(b"\x00\x38"),
-    "mod_cutoff" / Byte,
+    Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x36"), "mod_wah"       / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x37"), "mod_tremolo"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x38"), "mod_cutoff"    / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x39"),
-    "vel_amp" / Byte,   # 0xBD
-    Const(b"\x00\x3A"),
-    "vel_filter" / Byte,
-    Const(b"\x00\x3B"),
-    "vel_filter_env" / Byte,
+    Const(b"\x00\x39"), "vel_amp"       / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3A"), "vel_filter"    / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3B"), "vel_filter_env" / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x3C"),
-    "UNKNOWN-6" / Byte,
-    Const(b"\x00\x3D"),
-    "UNKNOWN-7" / Byte,
-    Const(b"\x00\x3E"),
-    "UNKNOWN-8" / Byte,
+    Const(b"\x00\x3C"), "unknown6"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3D"), "unknown7"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3E"), "unknown8"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x3F"),
-    "mod_lfo_rate" / Byte, #0xCF
-    Const(b"\x00\x40"),
-    "vel_lfo_rate" / Byte,
-    Const(b"\x00\x41"),
-    "amp_gate" / Byte, # Bizare encoding...
+    Const(b"\x00\x3F"), "mod_lfo_rate"  / Default(Midi1s(Int8sb), 0),
+    Const(b"\x00\x40"), "vel_lfo_rate"  / Default(Midi1s(Int8sb), 0),
+    Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),
+                                        # Something wrong with encoding...
 
-    Const(b"\x00\x42"),
-    "UNKNOWN-9" / Byte,
+    Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x43"),
-    "key_track" / Byte, #0xDB
+    Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 0),
     )
 
+# Sequencer portion of file
 Seq = Struct(
     "step" / Byte,
     "count" /Byte,
@@ -208,26 +175,28 @@ Seq = Struct(
 
         "element" / Switch(this.type,
         {
-           "SEQ00" : "Seq00" / Struct(
+           "SEQ00" : "Seq00" / Struct(  # Set by MIDI CC stored as 7bit
                 "param" / Enum(Byte,
-                    LEVEL1 = 15,
-                    LEVEL2 = 18,
-                    NOISE = 19,
-
                     MODE = 0,       # not sequencible?
-                    RES = 22,
-                    DRIVE = 23,
                     ENV_AMT = 24,
-
-                    DELAY_T = 7,
                     DELAY_M = 8,
 
+                    osc1_level = 15,        # CC 12
+                    osc2_level = 18,        # CC 13
+                    noise_level = 19,       # CC 14
+
+                    filter_res = 22,        # CC 21
+                    filter_drive = 23,      # CC 22
+
+                    delay_time = 7,         # CC 81
+
+                    filter_sustain = 27,    # CC 46
+                    amp_sustain = 31,       # CC 26
                 ),
-                "par2" / Byte,
+                "value" / Midi1u(Byte),
             ),
             "SEQ16" : "Seq16" / Struct(	# seen in 'PLUCK Castle Time'
-                "par1" / Byte,
-                "par2" / Byte,
+                "value" / Midi2u(Short),
             ),
             "PARAM" : "SeqParam" / Struct(
                 "param" / Enum(Byte,
@@ -253,9 +222,10 @@ Seq = Struct(
 
                     CUTOFF = 20,
                     GLIDE = 4,
+
+                    filter_env_amount = 24,     # CC 23
                 ),
-                "before" / Byte,
-                "after" / Byte,
+                "value" / Midi2u(Short),
             ),
             "SEQ48" : "Seq48" / Struct(
                 "param" / Enum(Byte,
@@ -265,14 +235,13 @@ Seq = Struct(
                     VAL_25 = 25,
                     VAL_35 = 35,
                 ),
-                "val_hi" / Byte,        # 16bit signed
-                "val_lo" / Byte,
+                "value" / Midi2u(Short),
             ),
             "NOTE" : "SeqNote" / Struct(
                 Const(b"\x00"),
                 "note" /Byte,
-                "vel" / Byte,
-                "len" / Byte,
+                "velocity" / Byte,
+                "length" / Byte,
                 Const(b"\x00"),
             ),
         },
@@ -299,6 +268,9 @@ def main():
     parser = OptionParser(usage)
     parser.add_option("-v", "--verbose",
         action="store_true", dest="verbose")
+    parser.add_option("-i", "--init",
+        help="create an initial(empty) patch",
+        action="store_true", dest="init")
     parser.add_option("-d", "--dump",
         help="dump configuration/sequence to text",
         action="store_true", dest="dump")
@@ -385,6 +357,9 @@ def main():
 
 
     # check whether we've already got data
+    if data == None and options.init:
+        data = Config.build({})
+
     if data == None:
         if len(args) != 1:
             parser.error("config FILE not specified")
@@ -405,7 +380,7 @@ def main():
 
     # When reading from UNO, write data to file.
     if _hasMido:
-        if options.read and data and len(args) == 1:
+        if (options.read or options.init) and data and len(args) == 1:
             outfile = open(args[0], "wb")
             if not outfile:
                 sys.exit("Unable to open config FILE for writing")
