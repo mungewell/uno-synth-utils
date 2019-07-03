@@ -4,28 +4,7 @@
 # (c) Simon Wood, 18 June 2019
 #
 
-import sys
-import os
-import time
-from optparse import OptionParser
 from construct import *
-
-#--------------------------------------------------
-# For Midi capabilites (optional)
-
-global inport
-global outport
-
-try:
-    import mido
-    _hasMido = True
-    if sys.platform == 'win32':
-        mido.set_backend('mido.backends.rtmidi_python')
-except ImportError:
-    _hasMido = False
-'''
-_hasMido = False
-'''
 
 #--------------------------------------------------
 # Define file format using Construct (v2.9)
@@ -167,9 +146,9 @@ Seq = Struct(
     "elements" / Array(this.count, Struct(
         "element" / BitStruct(
             Padding(1),
-            "type" / BitsInteger(2),
-            "port" / BitsInteger(1),            # guess generally 0, but 1 in some presets
-            "channel" / BitsInteger(4),         # complete guess.... only seen 0
+            "type" / Default(BitsInteger(2), 2),
+            "port" / Default(BitsInteger(1), 0),    # guess generally 0, but 1 in some presets
+            "channel" / Default(BitsInteger(4), 0), # complete guess.... only seen 0
         ),
 
         "data" / Switch(this.element.type,
@@ -186,7 +165,7 @@ Seq = Struct(
                     delay_mix = 8,              # CC 80
                     delay_time = 7,             # CC 81
                 ),
-                "value" / Midi1u(Byte),
+                "value" / Default(Midi1u(Byte), 0),
             ),
             1 : "midi2" / Struct(               # data stored as 14bit
                 "midi2" / Enum(Byte,
@@ -206,13 +185,13 @@ Seq = Struct(
                     lfo_to_pitch = 35,          # CC 68
                     lfo_to_filter_cutoff = 36,  # CC 69
                 ),
-                "value" / Midi2u(Short),
+                "value" / Default(Midi2u(Short), 0),
             ),
             2 : "SeqNote" / Struct(
                 Const(b"\x00"),
-                "note" /Byte,
-                "velocity" / Byte,
-                "length" / Byte,
+                "note" / Default(Midi1u(Byte), 60),
+                "velocity" / Default(Midi1u(Byte), 127),
+                "length" / Default(Midi1u(Byte), 1),
                 Const(b"\x00"),
             ),
         },
@@ -226,7 +205,6 @@ Uno = Sequence(
 )
 
 #--------------------------------------------------
-
 
 def main():
     global config
@@ -361,5 +339,28 @@ def main():
 
 
 if __name__ == "__main__":
+    import sys
+    import os
+    import time
+    from optparse import OptionParser
+
+    #--------------------------------------------------
+    # For Midi capabilites (optional)
+    
+    global inport
+    global outport
+    global _hasMido
+    
+    try:
+        import mido
+        _hasMido = True
+        if sys.platform == 'win32':
+            mido.set_backend('mido.backends.rtmidi_python')
+    except ImportError:
+        _hasMido = False
+    '''
+    _hasMido = False
+    '''
+
     main()
 
