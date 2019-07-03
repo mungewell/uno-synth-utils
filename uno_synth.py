@@ -99,7 +99,7 @@ Config = Struct(
     Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 0),
     Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),
     Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 0),
 
     Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),
