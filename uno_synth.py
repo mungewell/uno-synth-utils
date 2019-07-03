@@ -130,8 +130,8 @@ Config = Struct(
     Const(b"\x00\x2F"), "osc1_lfo"      / Default(Midi1u(Byte), 0),
     Const(b"\x00\x30"), "osc2_lfo"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x31"), "unknown4"      / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x32"), "unknown5"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x31"), "filter_to_osc1_wave" / Default(Midi1u(Byte), 0),   # only settable by CC50
+    Const(b"\x00\x32"), "filter_to_osc2_wave" / Default(Midi1u(Byte), 0),   # only settable by CC51
 
     Const(b"\x00\x33"), "osc1_shape_pwm" / Default(Midi1u(Byte), 0),
     Const(b"\x00\x34"), "osc2_shape_pwm" / Default(Midi1u(Byte), 0),
@@ -165,79 +165,50 @@ Seq = Struct(
     "count" /Byte,
 
     "elements" / Array(this.count, Struct(
-        "type" / Enum(Byte,
-            SEQ00 = 0,
-            SEQ16 = 16,
-            PARAM = 32,
-            SEQ48 = 48,
-            NOTE = 64,
+        "element" / BitStruct(
+            Padding(1),
+            "type" / BitsInteger(2),
+            "port" / BitsInteger(1),            # guess generally 0, but 1 in some presets
+            "channel" / BitsInteger(4),         # complete guess.... only seen 0
         ),
 
-        "element" / Switch(this.type,
+        "data" / Switch(this.element.type,
         {
-           "SEQ00" : "Seq00" / Struct(  # Set by MIDI CC stored as 7bit
-                "param" / Enum(Byte,
-                    MODE = 0,       # not sequencible?
-                    ENV_AMT = 24,
-                    DELAY_M = 8,
-
-                    osc1_level = 15,        # CC 12
-                    osc2_level = 18,        # CC 13
-                    noise_level = 19,       # CC 14
-
-                    filter_res = 22,        # CC 21
-                    filter_drive = 23,      # CC 22
-
-                    delay_time = 7,         # CC 81
-
-                    filter_sustain = 27,    # CC 46
-                    amp_sustain = 31,       # CC 26
+            0 : "midi1" / Struct(               # data stored as 7bit
+                "midi1" / Enum(Byte,
+                    osc1_level = 15,            # CC 12
+                    osc2_level = 18,            # CC 13
+                    noise_level = 19,           # CC 14
+                    filter_res = 22,            # CC 21
+                    filter_drive = 23,          # CC 22
+                    filter_sustain = 27,        # CC 46
+                    amp_sustain = 31,           # CC 26
+                    delay_mix = 8,              # CC 80
+                    delay_time = 7,             # CC 81
                 ),
                 "value" / Midi1u(Byte),
             ),
-            "SEQ16" : "Seq16" / Struct(	# seen in 'PLUCK Castle Time'
-                "value" / Midi2u(Short),
-            ),
-            "PARAM" : "SeqParam" / Struct(
-                "param" / Enum(Byte,
-                    WAVE1 = 13,
-                    WAVE2 = 16,
-                    TUNE1 = 14,
-                    TUNE2 = 17,
-
-                    FIL_A = 25,
-                    FIL_D = 26,
-                    FIL_S = 27,
-                    FIL_R = 28,
-
-                    ENC_A = 29,
-                    ENC_D = 30,
-                    ENC_S = 31,
-                    ENC_R = 32,
-
-                    LFO_WAVE = 0,       # not sequencible?
-                    LFO_RATE = 0,       # not sequencible?
-                    LFO_PITCH = 35,
-                    LFO_FILTER = 36,
-
-                    CUTOFF = 20,
-                    GLIDE = 4,
-
+            1 : "midi2" / Struct(               # data stored as 14bit
+                "midi2" / Enum(Byte,
+                    glide_time = 4,             # CC 5
+                    osc1_wave = 13,             # CC 15
+                    osc2_wave = 16,             # CC 16
+                    osc1_tune = 14,             # CC 17
+                    osc2_tune = 17,             # CC 18
+                    filter_cutoff = 20,         # CC 20
                     filter_env_amount = 24,     # CC 23
+                    amp_attack = 29,            # CC 24
+                    amp_decay = 30,             # CC 25
+                    amp_release = 32,           # CC 47
+                    filter_attack = 25,         # CC 44
+                    filter_decay = 26,          # CC 45
+                    filter_release = 28,        # CC 47
+                    lfo_to_pitch = 35,          # CC 68
+                    lfo_to_filter_cutoff = 36,  # CC 69
                 ),
                 "value" / Midi2u(Short),
             ),
-            "SEQ48" : "Seq48" / Struct(
-                "param" / Enum(Byte,
-                    VAL_4 = 4,          # '0xb0441c'
-                    VAL_20 = 20,        # '0xb0141b'
-                    VAL_24 = 24,        # Sends CC '0xb01723' -> 'Filter Env Amount'?
-                    VAL_25 = 25,
-                    VAL_35 = 35,
-                ),
-                "value" / Midi2u(Short),
-            ),
-            "NOTE" : "SeqNote" / Struct(
+            2 : "SeqNote" / Struct(
                 Const(b"\x00"),
                 "note" /Byte,
                 "velocity" / Byte,
