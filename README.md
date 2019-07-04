@@ -1,5 +1,5 @@
 # uno-synth-utils
-Scripts for controlling the IK UNO Synth
+Scripts for controlling the IK UNO Synth.
 
 Parsing of '*.unosyp' preset is done using the Python module 'Construct'
 https://github.com/construct/construct
@@ -22,12 +22,22 @@ Options:
                         directory
 ```
 
-Currently script supports selecting the preset on the device and
-downloading (from UNO to PC) the preset.
+Currently the script supports selecting the preset on the device and
+reading (from UNO to PC) the preset, if reading the config is saved
+to specified FILENAME.
 
-It can also 'dump' the config and sequencer sections of the preset file, 
-the dump is a text representation of the 'Construct' object. It can not 
-(yet) change the preset, but that is planned at some point...
+The 'backup' function selects all presets (21..100) in turn and saves
+them into the specified directory.
+
+The script can also be installed as a module, allowing the functions
+to be used to create/process '.unosyp' files within your own scripts.
+See the examples directory, 'scale.py' builds a config patch from 
+scratch with embedded sequence.
+
+The resultant 'Construct' object is really a combination of Python
+Lists and Dictionaries, and can be handled accordingly.
+
+The 'dump' function can be used to output a text representation.
 ```
 $ python3 uno_synth.py -d test/Factory\ 21-100/21.unosyp
 ListContainer: 
@@ -80,8 +90,8 @@ ListContainer:
         osc2_filter_env = 72
         osc1_lfo = 0
         osc2_lfo = 0
-        unknown4 = 0
-        unknown5 = 0
+        filter_to_osc1_wave = 0
+        filter_to_osc2_wave = 0
         osc1_shape_pwm = 0
         osc2_shape_pwm = 0
         mod_vibrato = 0
@@ -105,8 +115,11 @@ ListContainer:
             count = 1
             elements = ListContainer: 
                 Container: 
-                    type = (enum) NOTE 64
                     element = Container: 
+                        type = 2
+                        port = 0
+                        channel = 0
+                    data = Container: 
                         note = 51
                         velocity = 127
                         length = 1
@@ -115,8 +128,11 @@ ListContainer:
             count = 1
             elements = ListContainer: 
                 Container: 
-                    type = (enum) NOTE 64
                     element = Container: 
+                        type = 2
+                        port = 0
+                        channel = 0
+                    data = Container: 
                         note = 39
                         velocity = 125
                         length = 1
@@ -125,7 +141,7 @@ ListContainer:
 
 # SysEx control of the device
 
-Switch to preset X (ie 100 -> 0x64)
+Switch to preset 100 (ie 100 -> 0x64)
 ```
 $ amidi -p hw:1,0,0 -S 'f000211a02013364f7'
 ```
