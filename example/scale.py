@@ -1,7 +1,7 @@
 from uno_synth import *
 
 # Requires:
-# https://github.com/mungewell/music_essentials
+# https://github.com/charlottepierce/music_essentials
 from music_essentials import Note,Scale
 
 # build initial patch (basic triangle sound)
