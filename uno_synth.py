@@ -49,93 +49,93 @@ Config = Struct(
 
     Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 120),
     Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
-    Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),
+    Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),        # CC 5
     Const(b"\x00\x05"), "scale"         / Default(Midi1u(Byte), 0),
 
     Const(b"\x00\x06"), "unknown2"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x07"), "delay_time"    / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x08"), "delay_mix"     / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x09"), "arp_direction" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x0A"), "arp_octaves"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x07"), "delay_time"    / Default(Midi1u(Byte), 0),         # CC 81
+    Const(b"\x00\x08"), "delay_mix"     / Default(Midi1u(Byte), 0),         # CC 80
+    Const(b"\x00\x09"), "arp_direction" / Default(Midi1u(Byte), 0),         # CC 83
+    Const(b"\x00\x0A"), "arp_octaves"   / Default(Midi1u(Byte), 0),         # CC 84
 
-    Const(b"\x00\x0B"), "seq_direction" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x0C"), "range"         / Default(Midi1u(Byte), 16),
+    Const(b"\x00\x0B"), "seq_direction" / Default(Midi1u(Byte), 0),         # CC 86
+    Const(b"\x00\x0C"), "range"         / Default(Midi1u(Byte), 16),        # CC 87
 
-    Const(b"\x20\x0D"), "osc1_wave"     / Default(Midi2u(Short), 0),
-    Const(b"\x20\x0E"), "osc1_tune"     / Default(Midi2s(Int16sb), 0),
-    Const(b"\x00\x0F"), "osc1_level"    / Default(Midi1u(Byte), 127),
+    Const(b"\x20\x0D"), "osc1_wave"     / Default(Midi2u(Short), 0),        # CC 15
+    Const(b"\x20\x0E"), "osc1_tune"     / Default(Midi2s(Int16sb), 0),      # CC 17
+    Const(b"\x00\x0F"), "osc1_level"    / Default(Midi1u(Byte), 127),       # CC 12
 
-    Const(b"\x20\x10"), "osc2_wave"     / Default(Midi2u(Short), 0),
-    Const(b"\x20\x11"), "osc2_tune"     / Default(Midi2s(Int16sb), 0),
-    Const(b"\x00\x12"), "osc2_level"    / Default(Midi1u(Byte), 0),
+    Const(b"\x20\x10"), "osc2_wave"     / Default(Midi2u(Short), 0),        # CC 16
+    Const(b"\x20\x11"), "osc2_tune"     / Default(Midi2s(Int16sb), 0),      # CC 18
+    Const(b"\x00\x12"), "osc2_level"    / Default(Midi1u(Byte), 0),         # CC 13
 
-    Const(b"\x00\x13"), "noise_level"   / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x13"), "noise_level"   / Default(Midi1u(Byte), 0),         # CC 14
 
-    Const(b"\x20\x14"), "filter_cutoff" / Default(Midi2u(Short), 512),
-    Const(b"\x00\x15"), "filter_mode"   / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x16"), "filter_res"    / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x17"), "filter_drive"  / Default(Midi1u(Byte), 0),
-    Const(b"\x20\x18"), "filter_env_amount" / Default(Midi2s(Int16sb), 0),
+    Const(b"\x20\x14"), "filter_cutoff" / Default(Midi2u(Short), 512),      # CC 20
+    Const(b"\x00\x15"), "filter_mode"   / Default(Midi1u(Byte), 0),         # CC 19
+    Const(b"\x00\x16"), "filter_res"    / Default(Midi1u(Byte), 0),         # CC 21
+    Const(b"\x00\x17"), "filter_drive"  / Default(Midi1u(Byte), 0),         # CC 22
+    Const(b"\x20\x18"), "filter_env_amount" / Default(Midi2s(Int16sb), 0),  # CC 23
 
-    Const(b"\x20\x19"), "filter_attack" / Default(Midi2u(Short), 0),
-    Const(b"\x20\x1A"), "filter_delay"  / Default(Midi2u(Short), 0),
-    Const(b"\x00\x1B"), "filter_sustain" / Default(Midi1u(Byte), 0),
-    Const(b"\x20\x1C"), "filter_release" / Default(Midi2u(Short), 0),
+    Const(b"\x20\x19"), "filter_attack" / Default(Midi2u(Short), 0),        # CC 44
+    Const(b"\x20\x1A"), "filter_delay"  / Default(Midi2u(Short), 0),        # CC 45
+    Const(b"\x00\x1B"), "filter_sustain" / Default(Midi1u(Byte), 0),        # CC 46
+    Const(b"\x20\x1C"), "filter_release" / Default(Midi2u(Short), 0),       # CC 47
 
-    Const(b"\x20\x1D"), "envelope_attack"   / Default(Midi2u(Short), 0),
-    Const(b"\x20\x1E"), "envelope_delay"    / Default(Midi2u(Short), 0),
-    Const(b"\x00\x1F"), "envelope_sustain"  / Default(Midi1u(Byte), 127),
-    Const(b"\x20\x20"), "envelope_release"  / Default(Midi2u(Short), 0),
+    Const(b"\x20\x1D"), "envelope_attack"   / Default(Midi2u(Short), 0),    # CC 24
+    Const(b"\x20\x1E"), "envelope_delay"    / Default(Midi2u(Short), 0),    # CC 25
+    Const(b"\x00\x1F"), "envelope_sustain"  / Default(Midi1u(Byte), 127),   # CC 26
+    Const(b"\x20\x20"), "envelope_release"  / Default(Midi2u(Short), 0),    # CC 27
 
-    Const(b"\x00\x21"), "lfo_wave"      / Default(Midi1u(Byte), 0),
-    Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 0),
-    Const(b"\x20\x23"), "lfo_pitch"     / Default(Midi2u(Short), 0),
-    Const(b"\x20\x24"), "lfo_filter"    / Default(Midi2u(Short), 0),
+    Const(b"\x00\x21"), "lfo_wave"      / Default(Midi1u(Byte), 0),         # CC 66
+    Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 0),        # CC 67
+    Const(b"\x20\x23"), "lfo_pitch"     / Default(Midi2u(Short), 0),        # CC 68
+    Const(b"\x20\x24"), "lfo_filter"    / Default(Midi2u(Short), 0),        # CC 69
 
-    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 0),         # CC 70
+    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 0),         # CC 72
+    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 0),         # CC 71
+    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 0),         # CC 90
+    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 0),         # CC 92
 
-    Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),
-    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),        # CC 9
+    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 0),         # CC 101
 
     Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2D"), "osc1_filter_env" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x2E"), "osc2_filter_env" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x2F"), "osc1_lfo"      / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x30"), "osc2_lfo"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2D"), "osc1_filter_env" / Default(Midi1u(Byte), 0),       # CC 48
+    Const(b"\x00\x2E"), "osc2_filter_env" / Default(Midi1u(Byte), 0),       # CC 49
+    Const(b"\x00\x2F"), "osc1_lfo"      / Default(Midi1u(Byte), 0),         # CC 73
+    Const(b"\x00\x30"), "osc2_lfo"      / Default(Midi1u(Byte), 0),         # CC 74
 
     Const(b"\x00\x31"), "filter_to_osc1_wave" / Default(Midi1u(Byte), 0),   # only settable by CC50
     Const(b"\x00\x32"), "filter_to_osc2_wave" / Default(Midi1u(Byte), 0),   # only settable by CC51
 
-    Const(b"\x00\x33"), "osc1_shape_pwm" / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x34"), "osc2_shape_pwm" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x33"), "osc1_shape_pwm" / Default(Midi1u(Byte), 0),        # CC 75
+    Const(b"\x00\x34"), "osc2_shape_pwm" / Default(Midi1u(Byte), 0),        # CC 76
 
-    Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x36"), "mod_wah"       / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x37"), "mod_tremolo"   / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x38"), "mod_cutoff"    / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 0),         # CC 94
+    Const(b"\x00\x36"), "mod_wah"       / Default(Midi1u(Byte), 0),         # CC 95
+    Const(b"\x00\x37"), "mod_tremolo"   / Default(Midi1u(Byte), 0),         # CC 96
+    Const(b"\x00\x38"), "mod_cutoff"    / Default(Midi1u(Byte), 0),         # CC 97
 
-    Const(b"\x00\x39"), "vel_amp"       / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x3A"), "vel_filter"    / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x3B"), "vel_filter_env" / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x39"), "vel_amp"       / Default(Midi1u(Byte), 0),         # CC 102
+    Const(b"\x00\x3A"), "vel_filter"    / Default(Midi1u(Byte), 0),         # CC 103
+    Const(b"\x00\x3B"), "vel_filter_env" / Default(Midi1u(Byte), 0),        # CC 104
 
-    Const(b"\x00\x3C"), "unknown6"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3C"), "unknown6"      / Default(Midi1u(Byte), 0),         # CC 11
     Const(b"\x00\x3D"), "unknown7"      / Default(Midi1u(Byte), 0),
     Const(b"\x00\x3E"), "unknown8"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x3F"), "mod_lfo_rate"  / Default(Midi1s(Int8sb), 0),
-    Const(b"\x00\x40"), "vel_lfo_rate"  / Default(Midi1s(Int8sb), 0),
-    Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3F"), "mod_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 93
+    Const(b"\x00\x40"), "vel_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 105
+    Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),         # CC 85
                                         # Something wrong with encoding...
 
     Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 0),         # CC 106
     )
 
 # Sequencer portion of file
