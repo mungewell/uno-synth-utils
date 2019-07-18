@@ -1,7 +1,7 @@
 Synthmania/Sprite Voice.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 896
@@ -189,7 +189,7 @@ ListContainer:
 Synthmania/Persuaders Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -578,7 +578,7 @@ ListContainer:
 Synthmania/Corona Melody.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -984,7 +984,7 @@ ListContainer:
 Synthmania/Alien Talk.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -1081,7 +1081,7 @@ ListContainer:
 Synthmania/Yellow Puppet.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 2304
@@ -1217,7 +1217,7 @@ ListContainer:
 Synthmania/Ice Cream Truck.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 4
         glide = 0
@@ -1314,7 +1314,7 @@ ListContainer:
 Synthmania/Big In Japan.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -1541,7 +1541,7 @@ ListContainer:
 Synthmania/1001 Nights.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -1755,7 +1755,7 @@ ListContainer:
 Synthmania/Chameleon Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -1982,7 +1982,7 @@ ListContainer:
 Synthmania/Thunder Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 384
@@ -2170,7 +2170,7 @@ ListContainer:
 Synthmania/Euro Ambulance.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 4992
@@ -2254,7 +2254,7 @@ ListContainer:
 Synthmania/Planet Soul.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -2442,7 +2442,7 @@ ListContainer:
 Synthmania/Bass n Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 4
         glide = 0
@@ -2643,7 +2643,7 @@ ListContainer:
 Synthmania/VL Piano.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -2805,7 +2805,7 @@ ListContainer:
 Synthmania/I Like To Moov It.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 256
@@ -2941,7 +2941,7 @@ ListContainer:
 Synthmania/Alien Birds.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -3155,7 +3155,7 @@ ListContainer:
 Synthmania/Inside The CPU.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 4
         glide = 1664
@@ -3265,7 +3265,7 @@ ListContainer:
 Synthmania/Octopus.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -3349,7 +3349,7 @@ ListContainer:
 Synthmania/Warm Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 768
@@ -3576,7 +3576,7 @@ ListContainer:
 Synthmania/Anteater.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 384
@@ -3790,7 +3790,7 @@ ListContainer:
 Synthmania/Elvis Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1536
@@ -3965,7 +3965,7 @@ ListContainer:
 Synthmania/Pulsing Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1664
@@ -4205,7 +4205,7 @@ ListContainer:
 Synthmania/Lucky Squares.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1280
@@ -4302,7 +4302,7 @@ ListContainer:
 Synthmania/Cosmo Arp.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 102
         octave = 2
         glide = 4352
@@ -4709,7 +4709,7 @@ ListContainer:
 Synthmania/Under The Skin.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 9984
@@ -4793,7 +4793,7 @@ ListContainer:
 Synthmania/Synth Pop Seq.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 109
         octave = 5
         glide = 0
@@ -5200,7 +5200,7 @@ ListContainer:
 Synthmania/Funk Master.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1408
@@ -5401,7 +5401,7 @@ ListContainer:
 Synthmania/Ivory Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 2048
@@ -5602,7 +5602,7 @@ ListContainer:
 Synthmania/80s Bass 1.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -5937,7 +5937,7 @@ ListContainer:
 Synthmania/Laser Cannons.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -6073,7 +6073,7 @@ ListContainer:
 Synthmania/Big Room Squeeze.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -6196,7 +6196,7 @@ ListContainer:
 Synthmania/Distant Planet.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -6319,7 +6319,7 @@ ListContainer:
 Synthmania/Contagion.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 2944
@@ -6442,7 +6442,7 @@ ListContainer:
 Synthmania/70s Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -6669,7 +6669,7 @@ ListContainer:
 Synthmania/Electro Arpeggio.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 102
         octave = 2
         glide = 0
@@ -7076,7 +7076,7 @@ ListContainer:
 Synthmania/See You Lately.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -7342,7 +7342,7 @@ ListContainer:
 Synthmania/Wind Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -7556,7 +7556,7 @@ ListContainer:
 Synthmania/Venga Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -7835,7 +7835,7 @@ ListContainer:
 Synthmania/Disco Carnival.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 4
         glide = 0
@@ -8114,7 +8114,7 @@ ListContainer:
 Synthmania/Industrial Bass.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 384
@@ -8289,7 +8289,7 @@ ListContainer:
 Synthmania/Alien Rise.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -8412,7 +8412,7 @@ ListContainer:
 Synthmania/Thru The Night.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 108
         octave = 4
         glide = 4992
@@ -8691,7 +8691,7 @@ ListContainer:
 Synthmania/Mirrored Rave.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -8814,7 +8814,7 @@ ListContainer:
 Synthmania/50s Sci-Fi Vox.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 2432
@@ -8924,7 +8924,7 @@ ListContainer:
 Synthmania/Telstarry Eyes.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -9112,7 +9112,7 @@ ListContainer:
 Synthmania/Retro Sequence.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 2304
@@ -9261,7 +9261,7 @@ ListContainer:
 Synthmania/Faun Flute.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -9423,7 +9423,7 @@ ListContainer:
 Synthmania/Area 51.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 768
@@ -9507,7 +9507,7 @@ ListContainer:
 Synthmania/Badger Badger.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 102
         octave = 1
         glide = 3968
@@ -9786,7 +9786,7 @@ ListContainer:
 Synthmania/Snap Seq.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 102
         octave = 2
         glide = 0
@@ -10065,7 +10065,7 @@ ListContainer:
 Synthmania/Popcorn Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 5
         glide = 0
@@ -10344,7 +10344,7 @@ ListContainer:
 Synthmania/Rave Shield.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 0
@@ -10493,7 +10493,7 @@ ListContainer:
 Synthmania/Electro Sequence.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 102
         octave = 1
         glide = 0
@@ -10772,7 +10772,7 @@ ListContainer:
 Synthmania/Talk 2 Much.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 2944
@@ -10934,7 +10934,7 @@ ListContainer:
 Synthmania/Vampire Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 1408
@@ -11187,7 +11187,7 @@ ListContainer:
 Synthmania/Early Rave.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 1536
@@ -11427,7 +11427,7 @@ ListContainer:
 Synthmania/Paft Dunker.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 1792
@@ -11576,7 +11576,7 @@ ListContainer:
 Synthmania/Space Puppies.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -11699,7 +11699,7 @@ ListContainer:
 Synthmania/Lunar Base.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -11874,7 +11874,7 @@ ListContainer:
 Synthmania/Blue Ducks.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 8192
@@ -12010,7 +12010,7 @@ ListContainer:
 Synthmania/Sci-Fi Drone.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -12107,7 +12107,7 @@ ListContainer:
 Synthmania/Accordion.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -12386,7 +12386,7 @@ ListContainer:
 Synthmania/A Forest.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 7040
@@ -12522,7 +12522,7 @@ ListContainer:
 Synthmania/Space Gulls.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 4352
@@ -12632,7 +12632,7 @@ ListContainer:
 Synthmania/Morse Transmission.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 4
         glide = 2432
@@ -12820,7 +12820,7 @@ ListContainer:
 Synthmania/Fishing Boat.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 1280
@@ -12904,7 +12904,7 @@ ListContainer:
 Synthmania/Modular Lead.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 512
@@ -13118,7 +13118,7 @@ ListContainer:
 Synthmania/Clay Cats.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 2688
@@ -13332,7 +13332,7 @@ ListContainer:
 Synthmania/Rain & Wind.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 3840
@@ -13520,7 +13520,7 @@ ListContainer:
 Synthmania/Glacier Diva.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 1024
@@ -13656,7 +13656,7 @@ ListContainer:
 Synthmania/Hardcore Uproar.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -13935,7 +13935,7 @@ ListContainer:
 Synthmania/Antarctica.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 768
@@ -14045,7 +14045,7 @@ ListContainer:
 Synthmania/80s Bass 2.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 0
@@ -14324,7 +14324,7 @@ ListContainer:
 Synthmania/Dinosaur.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 1
         glide = 9088
@@ -14421,7 +14421,7 @@ ListContainer:
 Synthmania/Butterfly.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 640
@@ -14700,7 +14700,7 @@ ListContainer:
 Synthmania/Big Storm.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -14784,7 +14784,7 @@ ListContainer:
 Synthmania/Downpour.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 3
         glide = 0
@@ -14959,7 +14959,7 @@ ListContainer:
 Synthmania/Without Limits.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1024
@@ -15134,7 +15134,7 @@ ListContainer:
 Synthmania/PWM King.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 896
@@ -15309,7 +15309,7 @@ ListContainer:
 Synthmania/London Sequence.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 117
         octave = 2
         glide = 1024
