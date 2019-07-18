@@ -45,14 +45,13 @@ class Midi1s(Adapter):
 # Configuration portion of file
 Config = Struct(
     Const(b"\x00\x43"),
-    Const(b"\x00\x01"), "unknown1"      / Default(Midi1u(Byte), 2),
-
+    Const(b"\x00\x01"), "exttempo"      / Default(Midi1u(Byte), 2),         # used with external/midi clk
     Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 120),
     Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
     Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),        # CC 5
     Const(b"\x00\x05"), "scale"         / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x06"), "unknown2"      / Default(Midi1u(Byte), 0),         # also seen 8,9 in factory settings
+    Const(b"\x00\x06"), "unknown2"      / Default(Midi1u(Byte), 0),         # 0..11, seen 8,9 in factory settings
 
     Const(b"\x00\x07"), "delay_time"    / Default(Midi1u(Byte), 0),         # CC 81
     Const(b"\x00\x08"), "delay_mix"     / Default(Midi1u(Byte), 0),         # CC 80
@@ -125,15 +124,15 @@ Config = Struct(
     Const(b"\x00\x3B"), "vel_filter_env" / Default(Midi1u(Byte), 0),        # CC 104
 
     Const(b"\x00\x3C"), "unknown6"      / Default(Midi1u(Byte), 0),         # CC 11
-    Const(b"\x00\x3D"), "unknown7"      / Default(Midi1u(Byte), 0),
-    Const(b"\x00\x3E"), "unknown8"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x3D"), "unknown7"      / Default(Midi1u(Byte), 0),         # Limited to 0..1
+    Const(b"\x00\x3E"), "unknown8"      / Default(Midi1u(Byte), 0),         # Limited to 0..1
 
     Const(b"\x00\x3F"), "mod_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 93
     Const(b"\x00\x40"), "vel_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 105
     Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),         # CC 85
                                         # Something wrong with encoding...
 
-    Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 1),
+    Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 1),         # Limited to 0..1
 
     Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 0),         # CC 106
     )
