@@ -50,8 +50,7 @@ Config = Struct(
     Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
     Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),        # CC 5
     Const(b"\x00\x05"), "scale"         / Default(Midi1u(Byte), 0),
-
-    Const(b"\x00\x06"), "unknown2"      / Default(Midi1u(Byte), 0),         # 0..11, seen 8,9 in factory settings
+    Const(b"\x00\x06"), "scalekey"      / Default(Midi1u(Byte), 0),         # 0=C, 1=C# ... 11=B
 
     Const(b"\x00\x07"), "delay_time"    / Default(Midi1u(Byte), 0),         # CC 81
     Const(b"\x00\x08"), "delay_mix"     / Default(Midi1u(Byte), 0),         # CC 80
@@ -132,9 +131,9 @@ Config = Struct(
     Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),         # CC 85
                                         # Something wrong with encoding...
 
-    Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 1),         # Limited to 0..1
+    Const(b"\x00\x42"), "unknown9"      / Default(Midi1u(Byte), 0),         # Limited to 0..1
 
-    Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 0),         # CC 106
+    Const(b"\x00\x43"), "key_track"     / Default(Midi1u(Byte), 64),         # CC 106
     )
 
 # Sequencer portion of file
