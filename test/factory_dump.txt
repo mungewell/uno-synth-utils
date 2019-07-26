@@ -6,7 +6,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -181,7 +181,7 @@ ListContainer:
         octave = 3
         glide = 5632
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 95
         delay_mix = 80
         arp_direction = 2
@@ -453,7 +453,7 @@ ListContainer:
         octave = 3
         glide = 2432
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 87
         delay_mix = 49
         arp_direction = 2
@@ -761,7 +761,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 13
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -949,7 +949,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 3
         delay_mix = 18
         arp_direction = 2
@@ -1041,7 +1041,7 @@ ListContainer:
         octave = 1
         glide = 256
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 56
         delay_mix = 26
         arp_direction = 2
@@ -1307,7 +1307,7 @@ ListContainer:
         octave = 2
         glide = 1024
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 108
         delay_mix = 30
         arp_direction = 4
@@ -1456,7 +1456,7 @@ ListContainer:
         octave = 3
         glide = 1408
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 46
         delay_mix = 76
         arp_direction = 2
@@ -1592,7 +1592,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 118
         arp_direction = 2
@@ -1676,7 +1676,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 75
         delay_mix = 118
         arp_direction = 0
@@ -1838,7 +1838,7 @@ ListContainer:
         octave = 3
         glide = 4992
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 115
         delay_mix = 127
         arp_direction = 2
@@ -1922,7 +1922,7 @@ ListContainer:
         octave = 2
         glide = 896
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -2110,7 +2110,7 @@ ListContainer:
         octave = 3
         glide = 1280
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 38
         delay_mix = 67
         arp_direction = 2
@@ -2246,7 +2246,7 @@ ListContainer:
         octave = 4
         glide = 1664
         scale = 2
-        unknown2 = 9
+        scale_key = 9
         delay_time = 117
         delay_mix = 127
         arp_direction = 4
@@ -2408,7 +2408,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 21
         delay_mix = 88
         arp_direction = 2
@@ -2492,7 +2492,7 @@ ListContainer:
         octave = 3
         glide = 3840
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 110
         delay_mix = 127
         arp_direction = 2
@@ -2576,7 +2576,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 103
         delay_mix = 36
         arp_direction = 2
@@ -2686,7 +2686,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 69
         delay_mix = 127
         arp_direction = 2
@@ -2913,7 +2913,7 @@ ListContainer:
         octave = 1
         glide = 2944
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -3062,7 +3062,7 @@ ListContainer:
         octave = 1
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 124
         delay_mix = 0
         arp_direction = 0
@@ -3172,7 +3172,7 @@ ListContainer:
         octave = 4
         glide = 2432
         scale = 2
-        unknown2 = 8
+        scale_key = 8
         delay_time = 127
         delay_mix = 72
         arp_direction = 2
@@ -3321,7 +3321,7 @@ ListContainer:
         octave = 3
         glide = 1792
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 67
         arp_direction = 2
@@ -3509,7 +3509,7 @@ ListContainer:
         octave = 1
         glide = 2304
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 4
@@ -3684,7 +3684,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 106
         delay_mix = 121
         arp_direction = 0
@@ -3768,7 +3768,7 @@ ListContainer:
         octave = 3
         glide = 4352
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -3865,7 +3865,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 77
         delay_mix = 58
         arp_direction = 2
@@ -3949,7 +3949,7 @@ ListContainer:
         octave = 2
         glide = 2304
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 4
@@ -4033,7 +4033,7 @@ ListContainer:
         octave = 2
         glide = 3840
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 126
         delay_mix = 0
         arp_direction = 2
@@ -4117,7 +4117,7 @@ ListContainer:
         octave = 3
         glide = 4352
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -4240,7 +4240,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -4441,7 +4441,7 @@ ListContainer:
         octave = 1
         glide = 3968
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 49
         arp_direction = 4
@@ -4590,7 +4590,7 @@ ListContainer:
         octave = 1
         glide = 4992
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 98
         arp_direction = 2
@@ -4862,7 +4862,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 13
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -5037,7 +5037,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -5225,7 +5225,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -5309,7 +5309,7 @@ ListContainer:
         octave = 2
         glide = 6016
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 55
         delay_mix = 98
         arp_direction = 2
@@ -5581,7 +5581,7 @@ ListContainer:
         octave = 1
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 125
         delay_mix = 0
         arp_direction = 2
@@ -5769,7 +5769,7 @@ ListContainer:
         octave = 2
         glide = 3840
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 115
         delay_mix = 78
         arp_direction = 2
@@ -5853,7 +5853,7 @@ ListContainer:
         octave = 2
         glide = 384
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 4
@@ -6028,7 +6028,7 @@ ListContainer:
         octave = 1
         glide = 3840
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 48
         arp_direction = 2
@@ -6112,7 +6112,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 13
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -6235,7 +6235,7 @@ ListContainer:
         octave = 4
         glide = 2176
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 127
         arp_direction = 0
@@ -6410,7 +6410,7 @@ ListContainer:
         octave = 1
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 125
         delay_mix = 0
         arp_direction = 2
@@ -6572,7 +6572,7 @@ ListContainer:
         octave = 2
         glide = 2944
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -6734,7 +6734,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 66
         delay_mix = 101
         arp_direction = 0
@@ -6974,7 +6974,7 @@ ListContainer:
         octave = 3
         glide = 3968
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -7162,7 +7162,7 @@ ListContainer:
         octave = 4
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 69
         delay_mix = 80
         arp_direction = 2
@@ -7428,7 +7428,7 @@ ListContainer:
         octave = 2
         glide = 1024
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 105
         delay_mix = 68
         arp_direction = 2
@@ -7572,7 +7572,7 @@ ListContainer:
         octave = 2
         glide = 3840
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 126
         delay_mix = 73
         arp_direction = 2
@@ -7656,7 +7656,7 @@ ListContainer:
         octave = 2
         glide = 2944
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 69
         delay_mix = 58
         arp_direction = 4
@@ -7779,7 +7779,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 118
         arp_direction = 2
@@ -7863,7 +7863,7 @@ ListContainer:
         octave = 1
         glide = 4352
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -7947,7 +7947,7 @@ ListContainer:
         octave = 2
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 31
         delay_mix = 48
         arp_direction = 2
@@ -8083,7 +8083,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -8232,7 +8232,7 @@ ListContainer:
         octave = 1
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 125
         delay_mix = 0
         arp_direction = 2
@@ -8407,7 +8407,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 13
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -8491,7 +8491,7 @@ ListContainer:
         octave = 2
         glide = 1024
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 64
         delay_mix = 0
         arp_direction = 4
@@ -8627,7 +8627,7 @@ ListContainer:
         octave = 3
         glide = 5760
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 65
         arp_direction = 2
@@ -8789,7 +8789,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 90
         delay_mix = 77
         arp_direction = 2
@@ -8873,7 +8873,7 @@ ListContainer:
         octave = 3
         glide = 4992
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 84
         arp_direction = 2
@@ -9022,7 +9022,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 66
         arp_direction = 2
@@ -9184,7 +9184,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -9268,7 +9268,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -9417,7 +9417,7 @@ ListContainer:
         octave = 1
         glide = 768
         scale = 13
-        unknown2 = 0
+        scale_key = 0
         delay_time = 118
         delay_mix = 73
         arp_direction = 2
@@ -9501,7 +9501,7 @@ ListContainer:
         octave = 2
         glide = 2304
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 4
@@ -9637,7 +9637,7 @@ ListContainer:
         octave = 3
         glide = 1280
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 90
         delay_mix = 74
         arp_direction = 2
@@ -10073,7 +10073,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -10165,7 +10165,7 @@ ListContainer:
         octave = 4
         glide = 4992
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 65
         delay_mix = 44
         arp_direction = 2
@@ -10288,7 +10288,7 @@ ListContainer:
         octave = 2
         glide = 768
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -10424,7 +10424,7 @@ ListContainer:
         octave = 2
         glide = 3584
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -10573,7 +10573,7 @@ ListContainer:
         octave = 2
         glide = 2944
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -10748,7 +10748,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -11001,7 +11001,7 @@ ListContainer:
         octave = 3
         glide = 4992
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 62
         delay_mix = 91
         arp_direction = 2
@@ -11124,7 +11124,7 @@ ListContainer:
         octave = 2
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 127
         delay_mix = 0
         arp_direction = 2
@@ -11325,7 +11325,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 72
         delay_mix = 34
         arp_direction = 2
@@ -11539,7 +11539,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 125
         delay_mix = 100
         arp_direction = 0
@@ -11688,7 +11688,7 @@ ListContainer:
         octave = 3
         glide = 3456
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 123
         delay_mix = 43
         arp_direction = 2
@@ -12005,7 +12005,7 @@ ListContainer:
         octave = 2
         glide = 4352
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 69
         delay_mix = 66
         arp_direction = 2
@@ -12115,7 +12115,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 8
         delay_mix = 42
         arp_direction = 0
@@ -12341,7 +12341,7 @@ ListContainer:
         octave = 3
         glide = 0
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 69
         delay_mix = 80
         arp_direction = 2
