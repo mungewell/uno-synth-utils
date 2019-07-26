@@ -305,7 +305,7 @@ def main():
 
     # check whether we've already got data
     if data == None and options.init:
-        data = Config.build({})
+        data = Patch.build({})
 
     if data == None:
         if len(args) != 1:
