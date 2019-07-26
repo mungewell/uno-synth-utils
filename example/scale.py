@@ -5,7 +5,7 @@ from uno_synth import *
 from music_essentials import Note,Scale
 
 # build initial patch (basic triangle sound)
-data = Config.build({})
+data = Patch.build({})
 
 # now add a 'C Scale' to the sequence
 scale = Scale.build_scale(Note.from_note_string("C4"), "major")
