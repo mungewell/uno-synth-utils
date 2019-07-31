@@ -222,6 +222,9 @@ def main():
         help="dump configuration/sequence to text",
         action="store_true", dest="dump")
 
+    parser.add_option("-u", "--unknown", dest="unknown",
+        help="toggle 'unknown' parameter (3,6,7,8,9")
+
     if _hasMido:
         parser.add_option("-m", "--midi", dest="midi", default="UNO Synth",
             help="Select 'MIDI' device name")
@@ -320,6 +323,19 @@ def main():
 
         data = infile.read(2000)
         infile.close()
+
+    if options.unknown and data:
+        config = Uno.parse(data)
+        param = "unknown" + options.unknown
+        print("toggling param:", param)
+
+        if config[0][param]:
+            config[0][param] = 0
+        else:
+            config[0][param] = 1
+
+        data = Uno.build(config)
+
 
     if options.dump and data:
         config = Uno.parse(data)
