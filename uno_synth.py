@@ -281,25 +281,18 @@ def main():
             os.mkdir(path)
 
             for preset in range(21,101,1):
-                data=(0x00,0x21,0x1a,0x02,0x01,0x33,preset)
-                msg = mido.Message('sysex', data=data)
-                outport.send(msg)
-
-                # temp hack to allow UNO time to switch
-                time.sleep(1)
-
                 name = os.path.join(path, str(preset) + ".unosyp")
                 outfile = open(name, "wb")
                 if not outfile:
                     sys.exit("Unable to open config FILE for writing")
 
-                data=(0x00,0x21,0x1a,0x02,0x01,0x31)
+                data=(0x00,0x21,0x1a,0x02,0x01,0x24,0x00,preset)
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
                 for msg in inport:
                     if msg.type=='sysex':
-                        if len(msg.data) > 229 and msg.data[6]==0x31:
-                            data = bytes(msg.data[10:])
+                        if len(msg.data) > 228 and msg.data[6]==0x24:
+                            data = bytes(msg.data[9:])
                             break
 
                 outfile.write(data)
