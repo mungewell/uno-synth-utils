@@ -344,6 +344,23 @@ def main():
             outfile.write(patch)
             outfile.close()
 
+        if options.write and options.preset and patch:
+            data=(0x00,0x21,0x1a,0x02,0x01,0x11,0x01,0x0a)
+            msg = mido.Message('sysex', data=data)
+            outport.send(msg)
+
+            data=bytearray(b"\x00\x21\x1a\x02\x01\x23\x00")
+            data.append(int(options.preset))
+            data += patch
+            msg = mido.Message('sysex', data=data)
+            outport.send(msg)
+
+            # Official app writes a name...
+            data=(0x00,0x21,0x1a,0x02,0x01,0x35,0x01,int(options.preset), \
+                    0x55,0x73,0x65,0x72,0x20,0x50,0x72,0x65,0x73,0x65,0x74)
+            msg = mido.Message('sysex', data=data)
+            outport.send(msg)
+
 if __name__ == "__main__":
     import sys
     import os
