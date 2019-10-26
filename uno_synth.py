@@ -207,7 +207,7 @@ Uno = Sequence(
 def main():
     global config
 
-    data = None
+    patch = None
     inport = None
     outport = None
 
@@ -273,7 +273,7 @@ def main():
                 for msg in inport:
                     if msg.type=='sysex':
                         if len(msg.data) > 229 and msg.data[6]==0x31:
-                            data = bytes(msg.data[10:])
+                            patch = bytes(msg.data[10:])
                             break
 
         if options.backup:
@@ -292,18 +292,18 @@ def main():
                 for msg in inport:
                     if msg.type=='sysex':
                         if len(msg.data) > 228 and msg.data[6]==0x24:
-                            data = bytes(msg.data[9:])
+                            patch = bytes(msg.data[9:])
                             break
 
-                outfile.write(data)
+                outfile.write(patch)
                 outfile.close()
 
 
-    # check whether we've already got data
-    if data == None and options.init:
-        data = Patch.build({})
+    # check whether we've already got patch data
+    if patch == None and options.init:
+        patch = Patch.build({})
 
-    if data == None:
+    if patch == None:
         if len(args) != 1:
             parser.error("config FILE not specified")
 
@@ -314,11 +314,11 @@ def main():
         if not infile:
             sys.exit("Unable to open config FILE for reading")
 
-        data = infile.read(2000)
+        patch = infile.read(2000)
         infile.close()
 
-    if options.unknown and data:
-        config = Uno.parse(data)
+    if options.unknown and patch:
+        config = Uno.parse(patch)
         param = "unknown" + options.unknown
         print("toggling param:", param)
 
@@ -327,23 +327,22 @@ def main():
         else:
             config[0][param] = 1
 
-        data = Uno.build(config)
+        patch = Uno.build(config)
 
 
-    if options.dump and data:
-        config = Uno.parse(data)
+    if options.dump and patch:
+        config = Uno.parse(patch)
         print(config)
 
-    # When reading from UNO, write data to file.
     if _hasMido:
-        if (options.read or options.init) and data and len(args) == 1:
+        # When reading from UNO, write data to file.
+        if (options.read or options.init) and patch and len(args) == 1:
             outfile = open(args[0], "wb")
             if not outfile:
                 sys.exit("Unable to open config FILE for writing")
 
-            outfile.write(data)
+            outfile.write(patch)
             outfile.close()
-
 
 if __name__ == "__main__":
     import sys
