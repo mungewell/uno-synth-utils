@@ -192,6 +192,18 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C
 000000ff
 ```
 
+CMD 0x24+0x01: This maybe reading back name (set by editor with command 0x35)
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+43 bytes read
+00000000  f0 00 21 1a 02 01 00 24  01 2c 00 00 00 00 00 00  |..!....$.,......|
+00000010  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000020  00 00 00 00 00 00 00 00  00 00 f7                 |...........|
+0000002b
+```
+
+
 CMD 0x22: Read a parameter??, though don't seem to change or align with settings in preset.
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 00 01 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
@@ -211,20 +223,15 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 20 03 f7' -r temp.bin -t 1 ; hexdump -
 12 bytes read
 00000000  f0 00 21 1a 02 01 00 22  00 03 00 f7              |..!...."....|
 0000000c
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 4 1 0 1 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+15 bytes read
+00000000  f0 00 21 1a 02 01 00 22  00 01 01 00 01 01 f7     |..!....".......|
+0000000f
 ```
 
-CMD 0x24: This maybe reading back name (set by editor with command 0x35)
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
-
-43 bytes read
-00000000  f0 00 21 1a 02 01 00 24  01 2c 00 00 00 00 00 00  |..!....$.,......|
-00000010  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
-00000020  00 00 00 00 00 00 00 00  00 00 f7                 |...........|
-0000002b
-```
-
-CMD 0x30: Writes sequence to current preset (ie. not saved), if playing changes at end of seqeunce
+CMD 0x30: Writes sequence to current preset (ie. not saved), if playing changes at end of sequence
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
                                                                ^^ const 0x00
@@ -239,4 +246,56 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bi
 00000009
 
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 08 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+```
+
+Or send a complete patch...
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 43 0 1 2 20 2 0 78 0 3 2 20 4 7 0 0 5 0 0 6 0 0 7 46 0 8 0 0 9 4 0 a 2 0 b 0 0 c 10 20 d 2 1b 20 e 0 0 0 f 7f 20 10 0 1 20 11 7f 4b 0 12 7f 0 13 53 20 14 1 2c 0 15 0 0 16 2d 0 17 54 20 18 0 29 20 19 0 0 20 1a 0 0 0 1b 0 20 1c 1 7f 20 1d 0 14 20 1e 0 59 0 1f 2e 20 20 1 41 0 21 0 20 22 2 68 20 23 0 46 20 24 0 3f 0 25 59 0 26 40 0 27 1e 0 28 15 0 29 15 0 2a 35 0 2b 14 0 2c 0 0 2d 40 0 2e 48 0 2f 0 0 30 0 0 31 0 0 32 0 0 33 0 0 34 0 0 35 0 0 36 0 0 37 0 0 38 0 0 39 0 0 3a 0 0 3b 0 0 3c 0 0 3d 0 0 3e 0 0 3f 0 0 40 0 0 41 0 0 42 1 0 43 40 1 1 40 0 33 7f 1 0 2 1 40 0 27 7d 1 0 4 1 40 0 33 7d 1 0 6 1 40 0 31 7a 1 0 7 1 40 0 2e 72 1 0 9 1 40 0 36 76 1 0 b 1 40 0 38 7d 1 0 d 1 40 0 38 76 2 0 e 1 40 0 36 6a 5 0  f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+```
+
+Can also be used to change specific param(s) (range in this case)
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 1 00 0c 8 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+```
+
+Seq state
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 14 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+13 bytes read
+00000000  f0 00 21 1a 02 01 00 14  02 44 17 02 f7           |..!......D...|
+                                         ^^ Patch 
+                                       ^ Toggles 0<->4, unknown
+                                      ^ 4=SEQ lit
+00000000  f0 00 21 1a 02 01 00 14  02 00 17 42 f7           |..!........B.|
+                                            ^ 4=ARP lit
+00000000  f0 00 21 1a 02 01 00 14  02 0c 17 42 f7           |..!........B.|
+                                       ^ 8=Hold lit
+00000000  f0 00 21 1a 02 01 00 14  02 45 17 02 f7           |..!......E...|
+                                       ^ 1=PLAY lit
+00000000  f0 00 21 1a 02 01 00 14  02 46 15 02 f7           |..!......F...|
+                                       ^ 2 = Rec (flashing)
+00000000  f0 00 21 1a 02 01 00 14  02 54 14 02 f7           |..!......T...|
+                                      ^ 1=Metronome
+
+00000000  f0 00 21 1a 02 01 00 14  01 f7                    |..!.......|
+                                    ^ Tuning
+
+```
+
+System Reset, reboots and re-cals
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 10 0 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+10 bytes read
+00000000  f0 00 21 1a 02 01 32 15  15 f7                    |..!...2...|
+0000000a
 ```
