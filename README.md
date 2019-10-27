@@ -144,12 +144,12 @@ ListContainer:
 
 # Handcrafted SysEx control of the device
 
-Switch to preset 100 (ie 100 -> 0x64)
+CMD 0x33: Switch to preset 100 (ie 100 -> 0x64)
 ```
 $ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 33 64 f7'
 ```
 
-Download and process current preset
+CMD 0x31: Download and process current preset
 (note: may be interspersed with midi clock -> set sync external)
 ```
 amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 31 f7'  -r prog.bin -t 1
@@ -158,7 +158,7 @@ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 31 f7'  -r prog.bin -t 1
 dd bs=1024 count=1 skip=19 iflag=skip_bytes if=prog.bin of=prog.unosyp
 ```
 
-Read F/W version
+CMD 0x12: Read F/W version
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 12 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
 
@@ -168,7 +168,7 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 12 f7' -r temp.bin -t 1 ; hexdump -C temp
 0000001c
 ```
 
-Read back patch without having to select it
+CMD 0x24: Read back specific patch without having to select it
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
@@ -192,22 +192,28 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C
 000000ff
 ```
 
+CMD 0x22: Read a parameter??, though don't seem to change or align with settings in preset.
 ```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 00 01 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
-9 bytes read
-00000000  f0 00 21 1a 02 01 00 22  f7                       |..!....".|
-00000009
+12 bytes read
+00000000  f0 00 21 1a 02 01 00 22  00 01 01 f7              |..!...."....|
+0000000c
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 20 01 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+12 bytes read
+00000000  f0 00 21 1a 02 01 00 22  00 01 01 f7              |..!...."....|
+0000000c
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 20 03 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+12 bytes read
+00000000  f0 00 21 1a 02 01 00 22  00 03 00 f7              |..!...."....|
+0000000c
 ```
 
-This command returns nothing... strange.
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 27 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
-
-0 bytes read
-```
-
-This maybe reading back name (set with command 0x23)
+CMD 0x24: This maybe reading back name (set by editor with command 0x35)
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
@@ -218,3 +224,19 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C
 0000002b
 ```
 
+CMD 0x30: Writes sequence to current preset (ie. not saved), if playing changes at end of seqeunce
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+                                                               ^^ const 0x00
+                                                            ^^ Length
+                                                         ^^ Velocity
+                                                      ^^ Note
+                                                ^^ ^^ "SeqNote" + const 0x00
+                                             ^^ Item count
+                                          ^^ Step
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 08 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+```
