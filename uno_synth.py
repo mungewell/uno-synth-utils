@@ -238,11 +238,14 @@ def main():
             action="store_true")
         parser.add_option("-B", "--backup", dest="backup",
             help="Backup all presets (21-100) from UNO to 'BACKUP' directory")
+        parser.add_option("-R", "--restore", dest="restore",
+            help="Restore all presets (21-100) from 'BACKUP' directory to UNO")
 
     (options, args) = parser.parse_args()
 
     if _hasMido:
-        if options.preset or options.read or options.write or options.backup:
+        if options.preset or options.read or options.write or options.backup \
+                or options.restore:
             if sys.platform == 'win32':
                 name = bytes(options.midi, 'ascii')
             else:
@@ -303,7 +306,7 @@ def main():
     if patch == None and options.init:
         patch = Patch.build({})
 
-    if patch == None:
+    if patch == None and not options.restore:
         if len(args) != 1:
             parser.error("config FILE not specified")
 
@@ -360,6 +363,37 @@ def main():
                     0x55,0x73,0x65,0x72,0x20,0x50,0x72,0x65,0x73,0x65,0x74)
             msg = mido.Message('sysex', data=data)
             outport.send(msg)
+
+        if options.restore:
+            path = os.path.join(os.getcwd(), options.restore)
+
+            for preset in range(21,101,1):
+                name = os.path.join(path, str(preset) + ".unosyp")
+                infile = open(name, "rb")
+                if not infile:
+                    break
+
+                patch = infile.read(2000)
+                infile.close()
+
+                data=(0x00,0x21,0x1a,0x02,0x01,0x11,0x01,0x0a)
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+
+                data=bytearray(b"\x00\x21\x1a\x02\x01\x23\x00")
+                data.append(preset)
+                data += patch
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+
+                # Official app writes a name...
+                data=(0x00,0x21,0x1a,0x02,0x01,0x35,0x01,preset, \
+                        0x55,0x73,0x65,0x72,0x20,0x50,0x72,0x65,0x73,0x65,0x74)
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
+
+                # temp hack to allow UNO time to switch
+                time.sleep(1)
 
 if __name__ == "__main__":
     import sys

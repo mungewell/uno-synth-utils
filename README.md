@@ -17,17 +17,29 @@ Options:
   -p PRESET, --preset=PRESET
                         Select 'PRESET' and use in MIDI operations
   -r, --read            Read current (or 'PRESET') config from UNO
+  -w, --write           Read write config to 'PRESET' on attached UNO
   -B BACKUP, --backup=BACKUP
                         Backup all presets (21-100) from UNO to 'BACKUP'
                         directory
+  -R RESTORE, --restore=RESTORE
+                        Restore all presets (21-100) from 'BACKUP' directory
+                        to UNO
 ```
 
-Currently the script supports selecting the preset on the device and
-reading (from UNO to PC) the preset, if reading the config is saved
-to specified FILENAME.
+Currently the script supports selecting the preset on the device,
+reading (from UNO to PC) and writing (from PC to UNO) the presets.
+
+When reading and writing the config is saved to/from specified FILENAME.
 
 The 'backup' function selects all presets (21..100) in turn and saves
-them into the specified directory.
+them into the specified directory. A directory of patches (21..100)
+can be uploaded to the UNO with the 'restore' function.
+
+An initial patch can be created with 'init' function, this could be
+created and upload to preset 21 with
+```
+$ python3 uno_synth.py -i -p 21 -w
+```
 
 The script can also be installed as a module, allowing the functions
 to be used to create/process '.unosyp' files within your own scripts.
@@ -42,12 +54,12 @@ The 'dump' function can be used to output a text representation.
 $ python3 uno_synth.py -d test/Factory\ 21-100/21.unosyp
 ListContainer: 
     Container: 
-        unknown1 = 2
+        exttempo = 2
         tempo = 120
         octave = 2
         glide = 896
         scale = 0
-        unknown2 = 0
+        scale_key = 0
         delay_time = 70
         delay_mix = 0
         arp_direction = 4
@@ -127,30 +139,82 @@ ListContainer:
             step = 2
             count = 1
             elements = ListContainer: 
-                Container: 
-                    element = Container: 
-                        type = 2
-                        port = 0
-                        channel = 0
-                    data = Container: 
-                        note = 39
-                        velocity = 125
-                        length = 1
 ...
 ```
 
-# SysEx control of the device
+# Handcrafted SysEx control of the device
 
 Switch to preset 100 (ie 100 -> 0x64)
 ```
-$ amidi -p hw:1,0,0 -S 'f000211a02013364f7'
+$ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 33 64 f7'
 ```
 
 Download and process current preset
 (note: may be interspersed with midi clock -> set sync external)
 ```
-amidi -p hw:1,0,0 -S 'f000211a020131f7'  -r prog.bin -t 1
+amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 31 f7'  -r prog.bin -t 1
 
 # Strip off extra bits to get at 'config file' portion (note leaves 0x7f at end)
 dd bs=1024 count=1 skip=19 iflag=skip_bytes if=prog.bin of=prog.unosyp
 ```
+
+Read F/W version
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 12 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+28 bytes read
+00000000  f0 00 21 1a 02 01 00 12  01 30 31 2e 31 34 20 23  |..!......01.14 #|
+00000010  23 2e 23 23 20 23 23 2e  23 23 00 f7              |#.## ##.##..|
+0000001c
+```
+
+Read back patch without having to select it
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+255 bytes read
+00000000  f0 00 21 1a 02 01 00 24  00 2c 00 43 00 01 02 20  |..!....$.,.C... |
+00000010  02 01 04 00 03 01 20 04  06 00 00 05 00 00 06 00  |...... .........|
+00000020  00 07 67 00 08 24 00 09  02 00 0a 02 00 0b 00 00  |..g..$..........|
+00000030  0c 10 20 0d 02 59 20 0e  00 00 00 0f 73 20 10 00  |.. ..Y .....s ..|
+00000040  39 20 11 7f 6e 00 12 73  00 13 00 20 14 00 01 00  |9 ..n..s... ....|
+00000050  15 01 00 16 24 00 17 37  20 18 00 40 20 19 01 31  |....$..7 ..@ ..1|
+00000060  20 1a 00 39 00 1b 00 20  1c 01 7f 20 1d 00 00 20  | ..9... ... ... |
+00000070  1e 00 00 00 1f 7f 20 20  00 78 00 21 00 20 22 05  |......  .x.!. ".|
+00000080  2c 20 23 00 00 20 24 00  00 00 25 59 00 26 40 00  |, #.. $...%Y.&@.|
+00000090  27 1e 00 28 15 00 29 15  00 2a 32 00 2b 14 00 2c  |'..(..)..*2.+..,|
+000000a0  00 00 2d 3f 00 2e 3f 00  2f 00 00 30 00 00 31 00  |..-?..?./..0..1.|
+000000b0  00 32 00 00 33 00 00 34  00 00 35 00 00 36 00 00  |.2..3..4..5..6..|
+000000c0  37 00 00 38 7f 00 39 00  00 3a 00 00 3b 00 00 3c  |7..8..9..:..;..<|
+000000d0  00 00 3d 00 00 3e 00 00  3f 00 00 40 00 00 41 00  |..=..>..?..@..A.|
+000000e0  00 42 01 00 43 00 01 01  40 00 1c 7f 16 00 0d 01  |.B..C...@.......|
+000000f0  40 00 1f 7f 04 00 0f 01  40 00 21 7f 03 00 f7     |@.......@.!....|
+000000ff
+```
+
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 22  f7                       |..!....".|
+00000009
+```
+
+This command returns nothing... strange.
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 27 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+0 bytes read
+```
+
+This maybe reading back name (set with command 0x23)
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+43 bytes read
+00000000  f0 00 21 1a 02 01 00 24  01 2c 00 00 00 00 00 00  |..!....$.,......|
+00000010  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000020  00 00 00 00 00 00 00 00  00 00 f7                 |...........|
+0000002b
+```
+
