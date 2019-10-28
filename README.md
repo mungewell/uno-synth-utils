@@ -204,24 +204,27 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C
 ```
 
 
-CMD 0x22: Read a parameter??, though don't seem to change or align with settings in preset.
+CMD 0x21: Write setup parameter, need to enter 'setup mode' first
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 11 01 7f f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 11  f7                       |..!......|
+00000009
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 21 00 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 21  f7                       |..!....!.|
+00000009
+```
+
+CMD 0x22: Read setup parameter.
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 00 01 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
 12 bytes read
 00000000  f0 00 21 1a 02 01 00 22  00 01 01 f7              |..!...."....|
-0000000c
-
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 20 01 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
-
-12 bytes read
-00000000  f0 00 21 1a 02 01 00 22  00 01 01 f7              |..!...."....|
-0000000c
-
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 20 03 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
-
-12 bytes read
-00000000  f0 00 21 1a 02 01 00 22  00 03 00 f7              |..!...."....|
 0000000c
 
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 4 1 0 1 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
@@ -266,7 +269,7 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 1 00 0c 8 f7' -r temp.bin -t 1 ; hex
 00000009
 ```
 
-Seq state
+CMD 0x14: Report Sequence State
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 14 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
@@ -291,7 +294,7 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 14 f7' -r temp.bin -t 1 ; hexdump -C temp
 
 ```
 
-System Reset, reboots and re-cals
+CMD 0x10: System Reset, reboots and re-cals
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 10 0 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
