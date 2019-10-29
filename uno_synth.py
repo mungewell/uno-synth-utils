@@ -373,6 +373,9 @@ def main():
                 if not infile:
                     break
 
+                if options.verbose:
+                    print("Restoring: %s..." % name)
+
                 patch = infile.read(2000)
                 infile.close()
 
@@ -392,8 +395,8 @@ def main():
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
 
-                # temp hack to allow UNO time to switch
-                time.sleep(1)
+                # temp hack to allow UNO time save
+                time.sleep(0.1)
 
 if __name__ == "__main__":
     import sys
