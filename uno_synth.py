@@ -145,8 +145,8 @@ Seq = Struct(
         "element" / BitStruct(
             Padding(1),
             "type" / Default(BitsInteger(2), 2),
-            "port" / Default(BitsInteger(1), 0),    # guess generally 0, but 1 in some presets
-            "channel" / Default(BitsInteger(4), 0), # complete guess.... only seen 0
+            "fade" / Default(BitsInteger(1), 0),    # CC param 'fades' to value in next step
+            "unknown" / Default(BitsInteger(4), 0), # only seen 0 in official patches
         ),
 
         "data" / Switch(this.element.type,
