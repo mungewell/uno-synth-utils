@@ -81,15 +81,15 @@ Patch = Struct(
     Const(b"\x00\x1B"), "filter_sustain" / Default(Midi1u(Byte), 0),        # CC 46
     Const(b"\x20\x1C"), "filter_release" / Default(Midi2u(Short), 0),       # CC 47
 
-    Const(b"\x20\x1D"), "envelope_attack"   / Default(Midi2u(Short), 0),    # CC 24
-    Const(b"\x20\x1E"), "envelope_delay"    / Default(Midi2u(Short), 0),    # CC 25
-    Const(b"\x00\x1F"), "envelope_sustain"  / Default(Midi1u(Byte), 127),   # CC 26
-    Const(b"\x20\x20"), "envelope_release"  / Default(Midi2u(Short), 0),    # CC 27
+    Const(b"\x20\x1D"), "amp_attack"    / Default(Midi2u(Short), 0),        # CC 24
+    Const(b"\x20\x1E"), "amp_delay"     / Default(Midi2u(Short), 0),        # CC 25
+    Const(b"\x00\x1F"), "amp_sustain"   / Default(Midi1u(Byte), 127),       # CC 26
+    Const(b"\x20\x20"), "amp_release"   / Default(Midi2u(Short), 0),        # CC 27
 
     Const(b"\x00\x21"), "lfo_wave"      / Default(Midi1u(Byte), 0),         # CC 66
     Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 0),        # CC 67
-    Const(b"\x20\x23"), "lfo_pitch"     / Default(Midi2u(Short), 0),        # CC 68
-    Const(b"\x20\x24"), "lfo_filter"    / Default(Midi2u(Short), 0),        # CC 69
+    Const(b"\x20\x23"), "lfo_to_pitch"  / Default(Midi2u(Short), 0),        # CC 68
+    Const(b"\x20\x24"), "lfo_to_filter" / Default(Midi2u(Short), 0),        # CC 69
 
     Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 0),         # CC 70
     Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 0),         # CC 72
@@ -102,16 +102,16 @@ Patch = Struct(
 
     Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),
 
-    Const(b"\x00\x2D"), "osc1_filter_env" / Default(Midi1u(Byte), 0),       # CC 48
-    Const(b"\x00\x2E"), "osc2_filter_env" / Default(Midi1u(Byte), 0),       # CC 49
-    Const(b"\x00\x2F"), "osc1_lfo"      / Default(Midi1u(Byte), 0),         # CC 73
-    Const(b"\x00\x30"), "osc2_lfo"      / Default(Midi1u(Byte), 0),         # CC 74
+    Const(b"\x00\x2D"), "filter_to_osc1_pwm" / Default(Midi1u(Byte), 0),    # CC 48
+    Const(b"\x00\x2E"), "filter_to_osc2_pwm" / Default(Midi1u(Byte), 0),    # CC 49
+    Const(b"\x00\x2F"), "lfo_to_osc1_pwm" / Default(Midi1u(Byte), 0),       # CC 75
+    Const(b"\x00\x30"), "lfo_to_osc2_pwm" / Default(Midi1u(Byte), 0),       # CC 76
 
     Const(b"\x00\x31"), "filter_to_osc1_wave" / Default(Midi1u(Byte), 0),   # only settable by CC50
     Const(b"\x00\x32"), "filter_to_osc2_wave" / Default(Midi1u(Byte), 0),   # only settable by CC51
 
-    Const(b"\x00\x33"), "osc1_shape_pwm" / Default(Midi1u(Byte), 0),        # CC 75
-    Const(b"\x00\x34"), "osc2_shape_pwm" / Default(Midi1u(Byte), 0),        # CC 76
+    Const(b"\x00\x33"), "lfo_to_osc1_wave" / Default(Midi1u(Byte), 0),      # CC 73
+    Const(b"\x00\x34"), "lfo_to_osc2_wave" / Default(Midi1u(Byte), 0),      # CC 74
 
     Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 0),         # CC 94
     Const(b"\x00\x36"), "mod_wah"       / Default(Midi1u(Byte), 0),         # CC 95
@@ -126,8 +126,8 @@ Patch = Struct(
     Const(b"\x00\x3D"), "unknown7"      / Default(Midi1u(Byte), 0),         # Limited to 0..1
     Const(b"\x00\x3E"), "unknown8"      / Default(Midi1u(Byte), 0),         # Limited to 0..1
 
-    Const(b"\x00\x3F"), "mod_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 93
-    Const(b"\x00\x40"), "vel_lfo_rate"  / Default(Midi1s(Int8sb), 0),       # CC 105
+    Const(b"\x00\x3F"), "mod_to_lfo_rate" / Default(Midi1s(Int8sb), 0),     # CC 93
+    Const(b"\x00\x40"), "vel_to_lfo_rate" / Default(Midi1s(Int8sb), 0),     # CC 105
     Const(b"\x00\x41"), "arp_gate"      / Default(Midi1u(Byte), 0),         # CC 85
                                         # Something wrong with encoding...
 
