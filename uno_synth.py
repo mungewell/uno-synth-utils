@@ -87,20 +87,20 @@ Patch = Struct(
     Const(b"\x20\x20"), "amp_release"   / Default(Midi2u(Short), 0),        # CC 27
 
     Const(b"\x00\x21"), "lfo_wave"      / Default(Midi1u(Byte), 0),         # CC 66
-    Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 0),        # CC 67
+    Const(b"\x20\x22"), "lfo_rate"      / Default(Midi2u(Short), 800),      # CC 67
     Const(b"\x20\x23"), "lfo_to_pitch"  / Default(Midi2u(Short), 0),        # CC 68
     Const(b"\x20\x24"), "lfo_to_filter" / Default(Midi2u(Short), 0),        # CC 69
 
-    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 0),         # CC 70
-    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 0),         # CC 72
-    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 0),         # CC 71
-    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 0),         # CC 90
-    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 0),         # CC 92
+    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 64),        # CC 70
+    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 64),        # CC 72
+    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 64),        # CC 71
+    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 64),        # CC 90
+    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 64),        # CC 92
 
     Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),        # CC 9
-    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 0),         # CC 101
+    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 127),       # CC 101
 
-    Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),
+    Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),         # possibly gain
 
     Const(b"\x00\x2D"), "filter_to_osc1_pwm" / Default(Midi1u(Byte), 0),    # CC 48
     Const(b"\x00\x2E"), "filter_to_osc2_pwm" / Default(Midi1u(Byte), 0),    # CC 49
@@ -118,7 +118,7 @@ Patch = Struct(
     Const(b"\x00\x37"), "mod_tremolo"   / Default(Midi1u(Byte), 0),         # CC 96
     Const(b"\x00\x38"), "mod_cutoff"    / Default(Midi1u(Byte), 0),         # CC 97
 
-    Const(b"\x00\x39"), "vel_amp"       / Default(Midi1u(Byte), 0),         # CC 102
+    Const(b"\x00\x39"), "vel_amp"       / Default(Midi1u(Byte), 127),       # CC 102
     Const(b"\x00\x3A"), "vel_filter"    / Default(Midi1u(Byte), 0),         # CC 103
     Const(b"\x00\x3B"), "vel_filter_env" / Default(Midi1u(Byte), 0),        # CC 104
 
