@@ -44,9 +44,10 @@ class Midi1s(Adapter):
 
 # Patch portion of file
 Patch = Struct(
-    Const(b"\x00\x43"),
+    Const(b"\x00\x43"),                                                     # number of parameters to follow...
     Const(b"\x00\x01"), "exttempo"      / Default(Midi1u(Byte), 2),         # used with external/midi clk
     Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 120),
+
     Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
     Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),        # CC 5
     Const(b"\x00\x05"), "scale"         / Default(Midi1u(Byte), 0),
@@ -91,16 +92,16 @@ Patch = Struct(
     Const(b"\x20\x23"), "lfo_to_pitch"  / Default(Midi2u(Short), 0),        # CC 68
     Const(b"\x20\x24"), "lfo_to_filter" / Default(Midi2u(Short), 0),        # CC 69
 
-    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 64),        # CC 70
-    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 64),        # CC 72
-    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 64),        # CC 71
-    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 64),        # CC 90
-    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 64),        # CC 92
+    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 32),        # CC 70
+    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 32),        # CC 72
+    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 32),        # CC 71
+    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 32),        # CC 90
+    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 32),        # CC 92
 
     Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),        # CC 9
-    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 127),       # CC 101
+    Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 32),        # CC 101
 
-    Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),         # possibly gain
+    Const(b"\x00\x2C"), "unknown3"      / Default(Midi1u(Byte), 0),         # possibly gain, 0..24
 
     Const(b"\x00\x2D"), "filter_to_osc1_pwm" / Default(Midi1u(Byte), 0),    # CC 48
     Const(b"\x00\x2E"), "filter_to_osc2_pwm" / Default(Midi1u(Byte), 0),    # CC 49
@@ -109,11 +110,10 @@ Patch = Struct(
 
     Const(b"\x00\x31"), "filter_to_osc1_wave" / Default(Midi1u(Byte), 0),   # only settable by CC50
     Const(b"\x00\x32"), "filter_to_osc2_wave" / Default(Midi1u(Byte), 0),   # only settable by CC51
-
     Const(b"\x00\x33"), "lfo_to_osc1_wave" / Default(Midi1u(Byte), 0),      # CC 73
     Const(b"\x00\x34"), "lfo_to_osc2_wave" / Default(Midi1u(Byte), 0),      # CC 74
 
-    Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 0),         # CC 94
+    Const(b"\x00\x35"), "mod_vibrato"   / Default(Midi1u(Byte), 32),        # CC 94
     Const(b"\x00\x36"), "mod_wah"       / Default(Midi1u(Byte), 0),         # CC 95
     Const(b"\x00\x37"), "mod_tremolo"   / Default(Midi1u(Byte), 0),         # CC 96
     Const(b"\x00\x38"), "mod_cutoff"    / Default(Midi1u(Byte), 0),         # CC 97
