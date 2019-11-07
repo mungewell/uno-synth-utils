@@ -276,7 +276,7 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 14 f7' -r temp.bin -t 1 ; hexdump -C temp
 13 bytes read
 00000000  f0 00 21 1a 02 01 00 14  02 44 17 02 f7           |..!......D...|
                                          ^^ Patch 
-                                       ^ Toggles 0<->4, unknown
+                                       ^ Toggles 0<->4, except when play note, unknown
                                       ^ 4=SEQ lit
 00000000  f0 00 21 1a 02 01 00 14  02 00 17 42 f7           |..!........B.|
                                             ^ 4=ARP lit

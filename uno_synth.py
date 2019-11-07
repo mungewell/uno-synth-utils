@@ -179,7 +179,7 @@ Seq = Struct(
                     amp_release = 0x20,         # CC 27
                     filter_attack = 0x19,       # CC 44
                     filter_decay = 0x1A,        # CC 45
-                    filter_release = 0x20,      # CC 47
+                    filter_release = 0x1C,      # CC 47
                     lfo_to_pitch = 0x23,        # CC 68
                     lfo_to_filter = 0x24,       # CC 69
                 ),
