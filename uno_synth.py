@@ -153,35 +153,35 @@ Seq = Struct(
         {
             0 : "midi1" / Struct(               # data stored as 7bit
                 "midi1" / Enum(Byte,
-                    osc1_level = 15,            # CC 12
-                    osc2_level = 18,            # CC 13
-                    noise_level = 19,           # CC 14
-                    filter_res = 22,            # CC 21
-                    filter_drive = 23,          # CC 22
-                    filter_sustain = 27,        # CC 46
-                    amp_sustain = 31,           # CC 26
-                    delay_mix = 8,              # CC 80
-                    delay_time = 7,             # CC 81
+                    osc1_level = 0x0F,          # CC 12
+                    osc2_level = 0x12,          # CC 13
+                    noise_level = 0x13,         # CC 14
+                    filter_res = 0x16,          # CC 21
+                    filter_drive = 0x17,        # CC 22
+                    filter_sustain = 0x1B,      # CC 46
+                    amp_sustain = 0x1F,         # CC 26
+                    delay_mix = 0x08,           # CC 80
+                    delay_time = 0x07,          # CC 81
                 ),
                 "value" / Default(Midi1u(Byte), 0),
             ),
             1 : "midi2" / Struct(               # data stored as 14bit
                 "midi2" / Enum(Byte,
-                    glide_time = 4,             # CC 5
-                    osc1_wave = 13,             # CC 15
-                    osc2_wave = 16,             # CC 16
-                    osc1_tune = 14,             # CC 17
-                    osc2_tune = 17,             # CC 18
-                    filter_cutoff = 20,         # CC 20
-                    filter_env_amount = 24,     # CC 23
-                    amp_attack = 29,            # CC 24
-                    amp_decay = 30,             # CC 25
-                    amp_release = 32,           # CC 47
-                    filter_attack = 25,         # CC 44
-                    filter_decay = 26,          # CC 45
-                    filter_release = 28,        # CC 47
-                    lfo_to_pitch = 35,          # CC 68
-                    lfo_to_filter_cutoff = 36,  # CC 69
+                    glide_time = 0x04,          # CC 5
+                    osc1_wave = 0x0D,           # CC 15
+                    osc2_wave = 0x10,           # CC 16
+                    osc1_tune = 0x0E,           # CC 17
+                    osc2_tune = 0x11,           # CC 18
+                    filter_cutoff = 0x14,       # CC 20
+                    filter_env_amount = 0x18,   # CC 23
+                    amp_attack = 0x1D,          # CC 24
+                    amp_decay = 0x1E,           # CC 25
+                    amp_release = 0x20,         # CC 27
+                    filter_attack = 0x19,       # CC 44
+                    filter_decay = 0x1A,        # CC 45
+                    filter_release = 0x20,      # CC 47
+                    lfo_to_pitch = 0x23,        # CC 68
+                    lfo_to_filter = 0x24,       # CC 69
                 ),
                 "value" / Default(Midi2u(Short), 0),
             ),
