@@ -51,7 +51,7 @@ Lists and Dictionaries, and can be handled accordingly.
 
 The 'dump' function can be used to output a text representation.
 ```
-$ python3 uno_synth.py -d test/Factory\ 21-100/21.unosyp
+$ python3 uno_synth.py -d preset/Factory\ 21-100/21.unosyp
 ListContainer: 
     Container: 
         exttempo = 2
@@ -82,14 +82,14 @@ ListContainer:
         filter_delay = 73
         filter_sustain = 0
         filter_release = 255
-        envelope_attack = 0
-        envelope_delay = 255
-        envelope_sustain = 127
-        envelope_release = 71
+        amp_attack = 0
+        amp_delay = 255
+        amp_sustain = 127
+        amp_release = 71
         lfo_wave = 0
         lfo_rate = 669
-        lfo_pitch = 0
-        lfo_filter = 0
+        lfo_to_pitch = 0
+        lfo_to_filter = 0
         tremolo_depth = 89
         vibrato_depth = 64
         wah_depth = 30
@@ -98,14 +98,14 @@ ListContainer:
         seq_swing = 53
         pitch_bend = 20
         unknown3 = 0
-        osc1_filter_env = 64
-        osc2_filter_env = 72
-        osc1_lfo = 0
-        osc2_lfo = 0
+        filter_to_osc1_pwm = 64
+        filter_to_osc2_pwm = 72
+        lfo_to_osc1_pwm = 0
+        lfo_to_osc2_pwm = 0
         filter_to_osc1_wave = 0
         filter_to_osc2_wave = 0
-        osc1_shape_pwm = 0
-        osc2_shape_pwm = 0
+        lfo_to_osc1_wave = 0
+        lfo_to_osc2_wave = 0
         mod_vibrato = 0
         mod_wah = 0
         mod_tremolo = 0
@@ -116,8 +116,8 @@ ListContainer:
         unknown6 = 0
         unknown7 = 0
         unknown8 = 0
-        mod_lfo_rate = 0
-        vel_lfo_rate = 0
+        mod_to_lfo_rate = 0
+        vel_to_lfo_rate = 0
         arp_gate = 0
         unknown9 = 1
         key_track = 64
@@ -129,16 +129,12 @@ ListContainer:
                 Container: 
                     element = Container: 
                         type = 2
-                        port = 0
-                        channel = 0
+                        fade = 0
+                        unknown = 0
                     data = Container: 
                         note = 51
                         velocity = 127
                         length = 1
-        Container: 
-            step = 2
-            count = 1
-            elements = ListContainer: 
 ...
 ```
 
