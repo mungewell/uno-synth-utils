@@ -230,7 +230,26 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 22 4 1 0 1 f7' -r temp.bin -t 1 ; hexdump
 0000000f
 ```
 
-CMD 0x30: Writes sequence to current preset (ie. not saved), if playing changes at end of sequence
+Setup Parameters are:
+```
+00 - 0
+01 - Pot Mode (0=Absolute, 1=Pass-Thru, 2=Relative)
+02 - Midi Soft Thru (0=Off, 1=On)
+03 - 0
+04 - 0 
+05 - 0
+06 - Receive Program Change (0=Off, 1=On)
+07 - 1
+08 - Send Program Change (0=Off, 1=On)
+09 - 1
+0A - 1
+0B - Midi Interface Mode (0=Off, 1=On)
+0C - MIDI Clock Sync (0=Int, 1=USB, 2=Either)
+0D - Metronome (0=Off, 1=On)
+```
+
+CMD 0x30: Writes parameters and/or sequence to current preset (ie. not saved).
+If sequence is currently playing changes are loaded at end of sequence.
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
                                                                ^^ const 0x00
