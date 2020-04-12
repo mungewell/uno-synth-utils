@@ -236,8 +236,8 @@ Setup Parameters are:
 01 - Pot Mode (0=Absolute, 1=Pass-Thru, 2=Relative)
 02 - Midi Soft Thru (0=Off, 1=On)
 03 - 0
-04 - 0 
-05 - 0
+04 - Battery Type (0=Alkaline, 1=NiMH)
+05 - 1
 06 - Receive Program Change (0=Off, 1=On)
 07 - 1
 08 - Send Program Change (0=Off, 1=On)

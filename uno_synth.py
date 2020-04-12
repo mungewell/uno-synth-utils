@@ -92,11 +92,12 @@ Patch = Struct(
     Const(b"\x20\x23"), "lfo_to_pitch"  / Default(Midi2u(Short), 0),        # CC 68
     Const(b"\x20\x24"), "lfo_to_filter" / Default(Midi2u(Short), 0),        # CC 69
 
-    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 32),        # CC 70
-    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 32),        # CC 72
-    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 32),        # CC 71
-    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 32),        # CC 90
-    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 32),        # CC 92
+    Const(b"\x00\x25"), "tremolo_depth" / Default(Midi1u(Byte), 32),        # CC 70, on/off CC 79
+    Const(b"\x00\x26"), "vibrato_depth" / Default(Midi1u(Byte), 32),        # CC 72, on/off CC 77
+    Const(b"\x00\x27"), "wah_depth"     / Default(Midi1u(Byte), 32),        # CC 71, on/off CC 78
+
+    Const(b"\x00\x28"), "dive_amount"   / Default(Midi1u(Byte), 32),        # CC 90, on/off CC 89
+    Const(b"\x00\x29"), "scoop_amount"  / Default(Midi1u(Byte), 32),        # CC 92, on/off CC 91
 
     Const(b"\x00\x2A"), "seq_swing"     / Default(Midi1u(Byte), 50),        # CC 9
     Const(b"\x00\x2B"), "pitch_bend"    / Default(Midi1u(Byte), 32),        # CC 101
