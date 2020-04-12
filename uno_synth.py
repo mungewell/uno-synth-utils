@@ -46,7 +46,7 @@ class Midi1s(Adapter):
 Patch = Struct(
     Const(b"\x00\x43"),                                                     # number of parameters to follow...
     Const(b"\x00\x01"), "exttempo"      / Default(Midi1u(Byte), 2),         # used with external/midi clk
-    Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 120),
+    Const(b"\x20\x02"), "tempo"         / Default(Midi2u(Short), 240),
 
     Const(b"\x00\x03"), "octave"        / Default(Midi1u(Byte), 2),
     Const(b"\x20\x04"), "glide"         / Default(Midi2u(Short), 0),        # CC 5
