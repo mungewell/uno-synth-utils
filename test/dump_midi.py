@@ -5,6 +5,7 @@ Dump all incoming Midi as text
 import sys
 import mido
 from time import sleep
+from datetime import datetime
 
 inport = None
 
@@ -23,4 +24,6 @@ if inport == None:
     sys.exit("Unable to find UNO Synth")
 
 for msg in inport:
-    print(msg)
+    if msg.type == 'clock':
+        continue
+    print(datetime.now(), msg)
