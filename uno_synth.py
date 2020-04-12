@@ -348,6 +348,13 @@ def main():
             outfile.write(patch)
             outfile.close()
 
+        print(options.preset)
+        if options.write and not options.preset and patch:
+            data=bytearray(b"\x00\x21\x1a\x02\x01\x30")
+            data += patch
+            msg = mido.Message('sysex', data=data)
+            outport.send(msg)
+
         if options.write and options.preset and patch:
             data=(0x00,0x21,0x1a,0x02,0x01,0x11,0x01,0x0a)
             msg = mido.Message('sysex', data=data)
