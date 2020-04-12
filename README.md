@@ -147,7 +147,7 @@ CMD 0x33: Switch to preset 100 (ie 100 -> 0x64)
 $ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 33 64 f7'
 ```
 
-CMD 0x31: Download and process current preset
+CMD 0x31: Download current/active preset
 (note: may be interspersed with midi clock -> set sync external)
 ```
 amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 31 f7'  -r prog.bin -t 1
@@ -180,10 +180,10 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C
 000000ff
 ```
 
-CMD 0x30: Writes parameters and/or sequence to current preset (ie. not saved).
+CMD 0x30: Writes parameters and/or sequence to current preset (ie. not saved to patch memory).
 
 If the byte after 'CMD 0x30' is '0x00' a patch is included in the data, otherwise it
-indicates a sequencer step.
+indicates the step within sequence.
 
 Send a complete patch.
 ```
@@ -194,22 +194,25 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 43 0 1 2 20 2 0 78 0 3 2 20 4 7 0 0 
 00000009
 ```
 
-Can also be used to change specific param(s) (range in this case)
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 1 00 0c 8 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
-                                                    ^ ^^ Param Value 
-                                              ^^ ^^ Param ID
-                                            ^ Param count
+Can also be used to change specific param(s) (LFO in this case), which can be useful
+as it allows greater granuality on 14bit parameters than can be achieved via the dials
+and Midi CC.
 
-9 bytes read
-00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
-00000009
+Note: it is not possible to set Tempo via this method.
+```
+$ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 30 00 01 20 22 00 03 f7'
+                                                         ^^ ^^ Param Value 
+                                                   ^^ ^^ Param ID
+                                                ^^ Param count
+
 ```
 
 Normally a patch contains both configuration followed by sequence, but a sequence
 can be written directly with 'CMD 0x30+0x01'.
 
-If a sequence is currently playing changes are loaded when end of sequence is reached.
+Data can be notes and/or parameter automation, as per patch format.
+
+Note: If a sequence is currently playing changes are loaded when end of sequence is reached.
 
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
@@ -219,7 +222,7 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bi
                                                       ^^ Note
                                                 ^^ ^^ "SeqNote" + const 0x00
                                              ^^ Item count
-                                          ^^ Step
+                                          ^^ First Step
 9 bytes read
 00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
 00000009
