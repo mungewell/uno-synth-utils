@@ -140,6 +140,8 @@ ListContainer:
 
 # Handcrafted SysEx control of the device
 
+## Patch Data
+
 CMD 0x33: Switch to preset 100 (ie 100 -> 0x64)
 ```
 $ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 33 64 f7'
@@ -152,16 +154,6 @@ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 31 f7'  -r prog.bin -t 1
 
 # Strip off extra bits to get at 'config file' portion (note leaves 0x7f at end)
 dd bs=1024 count=1 skip=19 iflag=skip_bytes if=prog.bin of=prog.unosyp
-```
-
-CMD 0x12: Read F/W version
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 12 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
-
-28 bytes read
-00000000  f0 00 21 1a 02 01 00 12  01 30 31 2e 31 34 20 23  |..!......01.14 #|
-00000010  23 2e 23 23 20 23 23 2e  23 23 00 f7              |#.## ##.##..|
-0000001c
 ```
 
 CMD 0x24: Read back specific patch without having to select it
@@ -188,7 +180,59 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 0 2c f7' -r temp.bin -t 1 ; hexdump -C
 000000ff
 ```
 
-CMD 0x24+0x01: This maybe reading back name (set by editor with command 0x35)
+CMD 0x30: Writes parameters and/or sequence to current preset (ie. not saved).
+
+If the byte after 'CMD 0x30' is '0x00' a patch is included in the data, otherwise it
+indicates a sequencer step.
+
+Send a complete patch.
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 43 0 1 2 20 2 0 78 0 3 2 20 4 7 0 0 5 0 0 6 0 0 7 46 0 8 0 0 9 4 0 a 2 0 b 0 0 c 10 20 d 2 1b 20 e 0 0 0 f 7f 20 10 0 1 20 11 7f 4b 0 12 7f 0 13 53 20 14 1 2c 0 15 0 0 16 2d 0 17 54 20 18 0 29 20 19 0 0 20 1a 0 0 0 1b 0 20 1c 1 7f 20 1d 0 14 20 1e 0 59 0 1f 2e 20 20 1 41 0 21 0 20 22 2 68 20 23 0 46 20 24 0 3f 0 25 59 0 26 40 0 27 1e 0 28 15 0 29 15 0 2a 35 0 2b 14 0 2c 0 0 2d 40 0 2e 48 0 2f 0 0 30 0 0 31 0 0 32 0 0 33 0 0 34 0 0 35 0 0 36 0 0 37 0 0 38 0 0 39 0 0 3a 0 0 3b 0 0 3c 0 0 3d 0 0 3e 0 0 3f 0 0 40 0 0 41 0 0 42 1 0 43 40 1 1 40 0 33 7f 1 0 2 1 40 0 27 7d 1 0 4 1 40 0 33 7d 1 0 6 1 40 0 31 7a 1 0 7 1 40 0 2e 72 1 0 9 1 40 0 36 76 1 0 b 1 40 0 38 7d 1 0 d 1 40 0 38 76 2 0 e 1 40 0 36 6a 5 0  f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+```
+
+Can also be used to change specific param(s) (range in this case)
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 1 00 0c 8 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+                                                    ^ ^^ Param Value 
+                                              ^^ ^^ Param ID
+                                            ^ Param count
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+```
+
+Normally a patch contains both configuration followed by sequence, but a sequence
+can be written directly with 'CMD 0x30+0x01'.
+
+If a sequence is currently playing changes are loaded when end of sequence is reached.
+
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+                                                               ^^ const 0x00
+                                                            ^^ Length
+                                                         ^^ Velocity
+                                                      ^^ Note
+                                                ^^ ^^ "SeqNote" + const 0x00
+                                             ^^ Item count
+                                          ^^ Step
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
+00000009
+
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 08 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+```
+
+## Patch name
+
+The patch name is not displayed on the device, but is stored and read back by
+the official patch editor application.
+
+CMD 0x24+0x01: Read back name.
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C temp.bin
 
@@ -199,6 +243,16 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 24 1 2c f7' -r temp.bin -t 1 ; hexdump -C
 0000002b
 ```
 
+In order to set a name a system (unknown) command must be sent first.
+
+```
+$ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 11 01 0a f7'
+$ amidi -p hw:1,0,0 -S 'f0 00 21 1a 02 01 23 01 63 55 4e 4f 2d 55 74 69 6c 73 f7'
+                                                   ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ ASCII name
+                                                ^^ preset number
+```
+
+## Device Configuration (Setup)
 
 CMD 0x21: Write setup parameter, need to enter 'setup mode' first
 ```
@@ -248,41 +302,6 @@ Setup Parameters are:
 0D - Metronome (0=Off, 1=On)
 ```
 
-CMD 0x30: Writes parameters and/or sequence to current preset (ie. not saved).
-If sequence is currently playing changes are loaded at end of sequence.
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
-                                                               ^^ const 0x00
-                                                            ^^ Length
-                                                         ^^ Velocity
-                                                      ^^ Note
-                                                ^^ ^^ "SeqNote" + const 0x00
-                                             ^^ Item count
-                                          ^^ Step
-9 bytes read
-00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
-00000009
-
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 01 01 40 00 30 64 01 00 08 01 40 00 30 64 01 00 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
-```
-
-Or send a complete patch...
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 43 0 1 2 20 2 0 78 0 3 2 20 4 7 0 0 5 0 0 6 0 0 7 46 0 8 0 0 9 4 0 a 2 0 b 0 0 c 10 20 d 2 1b 20 e 0 0 0 f 7f 20 10 0 1 20 11 7f 4b 0 12 7f 0 13 53 20 14 1 2c 0 15 0 0 16 2d 0 17 54 20 18 0 29 20 19 0 0 20 1a 0 0 0 1b 0 20 1c 1 7f 20 1d 0 14 20 1e 0 59 0 1f 2e 20 20 1 41 0 21 0 20 22 2 68 20 23 0 46 20 24 0 3f 0 25 59 0 26 40 0 27 1e 0 28 15 0 29 15 0 2a 35 0 2b 14 0 2c 0 0 2d 40 0 2e 48 0 2f 0 0 30 0 0 31 0 0 32 0 0 33 0 0 34 0 0 35 0 0 36 0 0 37 0 0 38 0 0 39 0 0 3a 0 0 3b 0 0 3c 0 0 3d 0 0 3e 0 0 3f 0 0 40 0 0 41 0 0 42 1 0 43 40 1 1 40 0 33 7f 1 0 2 1 40 0 27 7d 1 0 4 1 40 0 33 7d 1 0 6 1 40 0 31 7a 1 0 7 1 40 0 2e 72 1 0 9 1 40 0 36 76 1 0 b 1 40 0 38 7d 1 0 d 1 40 0 38 76 2 0 e 1 40 0 36 6a 5 0  f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
-
-9 bytes read
-00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
-00000009
-```
-
-Can also be used to change specific param(s) (range in this case)
-```
-$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 30 0 1 00 0c 8 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
-
-9 bytes read
-00000000  f0 00 21 1a 02 01 00 30  f7                       |..!....0.|
-00000009
-```
 
 CMD 0x14: Report Sequence State
 ```
@@ -309,6 +328,8 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 14 f7' -r temp.bin -t 1 ; hexdump -C temp
 
 ```
 
+## System Commands
+
 CMD 0x10: System Reset, reboots and re-cals
 ```
 $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 10 0 f7' -r temp.bin -t 1 ; hexdump -C temp.bin
@@ -317,3 +338,25 @@ $ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 10 0 f7' -r temp.bin -t 1 ; hexdump -C te
 00000000  f0 00 21 1a 02 01 32 15  15 f7                    |..!...2...|
 0000000a
 ```
+
+CMD 0x10: Device mode
+
+ie. enter 'setup mode'
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 11 01 7f f7' -r temp.bin -t 1 ; hexdump -C temp.bin
+
+9 bytes read
+00000000  f0 00 21 1a 02 01 00 11  f7                       |..!......|
+00000009
+```
+
+CMD 0x12: Read F/W version
+```
+$ amidi -p hw:1,0,0 -S 'f0 0 21 1a 2 1 12 f7' -r temp.bin -t 1 ; hexdump -C temp.bin 
+
+28 bytes read
+00000000  f0 00 21 1a 02 01 00 12  01 30 31 2e 31 34 20 23  |..!......01.14 #|
+00000010  23 2e 23 23 20 23 23 2e  23 23 00 f7              |#.## ##.##..|
+0000001c
+```
+
