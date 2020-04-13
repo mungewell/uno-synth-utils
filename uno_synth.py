@@ -366,7 +366,7 @@ def main():
             outport.send(msg)
 
             # Official app writes a name...
-            sleep(0.1)
+            sleep(0.5)
             data=(0x00,0x21,0x1a,0x02,0x01,0x23,0x01,int(options.preset), \
                     0x55,0x4e,0x4f,0x20,0x53,0x79,0x6e,0x74,0x68)
             msg = mido.Message('sysex', data=data)
@@ -398,14 +398,14 @@ def main():
                 outport.send(msg)
 
                 # Official app writes a name...
-                sleep(0.1)
-                data=(0x00,0x21,0x1a,0x02,0x01,0x23,0x01,int(options.preset), \
+                sleep(0.5)
+                data=(0x00,0x21,0x1a,0x02,0x01,0x23,0x01, preset, \
                         0x55,0x4e,0x4f,0x20,0x53,0x79,0x6e,0x74,0x68)
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
 
                 # temp hack to allow UNO time save
-                sleep(0.1)
+                sleep(0.5)
 
 if __name__ == "__main__":
     import sys
