@@ -395,11 +395,14 @@ def main():
             outport.send(msg)
 
             # Official app writes a name...
-            sleep(0.5)
-            data=(0x00,0x21,0x1a,0x02,0x01,0x23,0x01,int(options.preset), \
-                    0x55,0x4e,0x4f,0x20,0x53,0x79,0x6e,0x74,0x68)
-            msg = mido.Message('sysex', data=data)
-            outport.send(msg)
+            if options.name:
+                sleep(0.5)
+                data=bytearray(b"\x00\x21\x1a\x02\x01\x23\x01")
+                data.append(int(options.preset))
+                data += str.encode(options.name, "utf-8")
+
+                msg = mido.Message('sysex', data=data)
+                outport.send(msg)
 
         if options.restore:
             path = os.path.join(os.getcwd(), options.restore)
