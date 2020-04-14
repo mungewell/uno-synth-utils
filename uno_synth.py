@@ -231,6 +231,8 @@ def main():
             help="Select 'MIDI' device name")
         parser.add_option("-p", "--preset", dest="preset",
             help="Select 'PRESET' and use in MIDI operations" )
+        parser.add_option("-n", "--name", dest="name",
+            help="Select 'NAME' for preset" )
         parser.add_option("-r", "--read", dest="read",
             help="Read current (or 'PRESET') config from UNO",
             action="store_true")
@@ -280,11 +282,27 @@ def main():
                             patch = bytes(msg.data[10:])
                             break
 
+                if options.verbose and options.preset:
+                    data=(0x00,0x21,0x1a,0x02,0x01,0x24,0x01, int(options.preset))
+                    msg = mido.Message('sysex', data=data)
+                    outport.send(msg)
+                    for msg in inport:
+                        if msg.type=='sysex':
+                            if len(msg.data)==41 and msg.data[6]==0x24:
+                                name = (bytes(msg.data[9:]).split(b'\x00'))[0].decode("utf-8")
+                                break
+                    print("Read Preset %s: '%s'" % (options.preset, name))
+
+
         if options.backup:
             path = os.path.join(os.getcwd(), options.backup)
             os.mkdir(path)
 
+            namesfile = open(os.path.join(path, "names.txt") , "wb")
+
             for preset in range(21,101,1):
+                if options.verbose:
+                    print("Backing up preset: %d" % preset)
                 name = os.path.join(path, str(preset) + ".unosyp")
                 outfile = open(name, "wb")
                 if not outfile:
@@ -302,6 +320,17 @@ def main():
                 outfile.write(patch)
                 outfile.close()
 
+                if namesfile:
+                    data=(0x00,0x21,0x1a,0x02,0x01,0x24,0x01, preset)
+                    msg = mido.Message('sysex', data=data)
+                    outport.send(msg)
+                    for msg in inport:
+                        if msg.type=='sysex':
+                            if len(msg.data)==41 and msg.data[6]==0x24:
+                                name = (bytes(msg.data[9:]).split(b'\x00'))[0]
+                                break
+                    namesfile.write(name + bytes(os.linesep, "utf-8"))
+            namesfile.close()
 
     # check whether we've already got patch data
     if patch == None and options.init:
