@@ -394,18 +394,17 @@ def main():
             msg = mido.Message('sysex', data=data)
             outport.send(msg)
 
-            # Official app writes a name...
             if options.name:
                 sleep(0.5)
                 data=bytearray(b"\x00\x21\x1a\x02\x01\x23\x01")
                 data.append(int(options.preset))
                 data += str.encode(options.name, "utf-8")
-
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
 
         if options.restore:
             path = os.path.join(os.getcwd(), options.restore)
+            namesfile = open(os.path.join(path, "names.txt") , "rb")
 
             for preset in range(21,101,1):
                 name = os.path.join(path, str(preset) + ".unosyp")
@@ -429,15 +428,22 @@ def main():
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
 
-                # Official app writes a name...
-                sleep(0.5)
-                data=(0x00,0x21,0x1a,0x02,0x01,0x23,0x01, preset, \
-                        0x55,0x4e,0x4f,0x20,0x53,0x79,0x6e,0x74,0x68)
-                msg = mido.Message('sysex', data=data)
-                outport.send(msg)
+                if namesfile:
+                    sleep(0.5)
+
+                    name = namesfile.readline().split(bytes(os.linesep, "utf-8"))[0]
+                    if options.verbose:
+                        print("Restoring to %d: %s" % (preset, name))
+
+                    data=bytearray(b"\x00\x21\x1a\x02\x01\x23\x01")
+                    data.append(preset)
+                    data += name
+                    msg = mido.Message('sysex', data=data)
+                    outport.send(msg)
 
                 # temp hack to allow UNO time save
                 sleep(0.5)
+            namesfile.close()
 
 if __name__ == "__main__":
     import sys
