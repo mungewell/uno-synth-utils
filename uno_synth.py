@@ -404,7 +404,10 @@ def main():
 
         if options.restore:
             path = os.path.join(os.getcwd(), options.restore)
-            namesfile = open(os.path.join(path, "names.txt") , "rb")
+
+            namesfile = None
+            if os.path.isfile(os.path.join(path, "names.txt")):
+                namesfile = open(os.path.join(path, "names.txt") , "rb")
 
             for preset in range(21,101,1):
                 name = os.path.join(path, str(preset) + ".unosyp")
@@ -428,10 +431,13 @@ def main():
                 msg = mido.Message('sysex', data=data)
                 outport.send(msg)
 
-                if namesfile:
+                if namesfile or options.name:
                     sleep(0.5)
 
-                    name = namesfile.readline().split(bytes(os.linesep, "utf-8"))[0]
+                    if namesfile:
+                        name = namesfile.readline().split(bytes(os.linesep, "utf-8"))[0]
+                    else:
+                        name = str.encode(options.name, "utf-8")
                     if options.verbose:
                         print("Restoring to %d: %s" % (preset, name))
 
@@ -443,7 +449,9 @@ def main():
 
                 # temp hack to allow UNO time save
                 sleep(0.5)
-            namesfile.close()
+
+            if namesfile:
+                namesfile.close()
 
 if __name__ == "__main__":
     import sys
