@@ -411,6 +411,8 @@ def main():
 
             for preset in range(21,101,1):
                 name = os.path.join(path, str(preset) + ".unosyp")
+                if not os.path.exists(name):
+                    break
                 infile = open(name, "rb")
                 if not infile:
                     break
