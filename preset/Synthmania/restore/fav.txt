@@ -1,0 +1,80 @@
+21.unosyp -> ../1001 Nights.unosyp
+22.unosyp -> ../50s Sci-Fi Vox.unosyp
+23.unosyp -> ../70s Lead.unosyp
+24.unosyp -> ../80s Bass 1.unosyp
+*25.unosyp -> ../80s Bass 2.unosyp
+26.unosyp -> ../A Forest.unosyp
+27.unosyp -> ../Accordion.unosyp
+28.unosyp -> ../Alien Birds.unosyp
+29.unosyp -> ../Alien Rise.unosyp
+30.unosyp -> ../Alien Talk.unosyp
+31.unosyp -> ../Antarctica.unosyp
+32.unosyp -> ../Anteater.unosyp
+33.unosyp -> ../Area 51.unosyp
+34.unosyp -> ../Badger Badger.unosyp
+35.unosyp -> ../Bass n Lead.unosyp
+36.unosyp -> ../Big In Japan.unosyp
+37.unosyp -> ../Big Room Squeeze.unosyp
+38.unosyp -> ../Big Storm.unosyp
+39.unosyp -> ../Blue Ducks.unosyp
+40.unosyp -> ../Butterfly.unosyp
+41.unosyp -> ../Chameleon Bass.unosyp
+42.unosyp -> ../Clay Cats.unosyp
+43.unosyp -> ../Contagion.unosyp
+*44.unosyp -> ../Corona Melody.unosyp
+45.unosyp -> ../Cosmo Arp.unosyp
+46.unosyp -> ../Dinosaur.unosyp
+47.unosyp -> ../Disco Carnival.unosyp
+48.unosyp -> ../Distant Planet.unosyp
+49.unosyp -> ../Downpour.unosyp
+50.unosyp -> ../Early Rave.unosyp
+51.unosyp -> ../Electro Arpeggio.unosyp
+52.unosyp -> ../Electro Sequence.unosyp
+53.unosyp -> ../Elvis Lead.unosyp
+54.unosyp -> ../Euro Ambulance.unosyp
+55.unosyp -> ../Faun Flute.unosyp
+56.unosyp -> ../Fishing Boat.unosyp
+57.unosyp -> ../Funk Master.unosyp
+58.unosyp -> ../Glacier Diva.unosyp
+59.unosyp -> ../Hardcore Uproar.unosyp
+60.unosyp -> ../I Like To Moov It.unosyp
+61.unosyp -> ../Ice Cream Truck.unosyp
+62.unosyp -> ../Industrial Bass.unosyp
+63.unosyp -> ../Inside The CPU.unosyp
+64.unosyp -> ../Ivory Lead.unosyp
+65.unosyp -> ../Laser Cannons.unosyp
+66.unosyp -> ../London Sequence.unosyp
+67.unosyp -> ../Lucky Squares.unosyp
+68.unosyp -> ../Lunar Base.unosyp
+69.unosyp -> ../Mirrored Rave.unosyp
+70.unosyp -> ../Modular Lead.unosyp
+71.unosyp -> ../Morse Transmission.unosyp
+72.unosyp -> ../Octopus.unosyp
+73.unosyp -> ../PWM King.unosyp
+74.unosyp -> ../Paft Dunker.unosyp
+75.unosyp -> ../Persuaders Bass.unosyp
+76.unosyp -> ../Planet Soul.unosyp
+77.unosyp -> ../Popcorn Lead.unosyp
+78.unosyp -> ../Pulsing Bass.unosyp
+79.unosyp -> ../Rain & Wind.unosyp
+80.unosyp -> ../Rave Shield.unosyp
+81.unosyp -> ../Retro Sequence.unosyp
+82.unosyp -> ../Sci-Fi Drone.unosyp
+83.unosyp -> ../See You Lately.unosyp
+84.unosyp -> ../Snap Seq.unosyp
+85.unosyp -> ../Space Gulls.unosyp
+86.unosyp -> ../Space Puppies.unosyp
+87.unosyp -> ../Sprite Voice.unosyp
+88.unosyp -> ../Synth Pop Seq.unosyp
+89.unosyp -> ../Talk 2 Much.unosyp
+90.unosyp -> ../Telstarry Eyes.unosyp
+91.unosyp -> ../Thru The Night.unosyp
+*92.unosyp -> ../Thunder Bass.unosyp
+93.unosyp -> ../Under The Skin.unosyp
+94.unosyp -> ../VL Piano.unosyp
+95.unosyp -> ../Vampire Lead.unosyp
+96.unosyp -> ../Venga Lead.unosyp
+97.unosyp -> ../Warm Bass.unosyp
+98.unosyp -> ../Wind Lead.unosyp
+99.unosyp -> ../Without Limits.unosyp
+100.unosyp -> ../Yellow Puppet.unosyp
