@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "uno_synth",
-    version = "0.1.0",
+    version = "0.2.0",
     author = "Simon Wood",
     author_email = "simon@mungewell.org",
     description = "Library for working with Uno Synth config files",

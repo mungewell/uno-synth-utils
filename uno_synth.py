@@ -249,10 +249,7 @@ def main():
     if _hasMido:
         if options.preset or options.read or options.write or options.backup \
                 or options.restore:
-            if sys.platform == 'win32':
-                name = bytes(options.midi, 'ascii')
-            else:
-                name = options.midi
+            name = options.midi
             for port in mido.get_input_names():
                 if port[:len(name)]==name:
                     inport = mido.open_input(port)
@@ -472,7 +469,7 @@ if __name__ == "__main__":
         import mido
         _hasMido = True
         if sys.platform == 'win32':
-            mido.set_backend('mido.backends.rtmidi_python')
+            mido.set_backend('mido.backends.rtmidi')
     except ImportError:
         _hasMido = False
     '''
