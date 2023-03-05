@@ -19,7 +19,7 @@ ln -s ../"FX Hihat.unosyp"                                             38.unosyp
 ln -s ../"FX LFO Noise.unosyp"                                         39.unosyp
 ln -s ../"FX Percussion.unosyp"                                        40.unosyp
 ln -s ../"FX Rain Sweep.unosyp"                                        41.unosyp
-ln -s ../"FX Snare:Clap Noise.unosyp"                                  42.unosyp
+ln -s ../"FX Snare Clap Noise.unosyp"                                  42.unosyp
 ln -s ../"FX Sweep.unosyp"                                             43.unosyp
 ln -s ../"FX Wind.unosyp"                                              44.unosyp
 ln -s ../"Seq City.unosyp"                                             45.unosyp

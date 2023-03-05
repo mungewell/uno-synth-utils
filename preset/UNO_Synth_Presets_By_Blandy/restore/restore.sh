@@ -77,4 +77,3 @@ ln -s ../"Warp Factor.unosyp"                                          96.unosyp
 ln -s ../"Wharehouse Dayz.unosyp"                                      97.unosyp
 ln -s ../"Wonderland.unosyp"                                           98.unosyp
 ln -s ../"Wonkee.unosyp"                                               99.unosyp
-ln -s ../"__unknown.unosyp"                                            100.unosyp
